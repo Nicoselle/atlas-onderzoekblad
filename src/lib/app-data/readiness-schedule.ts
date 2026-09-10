@@ -12,7 +12,7 @@ export function readinessProbeDelayMs(attempt: number): number {
 
 export function readinessProbeExhausted(
   startedAtMs: number,
-  nowMs: number<
+  nowMs: number,
 ): boolean {
   return nowMs - startedAtMs >= READINESS_PROBE_MAX_TOTAL_MS;
 }
