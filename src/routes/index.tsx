@@ -4,6 +4,7 @@ import { CompanyCard } from "@/components/atlas/company-card";
 import { SiteShell } from "@/components/atlas/site-shell";
 import { StatusBadge } from "@/components/atlas/status-badge";
 import { getCompany } from "@/lib/atlas/companies";
+import { OTIUM_BRIDGE } from "@/lib/atlas/copy";
 import { editions } from "@/lib/atlas/editions";
 
 export const Route = createFileRoute("/")({ component: Home });
@@ -34,6 +35,9 @@ function Home() {
               <em className="text-ink">Otium</em> is het doel; <em className="text-ink">AURA/S</em> is
               hoe ik dat lees. Geen tipstroom — wel een heldere leeswijze.
             </p>
+            <p className="mt-4 max-w-xl font-sans text-base leading-relaxed text-ink-soft">
+              {OTIUM_BRIDGE}
+            </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
                 to="/methode"
@@ -47,6 +51,12 @@ function Home() {
                 className="inline-flex min-h-11 items-center rounded-md border border-rule px-5 font-sans text-sm text-ink transition-colors duration-150 hover:border-ink"
               >
                 Continenten & manden
+              </Link>
+              <Link
+                to="/inschrijven"
+                className="inline-flex min-h-11 items-center rounded-md border border-rule px-5 font-sans text-sm text-ink transition-colors duration-150 hover:border-ink"
+              >
+                Inschrijven
               </Link>
             </div>
           </div>

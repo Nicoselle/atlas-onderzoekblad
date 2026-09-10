@@ -145,3 +145,15 @@ export const baskets: Basket[] = [
 export const ISSUE_DATE = "2026-09-10";
 export const SCORED_TOTAL = 195;
 export const INCOMPLETE_TOTAL = 27;
+
+export function getBasket(id: string) {
+  return baskets.find((b) => b.id === id);
+}
+
+export function getContinent(id: string) {
+  return continents.find((c) => c.id === id);
+}
+
+export type WorldPlace =
+  | { kind: "basket"; item: Basket }
+  | { kind: "continent"; item: Continent };

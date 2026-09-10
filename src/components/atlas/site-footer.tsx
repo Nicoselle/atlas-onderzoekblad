@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { OTIUM_BRIDGE } from "@/lib/atlas/copy";
 
 export function SiteFooter() {
   return (
@@ -6,10 +7,7 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:px-6 md:grid-cols-3">
         <div>
           <p className="font-display text-xl font-semibold tracking-tight">Atlas</p>
-          <p className="mt-2 font-sans text-sm leading-relaxed text-muted">
-            Onafhankelijk onderzoekblad over post-labour. Vanuit het Otium-project:
-            wie de productieve laag houdt, zodat tijd vrijkomt voor wat ertoe doet.
-          </p>
+          <p className="mt-2 font-sans text-sm leading-relaxed text-muted">{OTIUM_BRIDGE}</p>
         </div>
         <div className="font-sans text-sm">
           <p className="mb-3 text-xs tracking-[0.18em] text-faint uppercase">Op het blad</p>
@@ -32,6 +30,11 @@ export function SiteFooter() {
             <li>
               <Link to="/nummers" className="hover:text-ink">
                 Nummers
+              </Link>
+            </li>
+            <li>
+              <Link to="/inschrijven" className="hover:text-ink">
+                Inschrijven
               </Link>
             </li>
           </ul>
