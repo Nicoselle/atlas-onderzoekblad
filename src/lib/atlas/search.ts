@@ -40,6 +40,12 @@ const pages: SearchHit[] = [
     title: "Editie-shelf",
     dek: "Gedateerde onderzoeksedities — tip-vrij.",
   },
+  {
+    href: "/inschrijven",
+    kicker: "Brief",
+    title: "Inschrijven",
+    dek: "Onderzoekseditie per e-mail. Geen tipstroom. Geen koersdoelen.",
+  },
 ];
 
 export function searchAtlas(q: string): SearchHit[] {
@@ -59,13 +65,13 @@ export function searchAtlas(q: string): SearchHit[] {
       dek: e.dek,
     })),
     ...continents.map((c) => ({
-      href: `/wereld#${c.id}`,
+      href: `/wereld/${c.id}`,
       kicker: "Continent",
       title: c.name,
       dek: `${c.names} namen · ${c.scored} gescoord · ${c.note}`,
     })),
     ...baskets.map((b) => ({
-      href: `/wereld#${b.id}`,
+      href: `/wereld/${b.id}`,
       kicker: "Mand",
       title: b.name,
       dek: b.note,

@@ -1,16 +1,8 @@
 import { useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
+import { mainNav } from "@/lib/atlas/nav";
 import { cn } from "@/lib/utils";
-
-const nav = [
-  { to: "/", label: "Blad" },
-  { to: "/methode", label: "Methode" },
-  { to: "/wereld", label: "Wereld" },
-  { to: "/scores", label: "Scores" },
-  { to: "/nummers", label: "Nummers" },
-  { to: "/zoek", label: "Zoek" },
-] as const;
 
 export function SiteHeader() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
@@ -34,8 +26,8 @@ export function SiteHeader() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-1 md:flex" aria-label="Hoofd">
-          {nav.map((item) => {
+        <nav className="hidden items-center gap-1 md:flex md:flex-wrap" aria-label="Hoofd">
+          {mainNav.map((item) => {
             const active =
               item.to === "/"
                 ? pathname === "/"
@@ -79,7 +71,7 @@ export function SiteHeader() {
       >
         <nav className="overflow-hidden" aria-label="Mobiel">
           <ul className="flex flex-col px-2 py-2">
-            {nav.map((item) => (
+            {mainNav.map((item) => (
               <li key={item.to}>
                 <Link
                   to={item.to}

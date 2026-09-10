@@ -56,7 +56,15 @@ function WereldPage() {
                 <p className="font-sans text-xs tracking-[0.18em] text-faint uppercase">
                   {c.names} namen
                 </p>
-                <h3 className="mt-1 font-display text-2xl font-medium tracking-tight">{c.name}</h3>
+                <h3 className="mt-1 font-display text-2xl font-medium tracking-tight">
+                  <Link
+                    to="/wereld/$slug"
+                    params={{ slug: c.id }}
+                    className="hover:text-moss"
+                  >
+                    {c.name}
+                  </Link>
+                </h3>
                 <p className="mt-2 font-sans text-sm text-ink-soft">
                   {c.scored} gescoord · {c.incomplete} onvolledig. {c.note}
                 </p>
@@ -116,6 +124,15 @@ function WereldPage() {
                     ))}
                   </ul>
                 ) : null}
+                <p className="mt-5">
+                  <Link
+                    to="/wereld/$slug"
+                    params={{ slug: b.id }}
+                    className="inline-flex min-h-11 items-center font-sans text-sm text-ink underline decoration-rule underline-offset-4 hover:text-moss"
+                  >
+                    Open één mand
+                  </Link>
+                </p>
               </article>
             ))}
           </div>

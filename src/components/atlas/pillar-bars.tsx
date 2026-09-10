@@ -1,10 +1,19 @@
 import { PILLAR_META, type Pillars } from "@/lib/atlas/companies";
 import { formatScore } from "@/lib/atlas/format";
 
-export function PillarBars({ pillars }: { pillars: Pillars }) {
+export const AURA_PUBLIC_KEYS = ["automation", "utility", "resilience", "flex"] as const;
+
+export function PillarBars({
+  pillars,
+  keys,
+}: {
+  pillars: Pillars;
+  keys?: ReadonlyArray<keyof Pillars>;
+}) {
+  const rows = keys ? PILLAR_META.filter((p) => keys.includes(p.key)) : PILLAR_META;
   return (
     <ul className="space-y-3">
-      {PILLAR_META.map((p) => {
+      {rows.map((p) => {
         const value = pillars[p.key];
         return (
           <li key={p.label}>
