@@ -26,7 +26,7 @@ export function SiteHeader() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-1 md:flex" aria-label="Hoofd">
+        <nav className="hidden items-center gap-1 md:flex md:flex-wrap" aria-label="Hoofd">
           {mainNav.map((item) => {
             const active =
               item.to === "/"
