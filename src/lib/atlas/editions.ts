@@ -1,23 +1,10 @@
-export type EditionBlock =
-  | { type: "p"; text: string }
-  | { type: "h"; text: string }
-  | { type: "quote"; text: string }
-  | { type: "list"; items: string[] };
+import { speciales } from "./articles.ts";
+import type { Edition, EditionBlock } from "./edition-types.ts";
 
-export type Edition = {
-  slug: string;
-  kicker: string;
-  title: string;
-  dek: string;
-  date: string;
-  theme: string;
-  image?: string;
-  imageAlt?: string;
-  relatedTickers?: string[];
-  body: EditionBlock[];
-};
+export type { Edition, EditionBlock };
 
 export const editions: Edition[] = [
+  ...speciales,
   {
     slug: "2026-09-industrials-cluster",
     kicker: "Editie · research",
@@ -64,57 +51,6 @@ export const editions: Edition[] = [
           "GATX · S 72,8 · A 90,9 · U 100,0 · R 36,3 · A-flex 69,5 · K 77,6 · AI+ 0",
           "URI · S 56,5 · A 84,0 · U 30,8 · R 25,3 · A-flex 75,0 · K 81,7 · AI+ 0",
         ],
-      },
-    ],
-  },
-  {
-    slug: "2026-09-tesla",
-    kicker: "Speciale",
-    title: "Tesla · gehouden softwarelaag",
-    dek: "Issuer-lens: fabrieken plus FSD, OTA, connectivity en energy-control — ook ná verkoop of lease van het ijzer. World #9. Tip-vrij.",
-    date: "2026-09-10",
-    theme: "Gehouden softwarelaag",
-    image: "/art/tesla.jpg",
-    imageAlt: "Kopergravure van een autofabriek met softwarelaag",
-    relatedTickers: ["TSLA"],
-    body: [
-      {
-        type: "p",
-        text: "Tesla is een onderneming die elektrische auto’s en energieproducten fabriceert in eigen fabrieken, en daarboven een softwarelaag houdt. Dit is research onder tip-ban, status VOORLOPIG, filing-first — geen tipstroom en geen koersdoel.",
-      },
-      { type: "h", text: "De productieve laag, niet het stuur" },
-      {
-        type: "quote",
-        text: "Wie een aandeel Tesla houdt, houdt daarmee een claim op die onderneming: niet op één auto in de garage, maar op de machine die fabrieken én die gehouden stack samen runt.",
-      },
-      {
-        type: "p",
-        text: "De vraag is wat er economisch bij Tesla blijft als het ijzer de deur uit is. Het antwoord uit de filing is dat Tesla over-the-air updates, FSD Supervised, connectivity en energy-control houdt op verkocht én geleased materieel, zodat wie de auto “bezit” gebruiker blijft van Tesla’s stack.",
-      },
-      { type: "h", text: "Hoe het geld binnenkomt" },
-      {
-        type: "p",
-        text: "Omzet 94,83 mld USD: automotive 65,82, energy 12,77, services 12,53. Brutomarge 18,0%. Vrije kasstroom 6,6% van de omzet. De machine levert kas, maar de conversie is dunner dan bij software-IP of consumables-franchises — dat is de U-knip (49,2).",
-      },
-      { type: "h", text: "Score" },
-      {
-        type: "p",
-        text: "S = 84,6 VOORLOPIG. Pijlers: A 95,8 · U 49,2 · R 70,2 · A-flex 74,2 · K 88,0 · AI+ 10,0 (FSD-weights en fleet-data). Zonder AI-net zou S 74,6 zijn. Meetlat voor de issuer-lens: wie houdt de productieve laag wanneer de klant het ijzer “bezit”?",
-      },
-      { type: "h", text: "Waar het schuurt" },
-      {
-        type: "list",
-        items: [
-          "Autovolume, prijs en incentives",
-          "Concurrentie",
-          "FSD/robotaxi-execution",
-          "Cyclische energy",
-          "Regulering",
-        ],
-      },
-      {
-        type: "p",
-        text: "Wat telt als feit: primair SEC Form 10-K. Geen tip. Geen koersdoel. Status VOORLOPIG.",
       },
     ],
   },
@@ -198,7 +134,6 @@ export const editions: Edition[] = [
 export const embargo = [
   { date: "2026-09-11", name: "IDEXX" },
   { date: "2026-09-14", name: "Trinity" },
-  { date: "2026-09-15", name: "HEICO" },
   { date: "2026-09-16", name: "West" },
   { date: "2026-09-17", name: "STERIS" },
   { date: "2026-09-18", name: "GE Aerospace" },

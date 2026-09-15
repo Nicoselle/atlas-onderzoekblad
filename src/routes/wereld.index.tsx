@@ -3,8 +3,9 @@ import { PageHero } from "@/components/atlas/page-hero";
 import { SiteShell } from "@/components/atlas/site-shell";
 import { StatusBadge } from "@/components/atlas/status-badge";
 import { companies, getCompany } from "@/lib/atlas/companies";
+import { formatNlDate } from "@/lib/atlas/format";
 import { deskRowsForSlug, previewTickers } from "@/lib/atlas/mand-rows";
-import { baskets, continents, INCOMPLETE_TOTAL, SCORED_TOTAL } from "@/lib/atlas/world";
+import { baskets, CENSUS_DATE, continents, INCOMPLETE_TOTAL, SCORED_TOTAL } from "@/lib/atlas/world";
 
 export const Route = createFileRoute("/wereld/")({
   component: WereldPage,
@@ -21,7 +22,8 @@ function WereldPage() {
         title="Waar Atlas de manden legt"
         dek={
           <>
-            Centraal: continenten en dwarsdoorsneden. Telling = unieke namen op 10 september 2026.{" "}
+            Centraal: continenten en dwarsdoorsneden. Telling = unieke namen op{" "}
+            {formatNlDate(CENSUS_DATE)}.{" "}
             <StatusBadge status="VOORLOPIG" className="ml-1 align-middle" />
           </>
         }

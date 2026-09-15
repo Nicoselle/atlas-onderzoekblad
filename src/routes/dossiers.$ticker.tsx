@@ -38,7 +38,10 @@ function DossierPage() {
                 {company.ticker} · {company.sector}
               </p>
               <p className="mt-5 max-w-xl font-sans text-base leading-relaxed text-ink-soft">
-                Gehouden laag: {company.heldLayer}. {company.filing}.
+                {company.plainLede ?? `Wat dit bedrijf zelf houdt: ${company.heldLayer}.`}
+              </p>
+              <p className="mt-3 max-w-xl font-sans text-sm leading-relaxed text-muted">
+                {company.filing}. {company.readGuide ?? "Cijfers uit de jaarrekening. Geen kooptips."}
               </p>
               <div className="mt-5 flex flex-wrap items-center gap-3">
                 <StatusBadge status={company.status} />
@@ -69,10 +72,24 @@ function DossierPage() {
               ))}
             </dl>
 
-            <h2 className="mt-12 font-display text-2xl font-medium tracking-tight">Business</h2>
+            <h2 className="mt-12 font-display text-2xl font-medium tracking-tight">Bedrijf</h2>
             <p className="mt-4 font-sans text-base leading-relaxed text-ink-soft">{company.business}</p>
 
-            <h2 className="mt-12 font-display text-2xl font-medium tracking-tight">AURA/S-lezing</h2>
+            {company.depth && company.depth.length > 0 ? (
+              <>
+                <h2 className="mt-12 font-display text-2xl font-medium tracking-tight">Dieper lezen</h2>
+                <div className="mt-6 space-y-6">
+                  {company.depth.map((r) => (
+                    <section key={r.title}>
+                      <h3 className="font-display text-xl font-medium tracking-tight">{r.title}</h3>
+                      <p className="mt-2 font-sans text-sm leading-relaxed text-ink-soft">{r.body}</p>
+                    </section>
+                  ))}
+                </div>
+              </>
+            ) : null}
+
+            <h2 className="mt-12 font-display text-2xl font-medium tracking-tight">Score-lezing</h2>
             <div className="mt-6 space-y-6">
               {company.reading.map((r) => (
                 <section key={r.title}>
@@ -110,6 +127,9 @@ function DossierPage() {
               </p>
             ) : null}
             <p className="mt-6 font-sans text-xs leading-relaxed text-faint">{company.source}</p>
+            <p className="mt-4 font-sans text-xs leading-relaxed text-muted">
+              Onderzoek, status {company.status.toLowerCase()}. Geen kooptips. Geen koersdoelen.
+            </p>
           </aside>
         </div>
 

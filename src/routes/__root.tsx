@@ -2,20 +2,18 @@ import { createRootRoute, HeadContent, Outlet, Scripts } from "@tanstack/react-r
 import { AuthProvider } from "@/lib/auth/provider";
 import { PreviewHostBridge } from "@/components/preview-host-bridge";
 import { NotFound } from "@/components/atlas/not-found";
+import { SITE_DESCRIPTION, SITE_TITLE } from "@/lib/atlas/copy";
 import appCss from "../styles.css?url";
-
-const APP_NAME = "Atlas";
 
 export const Route = createRootRoute({
   head: () => ({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: APP_NAME },
+      { title: SITE_TITLE },
       {
         name: "description",
-        content:
-          "Atlas is een onafhankelijk onderzoekblad over post-labour. Otium is het doel; AURA/S is hoe we jaarrekeningen lezen. Geen tipstroom. Geen beleggingsadvies.",
+        content: SITE_DESCRIPTION,
       },
       { name: "theme-color", content: "#f2eee4" },
     ],

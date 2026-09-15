@@ -31,7 +31,7 @@ function ScoresPage() {
         </p>
         <ScoreRoster companies={rows} />
         <p className="mt-4 font-sans text-xs text-faint">
-          Tien dossiers op dit blad. Wereldtotaal 195 gescoord · 27 onvolledig. Geen tipstroom.
+          Twaalf dossiers op dit blad. Wereldtotaal 195 gescoord · 27 onvolledig. Geen kooptips.
         </p>
       </div>
     </SiteShell>

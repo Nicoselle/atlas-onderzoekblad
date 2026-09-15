@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
+import { CTA_SUBSCRIBE, HEADER_SUB } from "@/lib/atlas/copy";
 import { mainNav } from "@/lib/atlas/nav";
 import { cn } from "@/lib/utils";
 
@@ -22,7 +23,7 @@ export function SiteHeader() {
             Atlas
           </span>
           <span className="hidden font-sans text-xs tracking-wide text-muted sm:inline">
-            onderzoek · post-labour
+            {HEADER_SUB}
           </span>
         </Link>
 
@@ -45,6 +46,12 @@ export function SiteHeader() {
               </Link>
             );
           })}
+          <Link
+            to="/inschrijven"
+            className="ml-2 inline-flex min-h-11 items-center rounded-md bg-ink px-4 font-sans text-sm text-paper"
+          >
+            {CTA_SUBSCRIBE}
+          </Link>
         </nav>
 
         <button
@@ -82,6 +89,15 @@ export function SiteHeader() {
                 </Link>
               </li>
             ))}
+            <li>
+              <Link
+                to="/inschrijven"
+                onClick={() => setOpen(false)}
+                className="mx-4 my-2 inline-flex min-h-11 items-center rounded-md bg-ink px-4 font-sans text-sm text-paper"
+              >
+                {CTA_SUBSCRIBE}
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>
