@@ -115,6 +115,24 @@ test("etalage copy is research, not a buy list", () => {
   assert.equal(getCompany("GATX")?.s, 72.8);
 });
 
+test("Elon commercial slots stay filled; jargon paste does not override accessible labels", () => {
+  assert.equal(CTA_METHODE, "Hoe we scoren");
+  assert.notEqual(CTA_SUBSCRIBE, "Blijf bij het blad");
+  assert.notEqual(SUBSCRIBE_TITLE, "Blijf bij het blad");
+  assert.notEqual(SUBSCRIBE_KICKER, "Retentie");
+  assert.notEqual(FORM_BUTTON, "Inschrijven");
+  assert.doesNotMatch(SUBSCRIBE_LEDE, /AURA/);
+  assert.doesNotMatch(SUBSCRIBE_TRUST, /tipstroom|Filings first/i);
+  assert.doesNotMatch(ETALAGE_ABOVE, /tipstroom/);
+  assert.notEqual(BRIDGE_KICKER, "Twee lezingen");
+  assert.notEqual(BRIDGE_CTA, "Naar het Blad (lab)");
+  assert.equal(HERE_NOW_URL, "https://snowy-crest-h56g.here.now/");
+  assert.equal(METHODE_PRODUCT.length, 3);
+  assert.match(METHODE_PRODUCT[1]?.body ?? "", /AURA\/S/);
+  assert.match(METHODE_PRODUCT[2]?.body ?? "", /koersdoelen/);
+  assert.equal(isButtonDownWired(BUTTONDOWN_PLACEHOLDER), false);
+});
+
 test("methode-as-product has why / how / never", () => {
   assert.equal(METHODE_PRODUCT[0]?.kicker, "Waarom Atlas");
   assert.equal(METHODE_PRODUCT[1]?.kicker, "Hoe we scoren");

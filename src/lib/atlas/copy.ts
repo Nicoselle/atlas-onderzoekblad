@@ -17,6 +17,12 @@ export const HERO_PROMISE =
 export const HERO_LENS =
   "Je krijgt een leeswijze: blijft het bedrijf eigenaar van wat de klant elke maand nodig heeft, of stopt de relatie bij de kassa?";
 
+/**
+ * Elon commercial slots (cover CTA, inschrijven anatomy, etalage, dual-run,
+ * methode product) with Nico's accessible labels. Do not revert to the jargon
+ * paste: "Blijf bij het blad", kicker Retentie, "AURA op de filing",
+ * "Geen tipstroom", "Twee lezingen", "Naar het Blad (lab)".
+ */
 export const CTA_METHODE = "Hoe we scoren";
 export const CTA_SUBSCRIBE = "Blijf op de hoogte";
 export const FORM_BUTTON = "Houd me op de hoogte";
