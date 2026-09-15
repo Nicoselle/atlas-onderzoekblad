@@ -1,4 +1,5 @@
 import { companies, getCompany, type Company } from "./companies";
+import { deskRowsForSlug, type MandRow } from "./mand-rows";
 import { getBasket, getContinent, type Basket, type Continent, type WorldPlace } from "./world";
 
 export function companiesForPlace(place: WorldPlace): Company[] {
@@ -12,6 +13,24 @@ export function companiesForPlace(place: WorldPlace): Company[] {
       return _never;
     }
   }
+}
+
+export function companyToMandRow(company: Company): MandRow {
+  return {
+    ticker: company.ticker,
+    name: company.name,
+    sector: company.sector,
+    s: company.s,
+    status: company.status,
+    lezing: company.heldLayer,
+  };
+}
+
+/** Desk table when present; otherwise dossiers already on this blad. Never invents S. */
+export function rowsForPlace(place: WorldPlace): MandRow[] {
+  const desk = deskRowsForSlug(place.item.id);
+  if (desk.length > 0) return desk;
+  return companiesForPlace(place).map(companyToMandRow);
 }
 
 export function companiesForBasket(basket: Basket): Company[] {

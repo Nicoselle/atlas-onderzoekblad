@@ -224,7 +224,7 @@ export function ensureDbReady(): Promise<void> {
   return getSql().then(() => undefined);
 }
 
-//* Preview-only: warm the in-memory DB at module load so the first request doesn't
+/** Preview-only: warm the in-memory DB at module load so the first request doesn't
  * pay migration cost. No-op on Neon (ensureDbReady returns immediately).
  * Production (node): Vite configureServer awaits ensureDbReady() at dev startup
  * instead; the module-load call here is the fallback for non-Vite runtimes.

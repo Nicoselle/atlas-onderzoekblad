@@ -10,20 +10,25 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as InschrijvenRouteImport } from './routes/inschrijven'
 import { Route as MethodeRouteImport } from './routes/methode'
 import { Route as ScoresRouteImport } from './routes/scores'
 import { Route as WereldRouteImport } from './routes/wereld'
 import { Route as ZoekRouteImport } from './routes/zoek'
-import { Route as InschrijvenRouteImport } from './routes/inschrijven'
 import { Route as DossiersTickerRouteImport } from './routes/dossiers.$ticker'
+import { Route as MandenSlugRouteImport } from './routes/manden.$slug'
 import { Route as NummersIndexRouteImport } from './routes/nummers.index'
 import { Route as NummersSlugRouteImport } from './routes/nummers.$slug'
 import { Route as WereldSlugRouteImport } from './routes/wereld.$slug'
-import { Route as MandenSlugRouteImport } from './routes/manden.$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InschrijvenRoute = InschrijvenRouteImport.update({
+  id: '/inschrijven',
+  path: '/inschrijven',
   getParentRoute: () => rootRouteImport,
 } as any)
 const MethodeRoute = MethodeRouteImport.update({
@@ -46,14 +51,14 @@ const ZoekRoute = ZoekRouteImport.update({
   path: '/zoek',
   getParentRoute: () => rootRouteImport,
 } as any)
-const InschrijvenRoute = InschrijvenRouteImport.update({
-  id: '/inschrijven',
-  path: '/inschrijven',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const DossiersTickerRoute = DossiersTickerRouteImport.update({
   id: '/dossiers/$ticker',
   path: '/dossiers/$ticker',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MandenSlugRoute = MandenSlugRouteImport.update({
+  id: '/manden/$slug',
+  path: '/manden/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
 const NummersIndexRoute = NummersIndexRouteImport.update({
@@ -67,110 +72,104 @@ const NummersSlugRoute = NummersSlugRouteImport.update({
   getParentRoute: () => rootRouteImport,
 } as any)
 const WereldSlugRoute = WereldSlugRouteImport.update({
-  id: '/wereld/$slug',
-  path: '/wereld/$slug',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const MandenSlugRoute = MandenSlugRouteImport.update({
-  id: '/manden/$slug',
-  path: '/manden/$slug',
-  getParentRoute: () => rootRouteImport,
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => WereldRoute,
 } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/inschrijven': typeof InschrijvenRoute
   '/methode': typeof MethodeRoute
   '/scores': typeof ScoresRoute
-  '/wereld': typeof WereldRoute
+  '/wereld': typeof WereldRouteWithChildren
   '/zoek': typeof ZoekRoute
-  '/inschrijven': typeof InschrijvenRoute
   '/dossiers/$ticker': typeof DossiersTickerRoute
-  '/nummers/$slug': typeof NummersSlugRoute
-  '/nummers/': typeof NummersIndexRoute
-  '/wereld/$slug': typeof WereldSlugRoute
   '/manden/$slug': typeof MandenSlugRoute
+  '/nummers/$slug': typeof NummersSlugRoute
+  '/wereld/$slug': typeof WereldSlugRoute
+  '/nummers/': typeof NummersIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/inschrijven': typeof InschrijvenRoute
   '/methode': typeof MethodeRoute
   '/scores': typeof ScoresRoute
-  '/wereld': typeof WereldRoute
+  '/wereld': typeof WereldRouteWithChildren
   '/zoek': typeof ZoekRoute
-  '/inschrijven': typeof InschrijvenRoute
   '/dossiers/$ticker': typeof DossiersTickerRoute
-  '/nummers/$slug': typeof NummersSlugRoute
-  '/nummers': typeof NummersIndexRoute
-  '/wereld/$slug': typeof WereldSlugRoute
   '/manden/$slug': typeof MandenSlugRoute
+  '/nummers/$slug': typeof NummersSlugRoute
+  '/wereld/$slug': typeof WereldSlugRoute
+  '/nummers': typeof NummersIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/inschrijven': typeof InschrijvenRoute
   '/methode': typeof MethodeRoute
   '/scores': typeof ScoresRoute
-  '/wereld': typeof WereldRoute
+  '/wereld': typeof WereldRouteWithChildren
   '/zoek': typeof ZoekRoute
-  '/inschrijven': typeof InschrijvenRoute
   '/dossiers/$ticker': typeof DossiersTickerRoute
-  '/nummers/$slug': typeof NummersSlugRoute
-  '/nummers/': typeof NummersIndexRoute
-  '/wereld/$slug': typeof WereldSlugRoute
   '/manden/$slug': typeof MandenSlugRoute
+  '/nummers/$slug': typeof NummersSlugRoute
+  '/wereld/$slug': typeof WereldSlugRoute
+  '/nummers/': typeof NummersIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/inschrijven'
     | '/methode'
     | '/scores'
     | '/wereld'
     | '/zoek'
-    | '/inschrijven'
     | '/dossiers/$ticker'
-    | '/nummers/$slug'
-    | '/nummers/'
-    | '/wereld/$slug'
     | '/manden/$slug'
+    | '/nummers/$slug'
+    | '/wereld/$slug'
+    | '/nummers/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/inschrijven'
     | '/methode'
     | '/scores'
     | '/wereld'
     | '/zoek'
-    | '/inschrijven'
     | '/dossiers/$ticker'
-    | '/nummers/$slug'
-    | '/nummers'
-    | '/wereld/$slug'
     | '/manden/$slug'
+    | '/nummers/$slug'
+    | '/wereld/$slug'
+    | '/nummers'
   id:
     | '__root__'
     | '/'
+    | '/inschrijven'
     | '/methode'
     | '/scores'
     | '/wereld'
     | '/zoek'
-    | '/inschrijven'
     | '/dossiers/$ticker'
-    | '/nummers/$slug'
-    | '/nummers/'
-    | '/wereld/$slug'
     | '/manden/$slug'
+    | '/nummers/$slug'
+    | '/wereld/$slug'
+    | '/nummers/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  InschrijvenRoute: typeof InschrijvenRoute
   MethodeRoute: typeof MethodeRoute
   ScoresRoute: typeof ScoresRoute
-  WereldRoute: typeof WereldRoute
+  WereldRoute: typeof WereldRouteWithChildren
   ZoekRoute: typeof ZoekRoute
-  InschrijvenRoute: typeof InschrijvenRoute
   DossiersTickerRoute: typeof DossiersTickerRoute
+  MandenSlugRoute: typeof MandenSlugRoute
   NummersSlugRoute: typeof NummersSlugRoute
   NummersIndexRoute: typeof NummersIndexRoute
-  WereldSlugRoute: typeof WereldSlugRoute
-  MandenSlugRoute: typeof MandenSlugRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -180,6 +179,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/inschrijven': {
+      id: '/inschrijven'
+      path: '/inschrijven'
+      fullPath: '/inschrijven'
+      preLoaderRoute: typeof InschrijvenRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/methode': {
@@ -217,6 +223,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DossiersTickerRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/manden/$slug': {
+      id: '/manden/$slug'
+      path: '/manden/$slug'
+      fullPath: '/manden/$slug'
+      preLoaderRoute: typeof MandenSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/nummers/': {
       id: '/nummers/'
       path: '/nummers'
@@ -231,42 +244,38 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof NummersSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/inschrijven': {
-      id: '/inschrijven'
-      path: '/inschrijven'
-      fullPath: '/inschrijven'
-      preLoaderRoute: typeof InschrijvenRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/wereld/$slug': {
       id: '/wereld/$slug'
-      path: '/wereld/$slug'
+      path: '/$slug'
       fullPath: '/wereld/$slug'
       preLoaderRoute: typeof WereldSlugRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/manden/$slug': {
-      id: '/manden/$slug'
-      path: '/manden/$slug'
-      fullPath: '/manden/$slug'
-      preLoaderRoute: typeof MandenSlugRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof WereldRoute
     }
   }
 }
 
+interface WereldRouteChildren {
+  WereldSlugRoute: typeof WereldSlugRoute
+}
+
+const WereldRouteChildren: WereldRouteChildren = {
+  WereldSlugRoute: WereldSlugRoute,
+}
+
+const WereldRouteWithChildren =
+  WereldRoute._addFileChildren(WereldRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  InschrijvenRoute: InschrijvenRoute,
   MethodeRoute: MethodeRoute,
   ScoresRoute: ScoresRoute,
-  WereldRoute: WereldRoute,
+  WereldRoute: WereldRouteWithChildren,
   ZoekRoute: ZoekRoute,
-  InschrijvenRoute: InschrijvenRoute,
   DossiersTickerRoute: DossiersTickerRoute,
+  MandenSlugRoute: MandenSlugRoute,
   NummersSlugRoute: NummersSlugRoute,
   NummersIndexRoute: NummersIndexRoute,
-  WereldSlugRoute: WereldSlugRoute,
-  MandenSlugRoute: MandenSlugRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
