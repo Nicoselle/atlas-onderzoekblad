@@ -41,6 +41,7 @@ import {
 import { formatNlDate } from "./format.ts";
 import { speciales } from "./articles.ts";
 import { getEdition } from "./editions.ts";
+import { deskRowsForSlug, MAND_LEADS, MAND_ROSTERS } from "./mand-rows.ts";
 import { baskets, CENSUS_DATE, continents, getBasket, getContinent } from "./world.ts";
 
 const heroBundle = [HERO_TITLE, HERO_LEAD, HERO_PROMISE, HERO_LENS].join(" ");
@@ -180,16 +181,65 @@ test("every mand and continent slug resolves", () => {
   assert.equal(getContinent("bestaat-niet"), undefined);
 });
 
-test("mand tables only list dossiers already on this blad", () => {
-  const software = getBasket("software");
-  assert.ok(software);
-  const listed = (software.tickers ?? [])
-    .map((ticker) => getCompany(ticker)?.ticker)
-    .filter((ticker): ticker is string => Boolean(ticker));
-  assert.deepEqual(listed, ["MDB", "SAP"]);
+test("priority manden have desk tables with existing S", () => {
+  const filled = [
+    "europa",
+    "mijnbouw",
+    "software",
+    "softwarelaag",
+    "industrieel",
+    "landbouw",
+    "energie",
+    "azie",
+  ] as const;
+  for (const slug of filled) {
+    const rows = deskRowsForSlug(slug);
+    assert.ok(rows.length > 0, `${slug} should have desk rows`);
+  }
 
-  assert.equal((getBasket("mijnbouw")?.tickers ?? []).length, 0);
-  assert.equal((getBasket("coins")?.tickers ?? []).length, 0);
+  assert.equal(deskRowsForSlug("europa").length, 25);
+  assert.equal(deskRowsForSlug("mijnbouw").length, 22);
+  assert.equal(deskRowsForSlug("software").length, 38);
+  assert.equal(deskRowsForSlug("softwarelaag").length, 20);
+
+  const dsy = deskRowsForSlug("europa").find((row) => row.ticker === "DSY");
+  assert.equal(dsy?.s, 80.5);
+  const fnv = deskRowsForSlug("mijnbouw").find((row) => row.ticker === "FNV");
+  assert.equal(fnv?.s, 84.4);
+});
+
+test("mand S matches dossiers already on this blad — never recomputed", () => {
+  const pairs: Array<[string, string, number]> = [
+    ["europa", "SAP", 74.7],
+    ["software", "MDB", 84.3],
+    ["softwarelaag", "PME", 86.9],
+    ["softwarelaag", "TSLA", 84.6],
+    ["industrieel", "HEI", 80.0],
+    ["industrieel", "GATX", 72.8],
+    ["industrieel", "URI", 56.5],
+  ];
+  for (const [slug, ticker, s] of pairs) {
+    const row = deskRowsForSlug(slug).find((item) => item.ticker === ticker);
+    assert.equal(row?.s, s, `${slug} ${ticker}`);
+    assert.equal(getCompany(ticker)?.s, s, `dossier ${ticker}`);
+  }
+});
+
+test("incomplete mand rows keep empty S", () => {
+  const kone = deskRowsForSlug("europa").find((row) => row.ticker === "KNEBV");
+  assert.equal(kone?.s, null);
+  assert.equal(kone?.status, "INCOMPLEET");
+  const glen = deskRowsForSlug("mijnbouw").find((row) => row.ticker === "GLEN");
+  assert.equal(glen?.s, null);
+});
+
+test("tip-ban copy stays off buy language", () => {
+  const hay = [
+    ...Object.values(MAND_LEADS),
+    ...Object.values(MAND_ROSTERS).flatMap((rows) => rows.map((row) => row.lezing)),
+  ].join("\n");
+  assert.doesNotMatch(hay, /koop dit|koopsignaal|kansen om te kopen/i);
+  assert.doesNotMatch(hay, /(?<![Gg]een )koopadvies/);
 });
 
 test("P0 cover nummers list is GATX and HEICO only", () => {
