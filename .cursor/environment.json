@@ -1,0 +1,14 @@
+{
+  "name": "Atlas — AURA/S onderzoekblad",
+  "install": "npm install",
+  "terminals": [
+    {
+      "name": "dev",
+      "command": "npm run dev",
+      "description": "Vite dev server for the Atlas app on http://0.0.0.0:8080. Uses an embedded PGLite database, so no external services or secrets are required."
+    }
+  ],
+  "ports": [
+    { "name": "dev server", "port": 8080 }
+  ]
+}
