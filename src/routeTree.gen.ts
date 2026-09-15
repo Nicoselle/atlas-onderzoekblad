@@ -19,6 +19,7 @@ import { Route as DossiersTickerRouteImport } from './routes/dossiers.$ticker'
 import { Route as MandenSlugRouteImport } from './routes/manden.$slug'
 import { Route as NummersIndexRouteImport } from './routes/nummers.index'
 import { Route as NummersSlugRouteImport } from './routes/nummers.$slug'
+import { Route as WereldIndexRouteImport } from './routes/wereld.index'
 import { Route as WereldSlugRouteImport } from './routes/wereld.$slug'
 
 const IndexRoute = IndexRouteImport.update({
@@ -71,6 +72,11 @@ const NummersSlugRoute = NummersSlugRouteImport.update({
   path: '/nummers/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const WereldIndexRoute = WereldIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => WereldRoute,
+} as any)
 const WereldSlugRoute = WereldSlugRouteImport.update({
   id: '/$slug',
   path: '/$slug',
@@ -89,19 +95,20 @@ export interface FileRoutesByFullPath {
   '/nummers/$slug': typeof NummersSlugRoute
   '/wereld/$slug': typeof WereldSlugRoute
   '/nummers/': typeof NummersIndexRoute
+  '/wereld/': typeof WereldIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/inschrijven': typeof InschrijvenRoute
   '/methode': typeof MethodeRoute
   '/scores': typeof ScoresRoute
-  '/wereld': typeof WereldRouteWithChildren
   '/zoek': typeof ZoekRoute
   '/dossiers/$ticker': typeof DossiersTickerRoute
   '/manden/$slug': typeof MandenSlugRoute
   '/nummers/$slug': typeof NummersSlugRoute
   '/wereld/$slug': typeof WereldSlugRoute
   '/nummers': typeof NummersIndexRoute
+  '/wereld': typeof WereldIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -116,6 +123,7 @@ export interface FileRoutesById {
   '/nummers/$slug': typeof NummersSlugRoute
   '/wereld/$slug': typeof WereldSlugRoute
   '/nummers/': typeof NummersIndexRoute
+  '/wereld/': typeof WereldIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -131,19 +139,20 @@ export interface FileRouteTypes {
     | '/nummers/$slug'
     | '/wereld/$slug'
     | '/nummers/'
+    | '/wereld/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/inschrijven'
     | '/methode'
     | '/scores'
-    | '/wereld'
     | '/zoek'
     | '/dossiers/$ticker'
     | '/manden/$slug'
     | '/nummers/$slug'
     | '/wereld/$slug'
     | '/nummers'
+    | '/wereld'
   id:
     | '__root__'
     | '/'
@@ -157,6 +166,7 @@ export interface FileRouteTypes {
     | '/nummers/$slug'
     | '/wereld/$slug'
     | '/nummers/'
+    | '/wereld/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -244,6 +254,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof NummersSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/wereld/': {
+      id: '/wereld/'
+      path: '/'
+      fullPath: '/wereld/'
+      preLoaderRoute: typeof WereldIndexRouteImport
+      parentRoute: typeof WereldRoute
+    }
     '/wereld/$slug': {
       id: '/wereld/$slug'
       path: '/$slug'
@@ -256,10 +273,12 @@ declare module '@tanstack/react-router' {
 
 interface WereldRouteChildren {
   WereldSlugRoute: typeof WereldSlugRoute
+  WereldIndexRoute: typeof WereldIndexRoute
 }
 
 const WereldRouteChildren: WereldRouteChildren = {
   WereldSlugRoute: WereldSlugRoute,
+  WereldIndexRoute: WereldIndexRoute,
 }
 
 const WereldRouteWithChildren =
