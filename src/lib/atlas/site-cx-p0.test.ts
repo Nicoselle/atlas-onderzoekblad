@@ -38,15 +38,11 @@ import {
   TIP_BAN_FOOTER,
   TIP_BAN_SHORT,
 } from "./copy.ts";
-<<<<<<< HEAD
-import { deskRowsForSlug, MAND_LEADS, MAND_ROSTERS } from "./mand-rows.ts";
-import { baskets, continents, getBasket, getContinent } from "./world.ts";
-=======
 import { formatNlDate } from "./format.ts";
 import { speciales } from "./articles.ts";
 import { getEdition } from "./editions.ts";
+import { deskRowsForSlug, MAND_LEADS, MAND_ROSTERS } from "./mand-rows.ts";
 import { baskets, CENSUS_DATE, continents, getBasket, getContinent } from "./world.ts";
->>>>>>> origin/main
 
 const heroBundle = [HERO_TITLE, HERO_LEAD, HERO_PROMISE, HERO_LENS].join(" ");
 
