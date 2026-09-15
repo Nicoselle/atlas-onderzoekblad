@@ -17,6 +17,7 @@ import {
   HERO_LEAD,
   HERO_LENS,
   HERO_PROMISE,
+  GROK_BOT_COLOPHON,
   HERO_TITLE,
   ISSUE_DATE,
 } from "@/lib/atlas/copy";
@@ -86,6 +87,9 @@ function Home() {
           <h2 id="methode-product-heading" className="mt-2 font-display text-3xl font-medium tracking-tight">
             Waarom Atlas, hoe we scoren, wat we nooit doen
           </h2>
+          <p className="mt-3 max-w-2xl font-sans text-sm text-muted">
+            {GROK_BOT_COLOPHON satisfies "Atlas is een Grok Bot-project."}
+          </p>
           <div className="mt-8">
             <MethodeProduct />
           </div>

@@ -3,7 +3,7 @@ import { MethodeProduct } from "@/components/atlas/methode-product";
 import { PageHero } from "@/components/atlas/page-hero";
 import { SiteShell } from "@/components/atlas/site-shell";
 import { StatusBadge } from "@/components/atlas/status-badge";
-import { GLOSSARY, LEESGRENS_ITEMS } from "@/lib/atlas/copy";
+import { GLOSSARY, GROK_BOT_METHODE, LEESGRENS_ITEMS } from "@/lib/atlas/copy";
 
 export const Route = createFileRoute("/methode")({
   component: MethodePage,
@@ -59,7 +59,13 @@ function MethodePage() {
       </figure>
 
       <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
-        <MethodeProduct showIndexLink={false} />
+        <p className="font-sans text-xs tracking-[0.2em] text-moss uppercase">Over dit blad</p>
+        <p className="mt-3 max-w-2xl font-sans text-base leading-relaxed text-ink-soft">
+          {GROK_BOT_METHODE satisfies "Dit blad draait op Grok Bots: assistenten die jaarrekeningen lezen en het onderzoek blad-klaar zetten. Nico blijft eindredacteur."}
+        </p>
+        <div className="mt-10">
+          <MethodeProduct showIndexLink={false} />
+        </div>
         <h2 className="mt-14 font-display text-3xl font-medium tracking-tight">Wat we nooit doen</h2>
         <ul className="mt-4 max-w-2xl list-disc space-y-2 pl-5 font-sans text-sm text-ink-soft">
           {LEESGRENS_ITEMS.map((item) => (

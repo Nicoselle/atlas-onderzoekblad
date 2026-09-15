@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { CTA_SUBSCRIBE, FOOTER_NOTE, ISSUE_DATE } from "@/lib/atlas/copy";
+import { CTA_SUBSCRIBE, FOOTER_NOTE, GROK_BOT_COLOPHON, ISSUE_DATE } from "@/lib/atlas/copy";
 import { formatNlDate } from "@/lib/atlas/format";
 
 export function SiteFooter() {
@@ -54,9 +54,10 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="border-t border-rule">
-        <p className="mx-auto max-w-6xl px-4 py-4 font-sans text-xs tracking-wide text-faint sm:px-6">
-          Dit nummer · {formatNlDate(ISSUE_DATE)}
-        </p>
+        <div className="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-4 font-sans text-xs tracking-wide text-faint sm:flex-row sm:items-center sm:justify-between sm:px-6">
+          <p>Dit nummer · {formatNlDate(ISSUE_DATE)}</p>
+          <p>{GROK_BOT_COLOPHON satisfies "Atlas is een Grok Bot-project."}</p>
+        </div>
       </div>
     </footer>
   );

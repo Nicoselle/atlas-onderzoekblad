@@ -51,6 +51,11 @@ export const HEADER_SUB = "onderzoekblad";
 
 export const FOOTER_NOTE = "Scores 0–100, status voorlopig.";
 
+/** Calm colophon — not hero chrome, not AI-hype. */
+export const GROK_BOT_COLOPHON = "Atlas is een Grok Bot-project.";
+export const GROK_BOT_METHODE =
+  "Dit blad draait op Grok Bots: assistenten die jaarrekeningen lezen en het onderzoek blad-klaar zetten. Nico blijft eindredacteur.";
+
 export const HERE_NOW_URL = "https://snowy-crest-h56g.here.now/";
 export const BRIDGE_KICKER = "Twee sites";
 export const BRIDGE_BODY = "Nieuwe Atlas-site (test). De oude site blijft online.";
