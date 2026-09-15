@@ -107,7 +107,7 @@ export const baskets: Basket[] = [
     names: 16,
     scored: 14,
     incomplete: 2,
-    note: "Olie-gas / uranium / LNG — held productive layer. Tip-vrij · VOORLOPIG.",
+    note: "Olie-gas / uranium / LNG — held productive layer. VOORLOPIG.",
   },
   {
     id: "crypto",
@@ -115,7 +115,7 @@ export const baskets: Basket[] = [
     names: 19,
     scored: 17,
     incomplete: 2,
-    note: "Exchange, payments, brokerage, software+treasury, miners/HPC. Buiten SCREENER/LEDGER. Tip-ban.",
+    note: "Exchange, payments, brokerage, software+treasury, miners/HPC. Buiten SCREENER/LEDGER.",
   },
   {
     id: "coins",

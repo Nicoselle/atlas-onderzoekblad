@@ -87,7 +87,7 @@ export const companies: Company[] = [
     plainLede:
       "Pro Medicus maakt software waarmee ziekenhuizen scans bekijken. Het bedrijf houdt die software zelf.",
     readGuide:
-      "Lees eerst de snapshot. De hoge rang komt uit software die Pro Medicus zelf houdt — niet uit het ziekenhuisapparaat. Status blijft voorlopig. Dit is geen koopadvies.",
+      "Lees eerst de snapshot. De hoge rang komt uit software die Pro Medicus zelf houdt — niet uit het ziekenhuisapparaat. Status blijft voorlopig.",
     depth: [
       {
         title: "Wat de jaarrekening vastzet",
@@ -170,7 +170,7 @@ export const companies: Company[] = [
     plainLede:
       "Danaher verkoopt lab-apparaten. Daarna houdt het de kits en de service die labs blijven bestellen.",
     readGuide:
-      "Lees de mix, niet alleen de omzet. De rang hangt aan verbruiksgoederen en service op het geplaatste park. Status voorlopig. Geen koopadvies.",
+      "Lees de mix, niet alleen de omzet. De rang hangt aan verbruiksgoederen en service op het geplaatste park. Status voorlopig.",
     depth: [
       {
         title: "Wat de 10-K vastzet",
@@ -251,11 +251,11 @@ export const companies: Company[] = [
     plainLede:
       "Bio-Techne maakt reagens en kits voor labs. Labs blijven die bestellen op het park dat er al staat.",
     readGuide:
-      "Lees de consumables-mix, niet alleen de omzet. Status voorlopig. Geen koopadvies.",
+      "Lees de consumables-mix, niet alleen de omzet. Status voorlopig.",
     depth: [
       {
         title: "Verhaal",
-        body: "Bio-Techne levert proteïne-reagens, diagnostische kits en instrumenten. De terugkerende laag is niet één kit in een koelkast, maar de machine die specialty-consumables blijft leveren. S 86,4, status voorlopig. Geen kooptips.",
+        body: "Bio-Techne levert proteïne-reagens, diagnostische kits en instrumenten. De terugkerende laag is niet één kit in een koelkast, maar de machine die specialty-consumables blijft leveren. S 86,4, status voorlopig.",
       },
       {
         title: "Wat houd je?",
@@ -267,7 +267,7 @@ export const companies: Company[] = [
       },
       {
         title: "Waar het schuurt",
-        body: "Onderzoeksbudgetten van klanten. Concurrentie in reagents. Supply van biologische materialen. Acquisitie-integratie. Geen aparte stresstest in de jaarrekening. Geen kooptips.",
+        body: "Onderzoeksbudgetten van klanten. Concurrentie in reagents. Supply van biologische materialen. Acquisitie-integratie. Geen aparte stresstest in de jaarrekening.",
       },
       {
         title: "Wat telt als feit",
@@ -396,11 +396,11 @@ export const companies: Company[] = [
     plainLede:
       "Tesla maakt auto’s en energieproducten. Daarna houdt het de software die op dat ijzer blijft draaien.",
     readGuide:
-      "Lees wat bij Tesla blijft als de auto de deur uit is. Een aparte FSD-omzetregel staat niet in de 10-K. Status voorlopig. Geen koopadvies.",
+      "Lees wat bij Tesla blijft als de auto de deur uit is. Een aparte FSD-omzetregel staat niet in de 10-K. Status voorlopig.",
     depth: [
       {
         title: "Verhaal",
-        body: "Eigen fabrieken plus een gehouden softwarelaag. Wie de auto “bezit”, blijft gebruiker van Tesla’s stack. S 84,6, status voorlopig. Geen kooptips.",
+        body: "Eigen fabrieken plus een gehouden softwarelaag. Wie de auto “bezit”, blijft gebruiker van Tesla’s stack. S 84,6, status voorlopig.",
       },
       {
         title: "Wat houd je?",
@@ -543,11 +543,11 @@ export const companies: Company[] = [
     plainLede:
       "Intuitive zet operatierobots in ziekenhuizen. Daarna houdt het de instrumenten die op dat park blijven terugkomen.",
     readGuide:
-      "Lees park plus instrumenten, niet alleen de systeemverkoop. Classic NRR zagen we niet. Status voorlopig. Geen koopadvies.",
+      "Lees park plus instrumenten, niet alleen de systeemverkoop. Classic NRR zagen we niet. Status voorlopig.",
     depth: [
       {
         title: "Verhaal",
-        body: "da Vinci en Ion plus de instrumenten erop. S 81,7, status voorlopig. Geen kooptips.",
+        body: "da Vinci en Ion plus de instrumenten erop. S 81,7, status voorlopig.",
       },
       {
         title: "Wat houd je?",
@@ -625,11 +625,11 @@ export const companies: Company[] = [
     plainLede:
       "HEICO maakt en herstelt vliegtuigonderdelen. Airlines blijven die aftermarket nodig hebben.",
     readGuide:
-      "Lees aftermarket plus repair, niet de eenmalige OEM-verkoop. Status voorlopig. Geen koopadvies.",
+      "Lees aftermarket plus repair, niet de eenmalige OEM-verkoop. Status voorlopig.",
     depth: [
       {
         title: "Verhaal",
-        body: "Flight Support (PMA, manufacture, aftermarket) en Electronic Technologies. Aftermarket plus repair is 59,6% van de mix. S 80,0, status voorlopig. Geen kooptips.",
+        body: "Flight Support (PMA, manufacture, aftermarket) en Electronic Technologies. Aftermarket plus repair is 59,6% van de mix. S 80,0, status voorlopig.",
       },
       {
         title: "Wat houd je?",
@@ -770,11 +770,11 @@ export const companies: Company[] = [
     plainLede:
       "GATX rijdt geen treinen. Het bezit de wagons en verhuurt ze full-service.",
     readGuide:
-      "Lees vlootbezit en hefboom samen. Kas ná nieuwe wagons is negatief; de score leest de operationele kas. Status voorlopig. Geen koopadvies.",
+      "Lees vlootbezit en hefboom samen. Kas ná nieuwe wagons is negatief; de score leest de operationele kas. Status voorlopig.",
     depth: [
       {
         title: "Verhaal",
-        body: "Een lessor, geen railroad. Lease-omzet 1,49 mld van 1,74 mld. S 72,8, status voorlopig. Geen kooptips.",
+        body: "Een lessor, geen railroad. Lease-omzet 1,49 mld van 1,74 mld. S 72,8, status voorlopig.",
       },
       {
         title: "Wat houd je?",
@@ -857,11 +857,11 @@ export const companies: Company[] = [
     plainLede:
       "ASML maakt de machines waarmee chipfabrieken patronen schrijven. Daarna houdt het de service op die machines.",
     readGuide:
-      "Cijfers in euro uit de 20-F. Klanten-score 9,0 is concentratie bij weinig fabs, geen oordeel over service. Status voorlopig. Geen koopadvies.",
+      "Cijfers in euro uit de 20-F. Klanten-score 9,0 is concentratie bij weinig fabs, geen oordeel over service. Status voorlopig.",
     depth: [
       {
         title: "Verhaal",
-        body: "De schrijfmachine van de fab, plus installed base en service. S 70,7, status voorlopig. Geen kooptips.",
+        body: "De schrijfmachine van de fab, plus installed base en service. S 70,7, status voorlopig.",
       },
       {
         title: "Wat houd je?",

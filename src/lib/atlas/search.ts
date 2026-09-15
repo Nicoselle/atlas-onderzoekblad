@@ -14,37 +14,37 @@ const pages: SearchHit[] = [
     href: "/",
     kicker: "Blad",
     title: "Atlas onderzoekblad",
-    dek: "Onderzoekblad over bedrijven. We lezen jaarrekeningen. Geen kooptips.",
+    dek: "Onderzoekblad over bedrijven. We lezen jaarrekeningen.",
   },
   {
     href: "/methode",
     kicker: "Methode",
     title: "Hoe we scoren",
-    dek: "Vaste leeswijze. Geen kooptips. Score 0–100, status voorlopig.",
+    dek: "Vaste leeswijze. Score 0–100, status voorlopig.",
   },
   {
     href: "/wereld",
     kicker: "Wereld",
     title: "Continenten & manden",
-    dek: "Leeskaart van continenten en manden. Score 0–100. Geen kooptips.",
+    dek: "Leeskaart van continenten en manden. Score 0–100.",
   },
   {
     href: "/scores",
     kicker: "Frame",
     title: "AURA/S-scores",
-    dek: "Onderzoeksrang 0–100, status VOORLOPIG. Geen koersdoelen.",
+    dek: "Onderzoeksrang 0–100, status VOORLOPIG.",
   },
   {
     href: "/nummers",
     kicker: "Nummers",
     title: "Editie-shelf",
-    dek: "Gedateerde onderzoeksedities. Geen kooptips.",
+    dek: "Gedateerde onderzoeksedities.",
   },
   {
     href: "/inschrijven",
     kicker: "Nieuwsbrief",
     title: "Blijf op de hoogte",
-    dek: "Korte stukken over bedrijven, rechtstreeks uit de jaarrekening. Geen kooptips.",
+    dek: "Korte stukken over bedrijven, rechtstreeks uit de jaarrekening.",
   },
 ];
 

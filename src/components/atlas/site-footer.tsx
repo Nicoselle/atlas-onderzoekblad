@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { CTA_SUBSCRIBE, ISSUE_DATE, TIP_BAN_FOOTER, TIP_BAN_SHORT } from "@/lib/atlas/copy";
+import { CTA_SUBSCRIBE, FOOTER_NOTE, ISSUE_DATE } from "@/lib/atlas/copy";
 import { formatNlDate } from "@/lib/atlas/format";
 
 export function SiteFooter() {
@@ -9,7 +9,7 @@ export function SiteFooter() {
         <div>
           <p className="font-display text-xl font-semibold tracking-tight">Atlas</p>
           <p className="mt-2 font-sans text-sm leading-relaxed text-muted">
-            Onderzoekblad over bedrijven. We lezen jaarrekeningen. Geen kooptips.
+            Onderzoekblad over bedrijven. We lezen jaarrekeningen.
           </p>
           <Link
             to="/inschrijven"
@@ -49,13 +49,13 @@ export function SiteFooter() {
           </ul>
         </div>
         <div className="font-sans text-sm leading-relaxed text-muted">
-          <p className="mb-3 text-xs tracking-[0.18em] text-faint uppercase">Leesgrenzen</p>
-          <p>{TIP_BAN_FOOTER}</p>
+          <p className="mb-3 text-xs tracking-[0.18em] text-faint uppercase">Nummer</p>
+          <p>{FOOTER_NOTE}</p>
         </div>
       </div>
       <div className="border-t border-rule">
         <p className="mx-auto max-w-6xl px-4 py-4 font-sans text-xs tracking-wide text-faint sm:px-6">
-          Dit nummer · {formatNlDate(ISSUE_DATE)} · {TIP_BAN_SHORT}
+          Dit nummer · {formatNlDate(ISSUE_DATE)}
         </p>
       </div>
     </footer>

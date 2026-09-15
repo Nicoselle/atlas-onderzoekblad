@@ -18,7 +18,7 @@ export const editions: Edition[] = [
     body: [
       {
         type: "p",
-        text: "De clustervraag is niet “wie is de beste koop”, maar: waar blijft de productieve laag — in eigen aftermarket-ijzer, in een leasevloot, of in een rental-park dat elke dag opnieuw moet worden ingezet? Drie namen, drie antwoorden. Tip-vrij. Status VOORLOPIG. Geen kooplijst.",
+        text: "De clustervraag is niet “wie is de beste koop”, maar: waar blijft de productieve laag — in eigen aftermarket-ijzer, in een leasevloot, of in een rental-park dat elke dag opnieuw moet worden ingezet? Drie namen, drie antwoorden. Status VOORLOPIG.",
       },
       { type: "h", text: "HEICO — de bezitter" },
       {
@@ -42,7 +42,7 @@ export const editions: Edition[] = [
       },
       {
         type: "p",
-        text: "Verschil zit in U en R (hoog A bij alle drie: 80–91). Geen S ≥ 90. Overal status VOORLOPIG. Atlas noteert de structuur. Geen tip. Geen koersdoel.",
+        text: "Verschil zit in U en R (hoog A bij alle drie: 80–91). Geen S ≥ 90. Overal status VOORLOPIG. Atlas noteert de structuur.",
       },
       {
         type: "list",
@@ -71,7 +71,7 @@ export const editions: Edition[] = [
       },
       {
         type: "quote",
-        text: "Cover-belofte: wie de productieve laag houdt, blijft economisch actor. Methode, wereldkaart en top-S etalage — tip-vrij, VOORLOPIG.",
+        text: "Cover-belofte: wie de productieve laag houdt, blijft economisch actor. Methode, wereldkaart en top-S etalage — status VOORLOPIG.",
       },
       { type: "h", text: "Drie namen, drie lagen" },
       {
@@ -86,9 +86,6 @@ export const editions: Edition[] = [
       {
         type: "list",
         items: [
-          "Geen tipstroom",
-          "Geen koersdoelen",
-          "Geen kooplijst of modelportefeuille",
           "Geen omrekening uit een oude 3–15-poort naar S",
         ],
       },
@@ -98,7 +95,7 @@ export const editions: Edition[] = [
     slug: "2026-09-marktkijk-1-3m",
     kicker: "Editie · research",
     title: "Marktkijk 1–3 maanden",
-    dek: "Research lens op World-rang, gehouden laag en weekstructuur — tip-vrij, VOORLOPIG. Trendwissel spreekt alleen wanneer het beeld kantelt.",
+    dek: "Research lens op World-rang, gehouden laag en weekstructuur. Status voorlopig. Trendwissel spreekt alleen wanneer het beeld kantelt.",
     date: "2026-09-10",
     theme: "Korte-horizon research lens",
     image: "/art/ledger.jpg",
@@ -107,7 +104,7 @@ export const editions: Edition[] = [
     body: [
       {
         type: "p",
-        text: "AURA/S kijkt jaren: blijft de onderneming eigenaar van de productieve laag? Trendwissel kijkt weken tot maanden: is de bestaande markttrend nog intact? De korte lens triggert geen tip. Zij zegt enkel of het beeld kantelt, nadat AURA/S de naam al de moeite waard achtte om te volgen.",
+        text: "AURA/S kijkt jaren: blijft de onderneming eigenaar van de productieve laag? Trendwissel kijkt weken tot maanden: is de bestaande markttrend nog intact? Zij zegt enkel of het beeld kantelt, nadat AURA/S de naam al de moeite waard achtte om te volgen.",
       },
       { type: "h", text: "Twee lenzen" },
       {
@@ -121,7 +118,7 @@ export const editions: Edition[] = [
       { type: "h", text: "Casus: HEICO, weekstructuur" },
       {
         type: "p",
-        text: "Illustratief archiefvoorbeeld, vastgezet op 4 september 2026. Bodem rond 20 april (~264), daarna hogere bodems tot een piek op 10 augustus (~375). Vier weekslots nadien lager; slot van 4 september ~325, onder het 20-weken gemiddelde. Dat is een wissel: van hogere toppen en bodems naar een reeks lagere weekslots. Atlas noteert de wissel. Geen tip. Geen koersdoel.",
+        text: "Illustratief archiefvoorbeeld, vastgezet op 4 september 2026. Bodem rond 20 april (~264), daarna hogere bodems tot een piek op 10 augustus (~375). Vier weekslots nadien lager; slot van 4 september ~325, onder het 20-weken gemiddelde. Dat is een wissel: van hogere toppen en bodems naar een reeks lagere weekslots. Atlas noteert de wissel.",
       },
       {
         type: "p",

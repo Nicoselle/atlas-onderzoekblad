@@ -18,7 +18,7 @@ function NummersPage() {
       <PageHero
         kicker="Nummers · research"
         title="Editie-shelf"
-        dek="Gedateerde onderzoeksedities. Geen kooptips, geen koersdoelen."
+        dek="Gedateerde onderzoeksedities."
         aside={<StatusBadge status="VOORLOPIG" />}
       />
 
@@ -56,7 +56,7 @@ function NummersPage() {
         <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
           <h2 className="font-display text-2xl font-medium tracking-tight">Embargo · weekday release</h2>
           <p className="mt-2 font-sans text-sm text-muted">
-            Wereld×TA-extras — nog niet live op dit blad. Geen kooptips.
+            Wereld×TA-extras — nog niet live op dit blad.
           </p>
           <ul className="mt-6 divide-y divide-rule border-y border-rule">
             {embargo.map((item) => (

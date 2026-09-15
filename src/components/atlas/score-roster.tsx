@@ -118,7 +118,7 @@ export function ScoreRoster({
           </h2>
           <p className="mt-2 max-w-2xl font-sans text-sm text-muted">
             A · U · R · A-flex horen in het dossier, niet in de primaire rang. S blijft de
-            onderzoeksrang. Geen koersdoel.
+            onderzoeksrang.
           </p>
           <div className="mt-6 max-w-md rounded-lg bg-paper p-5 shadow-[var(--shadow-border)]">
             <PillarBars pillars={selected.pillars} keys={AURA_PUBLIC_KEYS} />

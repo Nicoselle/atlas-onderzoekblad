@@ -20,7 +20,7 @@ function ScoresPage() {
       <PageHero
         kicker="Frame · S 0–100"
         title="AURA/S-scores"
-        dek="Onderzoeksrang — geen koersdoelen. Filing-first. Alleen wat in de cijfers staat, telt als feit. Geen verzonnen S."
+        dek="Onderzoeksrang. Filing-first. Alleen wat in de cijfers staat, telt als feit. Geen verzonnen S."
         aside={<StatusBadge status="VOORLOPIG" />}
       />
 
@@ -31,7 +31,7 @@ function ScoresPage() {
         </p>
         <ScoreRoster companies={rows} />
         <p className="mt-4 font-sans text-xs text-faint">
-          Twaalf dossiers op dit blad. Wereldtotaal 195 gescoord · 27 onvolledig. Geen kooptips.
+          Twaalf dossiers op dit blad. Wereldtotaal 195 gescoord · 27 onvolledig.
         </p>
       </div>
     </SiteShell>

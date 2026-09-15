@@ -74,7 +74,7 @@ function Home() {
               height={1408}
             />
             <figcaption className="bg-paper-deep px-4 py-3 font-sans text-xs tracking-wide text-muted">
-              Jaarrekeningen eerst · geen kooptips
+              Jaarrekeningen eerst
             </figcaption>
           </figure>
         </div>

@@ -45,7 +45,7 @@ function MethodePage() {
       <PageHero
         kicker="Methode"
         title="Hoe we jaarrekeningen lezen"
-        dek="Eén vaste leeswijze. Geen kooptips. Hier staat wat Atlas is, hoe de score werkt, en wat we nooit doen."
+        dek="Eén vaste leeswijze. Hier staat wat Atlas is, hoe de score werkt, en wat we nooit doen."
       />
 
       <figure className="mx-auto max-w-6xl px-4 pt-10 sm:px-6">
@@ -176,7 +176,7 @@ function MethodePage() {
           <h2 className="font-display text-3xl font-medium tracking-tight">Trendwissel — de grafiek</h2>
           <p className="mt-4 max-w-2xl font-sans text-base leading-relaxed text-ink-soft">
             AURA/S kijkt jaren. Trendwissel kijkt weken tot maanden: is de bestaande markttrend
-            nog intact? De korte lens triggert geen tip. Zij zegt enkel of het beeld kantelt,
+            nog intact? Zij zegt enkel of het beeld kantelt,
             nadat AURA/S de naam al de moeite waard achtte om te volgen.
           </p>
           <blockquote className="mt-8 max-w-2xl border-l-2 border-moss pl-5 font-display text-xl leading-snug text-ink">

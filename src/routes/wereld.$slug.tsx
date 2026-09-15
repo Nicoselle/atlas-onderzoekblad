@@ -53,7 +53,7 @@ function WorldPlacePage() {
 
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
         <p className="mb-8 font-sans text-sm text-muted">
-          Primaire tabel toont alleen totaal S — onderzoeksrang, geen tip. A · U · R · A-flex
+          Primaire tabel toont alleen totaal S — onderzoeksrang. A · U · R · A-flex
           staan in de lezing eronder.
         </p>
         <ScoreRoster companies={companies} empty={empty} />

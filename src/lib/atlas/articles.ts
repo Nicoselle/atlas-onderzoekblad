@@ -6,7 +6,7 @@ export const speciales: Edition[] = [
     slug: "2026-09-gatx",
     kicker: "Speciale",
     title: "GATX · de wagons, niet de treinen",
-    dek: "GATX rijdt geen treinen. Het bezit de railcar-vloot en verhuurt die full-service. S 72,8, status voorlopig. Geen kooptips.",
+    dek: "GATX rijdt geen treinen. Het bezit de railcar-vloot en verhuurt die full-service. S 72,8, status voorlopig.",
     date: "2026-09-15",
     theme: "Leasevloot · bezit plus lange huur",
     image: "/art/industrials.jpg",
@@ -15,7 +15,7 @@ export const speciales: Edition[] = [
     body: [
       {
         type: "p",
-        text: "De luie lezing noemt GATX een spoorwegbedrijf. De jaarrekening tekent iets anders: een lessor. Het bedrijf bezit de wagons en verhuurt ze full-service — onderhoud, belasting, extra diensten. S 72,8, status voorlopig. Dit is onderzoek. Geen kooptips.",
+        text: "De luie lezing noemt GATX een spoorwegbedrijf. De jaarrekening tekent iets anders: een lessor. Het bedrijf bezit de wagons en verhuurt ze full-service — onderhoud, belasting, extra diensten. S 72,8, status voorlopig. Dit is onderzoek.",
       },
       { type: "h", text: "Verhaal" },
       {
@@ -60,12 +60,12 @@ export const speciales: Edition[] = [
       { type: "h", text: "Score" },
       {
         type: "p",
-        text: "S 72,8, status voorlopig. Overgenomen uit de desk-run 2026-09-07-aura-s-top100 — niet herberekend. Automatisering 90,9 · nut 100,0 · schokbestendigheid 36,3 · aanpassingsvermogen 69,5 · klanten 77,6 · AI-plus 0. Nut rust op de lessor-kasmarge 37,2 procent. Klanten leunen op renewal en occupancy, zonder classic NRR. Geen kooptips. Geen koersdoel.",
+        text: "S 72,8, status voorlopig. Overgenomen uit de desk-run 2026-09-07-aura-s-top100 — niet herberekend. Automatisering 90,9 · nut 100,0 · schokbestendigheid 36,3 · aanpassingsvermogen 69,5 · klanten 77,6 · AI-plus 0. Nut rust op de lessor-kasmarge 37,2 procent. Klanten leunen op renewal en occupancy, zonder classic NRR.",
       },
       { type: "h", text: "Wat telt als feit" },
       {
         type: "p",
-        text: "Primair: Form 10-K FY eind 31 december 2025 (CIK0000040211, accession 0000040211-26-000018) plus desk-run 2026-09-07-aura-s-top100. Utilization 99,0 procent en renewal 87,3 procent staan in die 10-K. De 10,7×-hefboom is een score-proxy uit de desk-run, geen aparte 10-K-regel onder dat label. S blijft 72,8. Geen kooptips.",
+        text: "Primair: Form 10-K FY eind 31 december 2025 (CIK0000040211, accession 0000040211-26-000018) plus desk-run 2026-09-07-aura-s-top100. Utilization 99,0 procent en renewal 87,3 procent staan in die 10-K. De 10,7×-hefboom is een score-proxy uit de desk-run, geen aparte 10-K-regel onder dat label. S blijft 72,8.",
       },
     ],
   },
@@ -73,7 +73,7 @@ export const speciales: Edition[] = [
     slug: "2026-09-hei",
     kicker: "Speciale",
     title: "HEICO · aftermarket op het vliegtuig",
-    dek: "HEICO houdt PMA-onderdelen en repair, plus niche-elektronica. Aftermarket plus repair is 59,6 procent van de mix. S 80,0, status voorlopig. Geen kooptips.",
+    dek: "HEICO houdt PMA-onderdelen en repair, plus niche-elektronica. Aftermarket plus repair is 59,6 procent van de mix. S 80,0, status voorlopig.",
     date: "2026-09-15",
     theme: "Aerospace aftermarket",
     image: "/art/industrials.jpg",
@@ -82,7 +82,7 @@ export const speciales: Edition[] = [
     body: [
       {
         type: "p",
-        text: "HEICO werkt in luchtvaart en defensie. Twee franchises: Flight Support (PMA, manufacture, aftermarket) en Electronic Technologies. De laag die terugkomt is aftermarket en repair op niche-onderdelen — niet één vliegtuigtype. S 80,0, status voorlopig. Onderzoek. Geen kooptips.",
+        text: "HEICO werkt in luchtvaart en defensie. Twee franchises: Flight Support (PMA, manufacture, aftermarket) en Electronic Technologies. De laag die terugkomt is aftermarket en repair op niche-onderdelen — niet één vliegtuigtype. S 80,0, status voorlopig. Onderzoek.",
       },
       { type: "h", text: "Verhaal" },
       {
@@ -102,17 +102,17 @@ export const speciales: Edition[] = [
       { type: "h", text: "Waar het schuurt" },
       {
         type: "p",
-        text: "Luchtvaart- en defensiecycli. OEM-weerstand tegen PMA. FAA/EASA. Integratie van bolt-on overnames. Een aparte hersteltest zagen we in deze run niet — herstel blijft voorzichtig genoteerd. Geen drama. Wel de sobere lezing. Geen kooptips.",
+        text: "Luchtvaart- en defensiecycli. OEM-weerstand tegen PMA. FAA/EASA. Integratie van bolt-on overnames. Een aparte hersteltest zagen we in deze run niet — herstel blijft voorzichtig genoteerd. Geen drama. Wel de sobere lezing.",
       },
       { type: "h", text: "Score" },
       {
         type: "p",
-        text: "S 80,0, status voorlopig. Niet herberekend. Automatisering 80,5 · nut 97,3 · schokbestendigheid 66,3 · aanpassingsvermogen 72,5 · klanten 89,2 · AI-plus 0. World-rang 27 in de desk-run. Geen koersdoel.",
+        text: "S 80,0, status voorlopig. Niet herberekend. Automatisering 80,5 · nut 97,3 · schokbestendigheid 66,3 · aanpassingsvermogen 72,5 · klanten 89,2 · AI-plus 0. World-rang 27 in de desk-run.",
       },
       { type: "h", text: "Wat telt als feit" },
       {
         type: "p",
-        text: "Primair: live dossier HEI plus desk-run 2026-09-07-aura-s-top100 en de daarin genoemde 10-K. S blijft 80,0. Geen verzonnen cijfers. Geen kooptips.",
+        text: "Primair: live dossier HEI plus desk-run 2026-09-07-aura-s-top100 en de daarin genoemde 10-K. S blijft 80,0. Geen verzonnen cijfers.",
       },
     ],
   },
@@ -120,7 +120,7 @@ export const speciales: Edition[] = [
     slug: "2026-09-tesla",
     kicker: "Speciale",
     title: "Tesla · fabrieken plus de software erop",
-    dek: "Tesla maakt auto’s en energieproducten, en houdt daarboven updates, FSD, connectiviteit en energiesturing — ook ná verkoop of lease. S 84,6, status voorlopig. Geen kooptips.",
+    dek: "Tesla maakt auto’s en energieproducten, en houdt daarboven updates, FSD, connectiviteit en energiesturing — ook ná verkoop of lease. S 84,6, status voorlopig.",
     date: "2026-09-10",
     theme: "Gehouden softwarelaag",
     image: "/art/tesla.jpg",
@@ -129,7 +129,7 @@ export const speciales: Edition[] = [
     body: [
       {
         type: "p",
-        text: "Tesla maakt elektrische auto’s en energieproducten in eigen fabrieken — metaal, batterijen, omvormers, laadpalen — en houdt daarboven een softwarelaag: over-the-air updates, FSD Supervised, connectiviteit en de besturing van energieproducten, ook als het ijzer al bij een koper of lessee staat. S 84,6, status voorlopig. Onderzoek. Geen kooptips.",
+        text: "Tesla maakt elektrische auto’s en energieproducten in eigen fabrieken — metaal, batterijen, omvormers, laadpalen — en houdt daarboven een softwarelaag: over-the-air updates, FSD Supervised, connectiviteit en de besturing van energieproducten, ook als het ijzer al bij een koper of lessee staat. S 84,6, status voorlopig. Onderzoek.",
       },
       { type: "h", text: "Verhaal" },
       {
@@ -153,7 +153,7 @@ export const speciales: Edition[] = [
       { type: "h", text: "Waar het schuurt" },
       {
         type: "p",
-        text: "Autovolume, prijs en incentives raken de lijn sneller dan de softwarestory. Concurrentie. FSD en Robotaxi vragen execution terwijl de filing potentieel noemt maar de omzetregel mist. Energy is cyclisch. Regulering. De gehouden softwarelaag bestaat, maar de issuer blijft blootgesteld aan hardwarecycli. Geen kooptips.",
+        text: "Autovolume, prijs en incentives raken de lijn sneller dan de softwarestory. Concurrentie. FSD en Robotaxi vragen execution terwijl de filing potentieel noemt maar de omzetregel mist. Energy is cyclisch. Regulering. De gehouden softwarelaag bestaat, maar de issuer blijft blootgesteld aan hardwarecycli.",
       },
       { type: "h", text: "Score" },
       {
@@ -163,7 +163,7 @@ export const speciales: Edition[] = [
       { type: "h", text: "Wat telt als feit" },
       {
         type: "p",
-        text: "Primair: SEC Form 10-K (CIK 0001318605, accession 0001628280-26-003952) plus companyfacts en dossier TSLA. S blijft 84,6. Geen koersdoelen. Status voorlopig.",
+        text: "Primair: SEC Form 10-K (CIK 0001318605, accession 0001628280-26-003952) plus companyfacts en dossier TSLA. S blijft 84,6. Status voorlopig.",
       },
     ],
   },
@@ -171,7 +171,7 @@ export const speciales: Edition[] = [
     slug: "2026-09-isrg",
     kicker: "Speciale",
     title: "Intuitive Surgical · park plus instrumenten",
-    dek: "da Vinci-systemen plus de instrumenten die ziekenhuizen blijven bestellen. S 81,7, status voorlopig. Geen kooptips.",
+    dek: "da Vinci-systemen plus de instrumenten die ziekenhuizen blijven bestellen. S 81,7, status voorlopig.",
     date: "2026-09-15",
     theme: "Robotchirurgie · park",
     image: "/art/machines.jpg",
@@ -180,7 +180,7 @@ export const speciales: Edition[] = [
     body: [
       {
         type: "p",
-        text: "Intuitive bouwt robotische operatiesystemen (da Vinci, Ion) plus instrumenten, accessoires en diensten. Het geplaatste park plus die instrumenten vormen de terugkerende laag. S 81,7, status voorlopig. Onderzoek. Geen kooptips.",
+        text: "Intuitive bouwt robotische operatiesystemen (da Vinci, Ion) plus instrumenten, accessoires en diensten. Het geplaatste park plus die instrumenten vormen de terugkerende laag. S 81,7, status voorlopig. Onderzoek.",
       },
       { type: "h", text: "Verhaal" },
       {
@@ -215,12 +215,12 @@ export const speciales: Edition[] = [
       { type: "h", text: "Score" },
       {
         type: "p",
-        text: "S 81,7, status voorlopig. Overgenomen uit desk-run 2026-09-07-aura-s-top100. Automatisering 94,0 · nut 100,0 · schokbestendigheid 75,4 · aanpassingsvermogen 75,2 · klanten 60,0 · AI-plus 0. Klanten 60 omdat classic NRR ontbreekt — parkproxy, geen verzonnen NRR. Geen kooptips.",
+        text: "S 81,7, status voorlopig. Overgenomen uit desk-run 2026-09-07-aura-s-top100. Automatisering 94,0 · nut 100,0 · schokbestendigheid 75,4 · aanpassingsvermogen 75,2 · klanten 60,0 · AI-plus 0. Klanten 60 omdat classic NRR ontbreekt — parkproxy, geen verzonnen NRR.",
       },
       { type: "h", text: "Wat telt als feit" },
       {
         type: "p",
-        text: "Primair: SEC CIK0001035267, 10-K accession 0001035267-26-000010. S blijft 81,7. Geen koersdoel.",
+        text: "Primair: SEC CIK0001035267, 10-K accession 0001035267-26-000010. S blijft 81,7.",
       },
     ],
   },
@@ -228,7 +228,7 @@ export const speciales: Edition[] = [
     slug: "2026-09-asml",
     kicker: "Speciale",
     title: "ASML · de schrijfmachine van de fab",
-    dek: "ASML houdt EUV- en DUV-lithografie plus service op de installed base — niet de chipvraag zelf. S 70,7, status voorlopig. Cijfers in euro. Geen kooptips.",
+    dek: "ASML houdt EUV- en DUV-lithografie plus service op de installed base — niet de chipvraag zelf. S 70,7, status voorlopig. Cijfers in euro.",
     date: "2026-09-15",
     theme: "Lithografie · installed base",
     image: "/art/machines.jpg",
@@ -237,7 +237,7 @@ export const speciales: Edition[] = [
     body: [
       {
         type: "p",
-        text: "ASML bouwt lithografiesystemen waarmee chipfabrieken circuits op wafers schrijven. De economische claim rust op die laag en de service eromheen — niet op de eindvraag naar chips. S 70,7, status voorlopig. Onderzoek. Geen kooptips.",
+        text: "ASML bouwt lithografiesystemen waarmee chipfabrieken circuits op wafers schrijven. De economische claim rust op die laag en de service eromheen — niet op de eindvraag naar chips. S 70,7, status voorlopig. Onderzoek.",
       },
       { type: "h", text: "Verhaal" },
       {
@@ -269,17 +269,17 @@ export const speciales: Edition[] = [
       { type: "h", text: "Waar het schuurt" },
       {
         type: "p",
-        text: "Semicon-investeringscyclus: vraag volgt fab-capex, niet lineair de eindvraag naar chips. Exportcontrole en geopolitiek. Single-source in de EUV-keten. Klantconcentratie (TSMC, Intel, Samsung) verklaart klanten-score 9,0. Schokbestendigheid 60,5: kasrijk in absolute zin, cyclisch en geopolitiek gevoelig. Aanpassingsvermogen 75,0 via High-NA en upgrades, met lange levertijden. S blijft 70,7 — geen herberekening. Geen kooptips.",
+        text: "Semicon-investeringscyclus: vraag volgt fab-capex, niet lineair de eindvraag naar chips. Exportcontrole en geopolitiek. Single-source in de EUV-keten. Klantconcentratie (TSMC, Intel, Samsung) verklaart klanten-score 9,0. Schokbestendigheid 60,5: kasrijk in absolute zin, cyclisch en geopolitiek gevoelig. Aanpassingsvermogen 75,0 via High-NA en upgrades, met lange levertijden. S blijft 70,7 — geen herberekening.",
       },
       { type: "h", text: "Score" },
       {
         type: "p",
-        text: "S 70,7, status voorlopig. Automatisering 96,0 · nut 100,0 · schokbestendigheid 60,5 · aanpassingsvermogen 75,0 · klanten 9,0 · AI-plus 0. Desk-run 2026-09-07-aura-s-top100. Geen koersdoel.",
+        text: "S 70,7, status voorlopig. Automatisering 96,0 · nut 100,0 · schokbestendigheid 60,5 · aanpassingsvermogen 75,0 · klanten 9,0 · AI-plus 0. Desk-run 2026-09-07-aura-s-top100.",
       },
       { type: "h", text: "Wat telt als feit" },
       {
         type: "p",
-        text: "Primair: Form 20-F FY eind 31 december 2025 (CIK 0000937966, accession 0001628280-26-011378) plus desk-run. S ongemoeid 70,7. Geen kooptips. Status voorlopig.",
+        text: "Primair: Form 20-F FY eind 31 december 2025 (CIK 0000937966, accession 0001628280-26-011378) plus desk-run. S ongemoeid 70,7. Status voorlopig.",
       },
     ],
   },
