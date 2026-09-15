@@ -14,19 +14,19 @@ const pages: SearchHit[] = [
     href: "/",
     kicker: "Blad",
     title: "Atlas onderzoekblad",
-    dek: "Wie de machines bezit, blijft economisch actor. Etalage, methode, wereld.",
+    dek: "Onderzoekblad over bedrijven. We lezen jaarrekeningen. Geen kooptips.",
   },
   {
     href: "/methode",
     kicker: "Methode",
-    title: "Hoe AURA/S werkt",
-    dek: "Automatisering · Utiliteit · Resilience · Aanpassingsvermogen → score S.",
+    title: "Hoe we scoren",
+    dek: "Vaste leeswijze. Geen kooptips. Score 0–100, status voorlopig.",
   },
   {
     href: "/wereld",
     kicker: "Wereld",
     title: "Continenten & manden",
-    dek: "Leeskaart. Filings first. S 0–100. Geen tipfilter.",
+    dek: "Leeskaart van continenten en manden. Score 0–100. Geen kooptips.",
   },
   {
     href: "/scores",
@@ -38,13 +38,13 @@ const pages: SearchHit[] = [
     href: "/nummers",
     kicker: "Nummers",
     title: "Editie-shelf",
-    dek: "Gedateerde onderzoeksedities — tip-vrij.",
+    dek: "Gedateerde onderzoeksedities. Geen kooptips.",
   },
   {
     href: "/inschrijven",
-    kicker: "Brief",
-    title: "Inschrijven",
-    dek: "Onderzoekseditie per e-mail. Geen tipstroom. Geen koersdoelen.",
+    kicker: "Nieuwsbrief",
+    title: "Blijf op de hoogte",
+    dek: "Korte stukken over bedrijven, rechtstreeks uit de jaarrekening. Geen kooptips.",
   },
 ];
 

@@ -1,21 +1,8 @@
-# Atlas — AURA/S onderzoekblad
+# Atlas — onderzoekblad over bedrijven
 
-Onafhankelijk onderzoekblad over post-labour. Otium is het doel; AURA/S is hoe jaarrekeningen gelezen worden.
+We lezen jaarrekeningen. Geen kooptips.
 
-Geen tipstroom. Geen beleggingsadvies. Scores 0—100, status VOORLOPIG.
-
-## Inhoud
-
-- Etalage: PME ⋊ DHR ⋺ TECH
-- Methode (AURA/S + Trendwissel)
-- Wereldkaart met continenten en manden
-- Scoretabel
-- Dossiers en gedateerde nummers
-- Zoek
-
-## Stack
-
-React 19, TanStack Start, Tailwind v4.
+Dit repo is de duurzame codebase voor de Grok-host. De live site op here.now is een andere publicatie. Cutover en DNS blijven buiten deze pass.
 
 ## Lokaal
 
@@ -25,8 +12,11 @@ npm run dev
 ```
 
 ```terminal
-npm run build
+node --experimental-strip-types --test src/lib/atlas/site-cx-p0.test.ts
 npm run typecheck
+npm run build
 ```
 
-Persoonlijk onderzoek. Geen koop- of verkoopsignalen.
+Open http://localhost:8080 — cover (geen AURA/S in de hero), nieuwsbrief, methode, etalage PME/DHR/TECH. Banner “Twee sites” wijst naar here.now.
+
+Persoonlijk onderzoek. Geen kooptips.

@@ -138,11 +138,12 @@ export const baskets: Basket[] = [
     names: 20,
     scored: 20,
     note: "Life tools, robotchirurgie, diagnostiek. Incl. PME · DHR · TECH.",
-    tickers: ["PME", "DHR", "TECH"],
+    tickers: ["PME", "DHR", "TECH", "ISRG"],
   },
 ];
 
-export const ISSUE_DATE = "2026-09-10";
+/** Snapshot date of the world-name census — not the visitor-facing issue date. */
+export const CENSUS_DATE = "2026-09-10";
 export const SCORED_TOTAL = 195;
 export const INCOMPLETE_TOTAL = 27;
 
