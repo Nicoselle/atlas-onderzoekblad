@@ -2,29 +2,65 @@ import assert from "node:assert/strict";
 import { test } from "node:test";
 import { etalageTickers, getCompany, mandenTickers, rankedCompanies } from "./companies.ts";
 import {
+  BRIDGE_BODY,
+  BRIDGE_CTA,
+  BRIDGE_KICKER,
   BUTTONDOWN_PLACEHOLDER,
   buttonDownEmbedAction,
   COVER_FAQ,
-  COVER_SCORE_LINE,
-  COVER_TRUST,
+  CTA_METHODE,
+  CTA_SUBSCRIBE,
+  ETALAGE_ABOVE,
+  ETALAGE_BELOW,
+  FORM_BUTTON,
+  HERE_NOW_URL,
+  HERO_LEAD,
+  HERO_LENS,
+  HERO_PROMISE,
+  HERO_TITLE,
   HEADER_SUB,
   isButtonDownWired,
   ISSUE_DATE,
   LEESGRENS_ITEMS,
+  METHODE_PRODUCT,
   OTIUM_BRIDGE,
   SITE_DESCRIPTION,
   SITE_TITLE,
+  SUBSCRIBE_KICKER,
+  SUBSCRIBE_LEDE,
+  SUBSCRIBE_STATUS,
+  SUBSCRIBE_TITLE,
+  SUBSCRIBE_TRUST,
+  SUBSCRIBE_UNDER,
   TIP_BAN_FOOTER,
   TIP_BAN_SHORT,
 } from "./copy.ts";
 import { formatNlDate } from "./format.ts";
 import { baskets, CENSUS_DATE, continents, getBasket, getContinent } from "./world.ts";
 
-test("Otium bridge line is exact", () => {
+const heroBundle = [HERO_TITLE, HERO_LEAD, HERO_PROMISE, HERO_LENS].join(" ");
+
+test("Otium bridge line is exact and stays off the hero", () => {
   assert.equal(
     OTIUM_BRIDGE,
     "Vanuit het Otium-project: Atlas leest wie de productieve laag houdt, zodat tijd vrijkomt voor wat ertoe doet.",
   );
+  assert.doesNotMatch(heroBundle, /Otium/);
+  assert.doesNotMatch(heroBundle, /AURA\/S/);
+  assert.doesNotMatch(heroBundle, /post-labour/i);
+});
+
+test("cover hero matches the accessible Elon brief", () => {
+  assert.equal(HERO_TITLE, "Atlas is een onderzoekblad over bedrijven.");
+  assert.match(HERO_LEAD, /jaarrekeningen/);
+  assert.match(HERO_LEAD, /huur betaalt/);
+  assert.equal(
+    HERO_PROMISE,
+    "Geen kooptips. Wel een vaste score (0–100, voorlopig) en dossiers die je kunt nalezen.",
+  );
+  assert.match(HERO_LENS, /eigenaar van wat de klant elke maand nodig heeft/);
+  assert.equal(CTA_METHODE, "Hoe we scoren");
+  assert.equal(CTA_SUBSCRIBE, "Blijf op de hoogte");
 });
 
 test("visitor-facing issue date matches here.now 15 september 2026", () => {
@@ -33,19 +69,62 @@ test("visitor-facing issue date matches here.now 15 september 2026", () => {
   assert.equal(CENSUS_DATE, "2026-09-10");
 });
 
-test("masthead and meta stay Dutch research, tip-banned", () => {
-  assert.equal(SITE_TITLE, "Atlas — AURA/S onderzoekblad · Otium · post-labour");
-  assert.match(SITE_DESCRIPTION, /VOORLOPIG/);
-  assert.match(SITE_DESCRIPTION, /Geen tipstroom/);
-  assert.equal(HEADER_SUB, "onderzoek · post-labour");
-  assert.match(COVER_TRUST, /Filings first/);
-  assert.match(COVER_TRUST, /Geen tipstroom/);
-  assert.match(COVER_SCORE_LINE, /geen koersdoelen/);
+test("masthead stays Dutch research, tip-banned, accessible", () => {
+  assert.equal(SITE_TITLE, "Atlas — onderzoekblad over bedrijven");
+  assert.match(SITE_DESCRIPTION, /Geen kooptips/);
+  assert.equal(HEADER_SUB, "onderzoekblad");
+  assert.doesNotMatch(SITE_TITLE, /Otium/);
+  assert.doesNotMatch(SITE_DESCRIPTION, /AURA\/S/);
+});
+
+test("dual-run banner points at live here.now in plain Dutch", () => {
+  assert.equal(BRIDGE_KICKER, "Twee sites");
+  assert.equal(BRIDGE_BODY, "Nieuwe Atlas-site (test). De oude site blijft online.");
+  assert.equal(BRIDGE_CTA, "Naar de huidige live Atlas");
+  assert.equal(HERE_NOW_URL, "https://snowy-crest-h56g.here.now/");
+});
+
+test("inschrijven copy is the commercial SKU, still tip-banned", () => {
+  assert.equal(SUBSCRIBE_KICKER, "Nieuwsbrief");
+  assert.equal(SUBSCRIBE_TITLE, "Blijf op de hoogte");
+  assert.equal(
+    SUBSCRIBE_LEDE,
+    "Korte stukken over bedrijven, rechtstreeks uit de jaarrekening. Geen kooptips. Eén e-mail is genoeg.",
+  );
+  assert.equal(SUBSCRIBE_TRUST, "Onderzoek · jaarrekeningen eerst · geen kooptips");
+  assert.equal(FORM_BUTTON, "Houd me op de hoogte");
+  assert.equal(SUBSCRIBE_STATUS, "De lijst wordt nog gekoppeld. Het formulier is al klaar.");
+  assert.match(SUBSCRIBE_UNDER, /Geen koopadvies/);
+});
+
+test("etalage copy is research, not a buy list", () => {
+  assert.equal(
+    ETALAGE_ABOVE,
+    "Drie bedrijven die we hebben nagekeken. De cijfers zijn onderzoek, geen advies om te kopen.",
+  );
+  assert.equal(ETALAGE_BELOW, "De onderbouwing staat in het dossier.");
+  assert.deepEqual(
+    etalageTickers.map((ticker) => [ticker, getCompany(ticker)?.s]),
+    [
+      ["PME", 86.9],
+      ["DHR", 86.5],
+      ["TECH", 86.4],
+    ],
+  );
+  assert.equal(getCompany("HEI")?.s, 80.0);
+  assert.equal(getCompany("GATX")?.s, 72.8);
+});
+
+test("methode-as-product has why / how / never", () => {
+  assert.equal(METHODE_PRODUCT[0]?.kicker, "Waarom Atlas");
+  assert.equal(METHODE_PRODUCT[1]?.kicker, "Hoe we scoren");
+  assert.equal(METHODE_PRODUCT[2]?.kicker, "Wat we nooit doen");
+  assert.match(METHODE_PRODUCT[2]?.body ?? "", /Geen “koop dit”|Geen "koop dit"/);
 });
 
 test("tip-ban copy forbids buy/sell/price-target language as a product promise", () => {
   for (const line of [TIP_BAN_FOOTER, TIP_BAN_SHORT, ...COVER_FAQ.map((item) => item.a)]) {
-    assert.match(line, /geen (tip|tipstroom|koersdoelen|koop- of verkoopsignalen|beleggingsadvies)/i);
+    assert.match(line, /geen (koop|kooptips|koersdoelen|koop- of verkoopsignalen|beleggingsadvies|tip)/i);
     assert.doesNotMatch(line, /koersdoel van/i);
     assert.doesNotMatch(line, /koop dit/i);
     assert.doesNotMatch(line, /verkoop signaal/i);
@@ -89,11 +168,22 @@ test("mand tables only list dossiers already on this blad", () => {
 test("cover etalage and manden use cited tickers only", () => {
   assert.deepEqual([...etalageTickers], ["PME", "DHR", "TECH"]);
   assert.deepEqual([...mandenTickers], ["SAP", "DLB"]);
-  for (const ticker of [...etalageTickers, ...mandenTickers]) {
+  for (const ticker of [...etalageTickers, ...mandenTickers, "HEI", "GATX"]) {
     const company = getCompany(ticker);
     assert.ok(company, ticker);
     assert.equal(company.status, "VOORLOPIG");
   }
+});
+
+test("PME and DHR dossiers deepen without changing S", () => {
+  const pme = getCompany("PME");
+  const dhr = getCompany("DHR");
+  assert.equal(pme?.s, 86.9);
+  assert.equal(dhr?.s, 86.5);
+  assert.ok(pme?.plainLede);
+  assert.ok(dhr?.plainLede);
+  assert.ok((pme?.depth?.length ?? 0) >= 2);
+  assert.ok((dhr?.depth?.length ?? 0) >= 2);
 });
 
 test("does not invent or change S values", () => {
@@ -114,5 +204,4 @@ test("does not invent or change S values", () => {
       ["URI", 56.5],
     ],
   );
-  assert.equal(ranked.find((c) => c.ticker === "URI")?.s, 56.5);
 });

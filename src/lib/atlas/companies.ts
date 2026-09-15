@@ -35,7 +35,13 @@ export type Company = {
   snapshot: SnapshotRow[];
   pillars: Pillars;
   business: string;
+  /** Plain Dutch first line for the dossier hero. */
+  plainLede?: string;
+  /** How to read this note, without inventing numbers. */
+  readGuide?: string;
   reading: Reading[];
+  /** Extra filing-backed paragraphs. No new S. */
+  depth?: Reading[];
   risks: string[];
   source: string;
 };
@@ -78,6 +84,24 @@ export const companies: Company[] = [
     pillars: { automation: 96.0, utility: 100.0, resilience: 75.4, flex: 75.3, customers: 92.0, ai: 0 },
     business:
       "Pro Medicus levert radiologie-beeldvormingssoftware, met Visage als kernplatform. De productieve laag is software-IP en de Visage-stack die de issuer zelf houdt — geen hardwarepark als kernfranchise.",
+    plainLede:
+      "Pro Medicus maakt software waarmee ziekenhuizen scans bekijken. Het bedrijf houdt die software zelf.",
+    readGuide:
+      "Lees eerst de snapshot. De hoge rang komt uit software die Pro Medicus zelf houdt — niet uit het ziekenhuisapparaat. Status blijft voorlopig. Dit is geen koopadvies.",
+    depth: [
+      {
+        title: "Wat de jaarrekening vastzet",
+        body: "Boekjaar tot 30 juni 2025 (ASX 4E): omzet 213,0 mln AUD, brutomarge 99,9%, underlying EBIT 157,7 mln AUD. Operationele kas 111,3 mln AUD — ongeveer 52,3% van de omzet. Vrije kasstroom ongeveer 52,1% van de omzet. Kas plus korte beleggingen 210,7 mln AUD; schulden 0,0. Dat is de machine, niet een koersverhaal.",
+      },
+      {
+        title: "Wat terugkomt elke maand",
+        body: "De abonnementsmix-proxy staat op 92%. Lange hospital-contracten en implementaties zijn het steunpunt. Een klassieke NRR-sheet zagen we in deze run niet — daarom blijft de status voorlopig, niet omdat de filing ontbreekt.",
+      },
+      {
+        title: "Waar het schuurt",
+        body: "Concentratie op grote Amerikaanse health-systemen. Timing van nieuwe contracten. AUD/USD. Concurrentie in enterprise imaging. Eén kernplatform: Visage. Geen van die risico’s is een verkoopsignaal; het zijn filing-grenzen.",
+      },
+    ],
     reading: [
       {
         title: "Automatisering",
@@ -139,6 +163,24 @@ export const companies: Company[] = [
     pillars: { automation: 91.5, utility: 100.0, resilience: 65.8, flex: 83.8, customers: 100.0, ai: 0 },
     business:
       "Danaher is een life-sciences- en diagnostiekconcern. Instrumenten en verbruiksgoederen (reagens, kits, service) vormen een park-plus-aftermarketmodel: de gehouden laag zit in consumables en services op het geplaatste instrumentarium.",
+    plainLede:
+      "Danaher verkoopt lab-apparaten. Daarna houdt het de kits en de service die labs blijven bestellen.",
+    readGuide:
+      "Lees de mix, niet alleen de omzet. De rang hangt aan verbruiksgoederen en service op het geplaatste park. Status voorlopig. Geen koopadvies.",
+    depth: [
+      {
+        title: "Wat de 10-K vastzet",
+        body: "Boekjaar tot 31 december 2025: omzet 24,57 mld USD, brutomarge 59,1%, bedrijfsresultaat 4,69 mld USD. Operationele kas 6,42 mld USD (ongeveer 26,1% van de omzet). Vrije kasstroom ongeveer 21,4% van de omzet. Kas plus korte beleggingen 19,91 mld USD; schulden 18,42 mld USD; current ratio 1,87. R&D 6,5% van de omzet.",
+      },
+      {
+        title: "Park plus aftermarket",
+        body: "Klanten blijven bestellen op het instrumentenpark. Terugkerende consumables, services en vergelijkbare stromen zijn ongeveer 82% van de mix — een aftermarket-indicatie uit de desk-run, geen nieuw cijfer. Dat is waarom de gehouden laag hier niet de eenmalige apparaatverkoop is.",
+      },
+      {
+        title: "Waar het schuurt",
+        body: "Life-sciences CapEx-cycli. Regulering en vergoeding in diagnostiek. Integratie na overnames. Geopolitiek en supply in instrumenten en reagents. In de jaarrekening staat geen aparte stresstest; herstel blijft voorzichtig.",
+      },
+    ],
     reading: [
       {
         title: "Automatisering",

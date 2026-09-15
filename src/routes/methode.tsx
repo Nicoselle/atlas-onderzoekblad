@@ -1,8 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { MethodeProduct } from "@/components/atlas/methode-product";
 import { PageHero } from "@/components/atlas/page-hero";
 import { SiteShell } from "@/components/atlas/site-shell";
 import { StatusBadge } from "@/components/atlas/status-badge";
-import { LEESGRENS_ITEMS, OTIUM_BRIDGE } from "@/lib/atlas/copy";
+import { GLOSSARY, LEESGRENS_ITEMS } from "@/lib/atlas/copy";
 
 export const Route = createFileRoute("/methode")({
   component: MethodePage,
@@ -42,9 +43,9 @@ function MethodePage() {
   return (
     <SiteShell>
       <PageHero
-        kicker="Methode · proprietary frame"
-        title="Hoe Atlas jaarrekeningen leest"
-        dek="Vaste leeswijze: hoe AURA/S telt, wanneer Trendwissel mag spreken, en welke grenzen dit onderzoek houdt. Geen signaalstroom — wel een herhaalbaar frame. Filing-first · geen koersdoelen."
+        kicker="Methode"
+        title="Hoe we jaarrekeningen lezen"
+        dek="Eén vaste leeswijze. Geen kooptips. Hier staat wat Atlas is, hoe de score werkt, en wat we nooit doen."
       />
 
       <figure className="mx-auto max-w-6xl px-4 pt-10 sm:px-6">
@@ -58,14 +59,23 @@ function MethodePage() {
       </figure>
 
       <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
-        <p className="max-w-2xl font-sans text-base leading-relaxed text-ink-soft">{OTIUM_BRIDGE}</p>
-        <h2 className="mt-10 font-display text-3xl font-medium tracking-tight">Harde leesgrenzen</h2>
+        <MethodeProduct showIndexLink={false} />
+        <h2 className="mt-14 font-display text-3xl font-medium tracking-tight">Wat we nooit doen</h2>
         <ul className="mt-4 max-w-2xl list-disc space-y-2 pl-5 font-sans text-sm text-ink-soft">
           {LEESGRENS_ITEMS.map((item) => (
             <li key={item}>{item}</li>
           ))}
         </ul>
-        <p className="mt-12 font-sans text-xs tracking-[0.2em] text-moss uppercase">Productframe</p>
+        <h2 className="mt-14 font-display text-3xl font-medium tracking-tight">Woordenlijst</h2>
+        <dl className="mt-6 max-w-2xl divide-y divide-rule border-y border-rule">
+          {GLOSSARY.map((item) => (
+            <div key={item.term} className="py-4">
+              <dt className="font-display text-lg font-medium tracking-tight">{item.term}</dt>
+              <dd className="mt-1 font-sans text-sm leading-relaxed text-ink-soft">{item.def}</dd>
+            </div>
+          ))}
+        </dl>
+        <p className="mt-12 font-sans text-xs tracking-[0.2em] text-moss uppercase">De score</p>
         <h2 className="mt-2 font-display text-3xl font-medium tracking-tight">AURA/S — vier letters, één score</h2>
         <p className="mt-4 max-w-2xl font-sans text-base leading-relaxed text-ink-soft">
           Twee keer de letter A is bewust: eerst Automatisering, daarna Aanpassingsvermogen

@@ -1,25 +1,8 @@
-# Atlas — AURA/S onderzoekblad
+# Atlas — onderzoekblad over bedrijven
 
-Onafhankelijk onderzoekblad over post-labour. Otium is het doel; AURA/S is hoe jaarrekeningen gelezen worden.
+We lezen jaarrekeningen. Geen kooptips.
 
-Geen tipstroom. Geen beleggingsadvies. Geen koop- of verkoopsignalen. Scores 0—100, status VOORLOPIG.
-
-## Ship lane
-
-Dit repo is de duurzame codebase voor de Grok-host (`field-glow-garden-dream.grok.me`). De live bezoekers-UX op here.now is een aparte statische public-face. Cutover en DNS blijven buiten deze pass.
-
-## Inhoud
-
-- Cover: 5 doorklikken (methode · wereld · etalage PME/DHR/TECH · manden SAP/DLB · frame)
-- Methode (AURA/S + Trendwissel + harde leesgrenzen)
-- Wereldkaart met continenten en manden
-- Scoretabel
-- Dossiers en gedateerde nummers die in `src/lib/atlas` staan
-- Zoek
-
-## Stack
-
-React 19, TanStack Start, Tailwind v4.
+Dit repo is de duurzame codebase voor de Grok-host. De live site op here.now is een andere publicatie. Cutover en DNS blijven buiten deze pass.
 
 ## Lokaal
 
@@ -29,11 +12,11 @@ npm run dev
 ```
 
 ```terminal
-npm test
+node --experimental-strip-types --test src/lib/atlas/site-cx-p0.test.ts
 npm run typecheck
 npm run build
 ```
 
-Open http://localhost:8080 — cover, methode, scores, dossier PME. Controleren: footer-tip-ban, datum 15 september 2026, geen koop-CTA.
+Open http://localhost:8080 — cover (geen AURA/S in de hero), nieuwsbrief, methode, etalage PME/DHR/TECH. Banner “Twee sites” wijst naar here.now.
 
-Persoonlijk onderzoek. Geen koop- of verkoopsignalen.
+Persoonlijk onderzoek. Geen kooptips.
