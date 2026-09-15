@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
+import { HEADER_SUB } from "@/lib/atlas/copy";
 import { mainNav } from "@/lib/atlas/nav";
 import { cn } from "@/lib/utils";
 
@@ -22,7 +23,7 @@ export function SiteHeader() {
             Atlas
           </span>
           <span className="hidden font-sans text-xs tracking-wide text-muted sm:inline">
-            onderzoek · post-labour
+            {HEADER_SUB}
           </span>
         </Link>
 

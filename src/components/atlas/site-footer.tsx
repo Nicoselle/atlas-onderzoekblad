@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
-import { OTIUM_BRIDGE } from "@/lib/atlas/copy";
+import { ISSUE_DATE, OTIUM_BRIDGE, TIP_BAN_FOOTER, TIP_BAN_SHORT } from "@/lib/atlas/copy";
+import { formatNlDate } from "@/lib/atlas/format";
 
 export function SiteFooter() {
   return (
@@ -41,16 +42,12 @@ export function SiteFooter() {
         </div>
         <div className="font-sans text-sm leading-relaxed text-muted">
           <p className="mb-3 text-xs tracking-[0.18em] text-faint uppercase">Leesgrenzen</p>
-          <p>
-            Persoonlijk onderzoek. <strong className="font-medium text-ink-soft">Geen beleggingsadvies.</strong>{" "}
-            Scores 0–100, status VOORLOPIG — een leeswijze, geen modelportefeuille. Geen
-            tipstroom. Geen koersdoelen.
-          </p>
+          <p>{TIP_BAN_FOOTER}</p>
         </div>
       </div>
       <div className="border-t border-rule">
         <p className="mx-auto max-w-6xl px-4 py-4 font-sans text-xs tracking-wide text-faint sm:px-6">
-          Dit nummer · 10 september 2026 · filings first · Europe/Brussels
+          Dit nummer · {formatNlDate(ISSUE_DATE)} · filings first · Europe/Brussels · {TIP_BAN_SHORT}
         </p>
       </div>
     </footer>

@@ -110,6 +110,10 @@ function DossierPage() {
               </p>
             ) : null}
             <p className="mt-6 font-sans text-xs leading-relaxed text-faint">{company.source}</p>
+            <p className="mt-4 font-sans text-xs leading-relaxed text-muted">
+              Onderzoeksrang, status {company.status}. Geen tipstroom. Geen koersdoelen. Geen
+              koop- of verkoopsignalen.
+            </p>
           </aside>
         </div>
 

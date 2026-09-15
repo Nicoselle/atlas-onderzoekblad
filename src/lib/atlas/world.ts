@@ -142,7 +142,8 @@ export const baskets: Basket[] = [
   },
 ];
 
-export const ISSUE_DATE = "2026-09-10";
+/** Snapshot date of the world-name census — not the visitor-facing issue date. */
+export const CENSUS_DATE = "2026-09-10";
 export const SCORED_TOTAL = 195;
 export const INCOMPLETE_TOTAL = 27;
 
