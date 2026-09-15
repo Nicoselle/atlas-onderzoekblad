@@ -8,8 +8,11 @@ import {
   COVER_FAQ,
   CTA_METHODE,
   CTA_SUBSCRIBE,
+  COVER_EDITION_SLUGS,
+  COVER_NUMMERS_LEDE,
   ETALAGE_ABOVE,
   ETALAGE_BELOW,
+  ETALAGE_HEADING,
   ETALAGE_STATUS,
   HERO_LEAD,
   HERO_LENS,
@@ -17,7 +20,7 @@ import {
   HERO_TITLE,
   ISSUE_DATE,
 } from "@/lib/atlas/copy";
-import { editions } from "@/lib/atlas/editions";
+import { getEdition } from "@/lib/atlas/editions";
 import { formatNlDate, formatScore } from "@/lib/atlas/format";
 
 export const Route = createFileRoute("/")({ component: Home });
@@ -26,6 +29,9 @@ const etalage = etalageTickers.map((t) => getCompany(t)).filter((c): c is Compan
 const extraSamples = sampleTickers
   .map((t) => getCompany(t))
   .filter((c): c is Company & { specialSlug: string } => Boolean(c?.specialSlug));
+const coverEditions = COVER_EDITION_SLUGS.map((slug) => getEdition(slug)).filter(
+  (edition): edition is NonNullable<ReturnType<typeof getEdition>> => Boolean(edition),
+);
 
 function Home() {
   return (
@@ -87,15 +93,10 @@ function Home() {
       </section>
 
       <section id="etalage" className="mx-auto max-w-6xl scroll-mt-24 px-4 py-14 sm:px-6">
-        <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
-          <div>
-            <p className="font-sans text-xs tracking-[0.2em] text-moss uppercase">Etalage</p>
-            <h2 className="mt-2 font-display text-3xl font-medium tracking-tight">Hoogste scores eerst</h2>
-            <p className="mt-2 max-w-xl font-sans text-sm text-muted">{ETALAGE_ABOVE}</p>
-          </div>
-          <Link to="/scores" className="font-sans text-sm text-ink underline decoration-rule underline-offset-4">
-            Alle scores
-          </Link>
+        <div className="mb-8">
+          <p className="font-sans text-xs tracking-[0.2em] text-moss uppercase">Etalage</p>
+          <h2 className="mt-2 font-display text-3xl font-medium tracking-tight">{ETALAGE_HEADING}</h2>
+          <p className="mt-2 max-w-xl font-sans text-sm text-muted">{ETALAGE_ABOVE}</p>
         </div>
         <p className="mb-4 font-sans text-xs text-faint">
           {etalage.map((c, i) => (
@@ -136,10 +137,10 @@ function Home() {
           <p className="font-sans text-xs tracking-[0.2em] text-moss uppercase">Nummers op dit blad</p>
           <h2 className="mt-2 font-display text-3xl font-medium tracking-tight">Gedateerde edities</h2>
           <p className="mt-3 max-w-2xl font-sans text-sm text-muted">
-            Stukken die je kunt nalezen — GATX, HEICO, Tesla, Intuitive, ASML en de etalage-dossiers. Geen kooplijst.
+            {COVER_NUMMERS_LEDE}
           </p>
           <ul className="mt-8 divide-y divide-rule border-y border-rule">
-            {editions.map((e) => (
+            {coverEditions.map((e) => (
               <li key={e.slug}>
                 <Link
                   to="/nummers/$slug"

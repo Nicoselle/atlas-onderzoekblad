@@ -7,11 +7,14 @@ import {
   BRIDGE_KICKER,
   BUTTONDOWN_PLACEHOLDER,
   buttonDownEmbedAction,
+  COVER_EDITION_SLUGS,
   COVER_FAQ,
+  COVER_NUMMERS_LEDE,
   CTA_METHODE,
   CTA_SUBSCRIBE,
   ETALAGE_ABOVE,
   ETALAGE_BELOW,
+  ETALAGE_HEADING,
   FORM_BUTTON,
   HERE_NOW_URL,
   HERO_LEAD,
@@ -96,7 +99,10 @@ test("inschrijven copy is the commercial SKU, still tip-banned", () => {
   assert.equal(SUBSCRIBE_TRUST, "Onderzoek · jaarrekeningen eerst · geen kooptips");
   assert.equal(FORM_BUTTON, "Houd me op de hoogte");
   assert.equal(SUBSCRIBE_STATUS, "De lijst wordt nog gekoppeld. Het formulier is al klaar.");
-  assert.match(SUBSCRIBE_UNDER, /Geen koopadvies/);
+  assert.equal(
+    SUBSCRIBE_UNDER,
+    "We sturen geen koop- of verkoopadvies. De score op het blad is een onderzoeksrang, geen advies om te handelen.",
+  );
 });
 
 test("etalage copy is research, not a buy list", () => {
@@ -105,6 +111,7 @@ test("etalage copy is research, not a buy list", () => {
     "Drie bedrijven die we hebben nagekeken. De cijfers zijn onderzoek, geen advies om te kopen.",
   );
   assert.equal(ETALAGE_BELOW, "De onderbouwing staat in het dossier.");
+  assert.equal(ETALAGE_HEADING, "Drie nagekeken namen");
   assert.deepEqual(
     etalageTickers.map((ticker) => [ticker, getCompany(ticker)?.s]),
     [
@@ -183,6 +190,28 @@ test("mand tables only list dossiers already on this blad", () => {
 
   assert.equal((getBasket("mijnbouw")?.tickers ?? []).length, 0);
   assert.equal((getBasket("coins")?.tickers ?? []).length, 0);
+});
+
+test("P0 cover nummers list is GATX and HEICO only", () => {
+  assert.equal(
+    COVER_NUMMERS_LEDE,
+    "Twee langere voorbeelden: GATX en HEICO. Meer stukken staan op de huidige live Atlas.",
+  );
+  assert.deepEqual([...COVER_EDITION_SLUGS], ["2026-09-gatx", "2026-09-hei"]);
+  for (const slug of COVER_EDITION_SLUGS) {
+    assert.ok(getEdition(slug), slug);
+  }
+  for (const hidden of [
+    "2026-09-tesla",
+    "2026-09-isrg",
+    "2026-09-asml",
+    "2026-09-industrials-cluster",
+    "2026-09-gehouden-laag",
+    "2026-09-marktkijk-1-3m",
+  ]) {
+    assert.equal((COVER_EDITION_SLUGS as readonly string[]).includes(hidden), false);
+    assert.ok(getEdition(hidden), hidden);
+  }
 });
 
 test("cover etalage stays PME DHR TECH; samples are GATX and HEICO only", () => {

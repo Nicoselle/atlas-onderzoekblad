@@ -34,12 +34,18 @@ export const SUBSCRIBE_LEDE =
 export const SUBSCRIBE_TRUST = "Onderzoek · jaarrekeningen eerst · geen kooptips";
 export const SUBSCRIBE_STATUS = "De lijst wordt nog gekoppeld. Het formulier is al klaar.";
 export const SUBSCRIBE_UNDER =
-  "Geen koopadvies. Geen verkoopadvies. Alleen onderzoek wanneer er een nieuw stuk klaar is.";
+  "We sturen geen koop- of verkoopadvies. De score op het blad is een onderzoeksrang, geen advies om te handelen.";
 
+export const ETALAGE_HEADING = "Drie nagekeken namen";
 export const ETALAGE_ABOVE =
   "Drie bedrijven die we hebben nagekeken. De cijfers zijn onderzoek, geen advies om te kopen.";
 export const ETALAGE_BELOW = "De onderbouwing staat in het dossier.";
 export const ETALAGE_STATUS = "status voorlopig";
+
+/** P0 cover nummers list — GATX + HEICO only. Other speciales stay as routes. */
+export const COVER_EDITION_SLUGS = ["2026-09-gatx", "2026-09-hei"] as const;
+export const COVER_NUMMERS_LEDE =
+  "Twee langere voorbeelden: GATX en HEICO. Meer stukken staan op de huidige live Atlas.";
 
 export const SITE_TITLE = "Atlas — onderzoekblad over bedrijven";
 export const SITE_DESCRIPTION =
