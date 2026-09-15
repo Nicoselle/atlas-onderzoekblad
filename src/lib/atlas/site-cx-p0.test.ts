@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { etalageTickers, getCompany, mandenTickers, rankedCompanies } from "./companies.ts";
+import { etalageTickers, getCompany, mandenTickers, rankedCompanies, sampleTickers } from "./companies.ts";
 import {
   BRIDGE_BODY,
   BRIDGE_CTA,
@@ -36,6 +36,8 @@ import {
   TIP_BAN_SHORT,
 } from "./copy.ts";
 import { formatNlDate } from "./format.ts";
+import { speciales } from "./articles.ts";
+import { getEdition } from "./editions.ts";
 import { baskets, CENSUS_DATE, continents, getBasket, getContinent } from "./world.ts";
 
 const heroBundle = [HERO_TITLE, HERO_LEAD, HERO_PROMISE, HERO_LENS].join(" ");
@@ -183,30 +185,68 @@ test("mand tables only list dossiers already on this blad", () => {
   assert.equal((getBasket("coins")?.tickers ?? []).length, 0);
 });
 
-test("cover etalage and manden use cited tickers only", () => {
+test("cover etalage stays PME DHR TECH; samples are GATX and HEICO only", () => {
   assert.deepEqual([...etalageTickers], ["PME", "DHR", "TECH"]);
+  assert.deepEqual([...sampleTickers], ["HEI", "GATX"]);
   assert.deepEqual([...mandenTickers], ["SAP", "DLB"]);
-  for (const ticker of [...etalageTickers, ...mandenTickers, "HEI", "GATX"]) {
+  for (const extra of ["TSLA", "ISRG", "ASML"] as const) {
+    assert.equal((etalageTickers as readonly string[]).includes(extra), false);
+    assert.equal((sampleTickers as readonly string[]).includes(extra), false);
+  }
+  for (const ticker of [...etalageTickers, ...mandenTickers, ...sampleTickers]) {
     const company = getCompany(ticker);
     assert.ok(company, ticker);
     assert.equal(company.status, "VOORLOPIG");
   }
 });
 
-test("PME and DHR dossiers deepen without changing S", () => {
+test("ported speciales are full articles with mal headings and cited S", () => {
+  const expected = [
+    ["2026-09-gatx", "GATX", 72.8],
+    ["2026-09-hei", "HEI", 80.0],
+    ["2026-09-tesla", "TSLA", 84.6],
+    ["2026-09-isrg", "ISRG", 81.7],
+    ["2026-09-asml", "ASML", 70.7],
+  ] as const;
+  assert.equal(speciales.length, 5);
+  for (const [slug, ticker, s] of expected) {
+    const edition = getEdition(slug);
+    assert.ok(edition, slug);
+    const headings = edition.body.filter((b) => b.type === "h").map((b) => b.text);
+    assert.ok(headings.includes("Verhaal"), slug);
+    assert.ok(headings.includes("Wat houd je?"), slug);
+    assert.ok(headings.includes("Hoe het geld binnenkomt"), slug);
+    assert.ok(headings.includes("Waar het schuurt") || headings.includes("Waar schuurt"), slug);
+    assert.ok(headings.includes("Score"), slug);
+    assert.ok(headings.includes("Wat telt als feit"), slug);
+    const blob = edition.body.map((b) => ("text" in b ? b.text : "")).join(" ");
+    assert.match(blob, /geen kooptips/i);
+    assert.doesNotMatch(blob, /koop dit/i);
+    const company = getCompany(ticker);
+    assert.equal(company?.s, s);
+    assert.equal(company?.specialSlug, slug);
+    assert.ok((company?.depth?.length ?? 0) >= 4, ticker);
+  }
+});
+
+test("PME DHR TECH deepen without changing S", () => {
   const pme = getCompany("PME");
   const dhr = getCompany("DHR");
+  const tech = getCompany("TECH");
   assert.equal(pme?.s, 86.9);
   assert.equal(dhr?.s, 86.5);
+  assert.equal(tech?.s, 86.4);
   assert.ok(pme?.plainLede);
   assert.ok(dhr?.plainLede);
-  assert.ok((pme?.depth?.length ?? 0) >= 2);
-  assert.ok((dhr?.depth?.length ?? 0) >= 2);
+  assert.ok(tech?.plainLede);
+  assert.ok((pme?.depth?.length ?? 0) >= 3);
+  assert.ok((dhr?.depth?.length ?? 0) >= 3);
+  assert.ok((tech?.depth?.length ?? 0) >= 4);
 });
 
 test("does not invent or change S values", () => {
   const ranked = rankedCompanies();
-  assert.equal(ranked.length, 10);
+  assert.equal(ranked.length, 12);
   assert.deepEqual(
     ranked.map((c) => [c.ticker, c.s]),
     [
@@ -216,9 +256,11 @@ test("does not invent or change S values", () => {
       ["DLB", 85.7],
       ["TSLA", 84.6],
       ["MDB", 84.3],
+      ["ISRG", 81.7],
       ["HEI", 80.0],
       ["SAP", 74.7],
       ["GATX", 72.8],
+      ["ASML", 70.7],
       ["URI", 56.5],
     ],
   );

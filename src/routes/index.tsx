@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { CompanyCard } from "@/components/atlas/company-card";
 import { MethodeProduct } from "@/components/atlas/methode-product";
 import { SiteShell } from "@/components/atlas/site-shell";
-import { etalageTickers, getCompany, type Company } from "@/lib/atlas/companies";
+import { etalageTickers, getCompany, sampleTickers, type Company } from "@/lib/atlas/companies";
 import {
   COVER_FAQ,
   CTA_METHODE,
@@ -23,9 +23,9 @@ import { formatNlDate, formatScore } from "@/lib/atlas/format";
 export const Route = createFileRoute("/")({ component: Home });
 
 const etalage = etalageTickers.map((t) => getCompany(t)).filter((c): c is Company => Boolean(c));
-const extraSamples = ["HEI", "GATX"]
+const extraSamples = sampleTickers
   .map((t) => getCompany(t))
-  .filter((c): c is Company => Boolean(c));
+  .filter((c): c is Company & { specialSlug: string } => Boolean(c?.specialSlug));
 
 function Home() {
   return (
@@ -119,8 +119,8 @@ function Home() {
             <span key={c.ticker}>
               {i > 0 ? " · " : null}
               <Link
-                to="/dossiers/$ticker"
-                params={{ ticker: c.ticker.toLowerCase() }}
+                to="/nummers/$slug"
+                params={{ slug: c.specialSlug }}
                 className="underline decoration-rule underline-offset-4"
               >
                 {c.name} {formatScore(c.s)}
@@ -136,8 +136,7 @@ function Home() {
           <p className="font-sans text-xs tracking-[0.2em] text-moss uppercase">Nummers op dit blad</p>
           <h2 className="mt-2 font-display text-3xl font-medium tracking-tight">Gedateerde edities</h2>
           <p className="mt-3 max-w-2xl font-sans text-sm text-muted">
-            Alleen stukken die in deze codebase staan. Geen extra namen tot hun cijfers hier
-            nagekeken zijn.
+            Stukken die je kunt nalezen — GATX, HEICO, Tesla, Intuitive, ASML en de etalage-dossiers. Geen kooplijst.
           </p>
           <ul className="mt-8 divide-y divide-rule border-y border-rule">
             {editions.map((e) => (

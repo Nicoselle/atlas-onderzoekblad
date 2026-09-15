@@ -101,6 +101,10 @@ export const companies: Company[] = [
         title: "Waar het schuurt",
         body: "Concentratie op grote Amerikaanse health-systemen. Timing van nieuwe contracten. AUD/USD. Concurrentie in enterprise imaging. Eén kernplatform: Visage. Geen van die risico’s is een verkoopsignaal; het zijn filing-grenzen.",
       },
+      {
+        title: "Wat telt als feit",
+        body: "ASX FY25 Appendix 4E / annual report (boekjaar tot 30 jun 2025). Desk-run 2026-09-09-sleeves-dieper. S blijft 86,9. Abonnementsmix ~92% is een proxy, geen classic NRR-sheet.",
+      },
     ],
     reading: [
       {
@@ -180,6 +184,10 @@ export const companies: Company[] = [
         title: "Waar het schuurt",
         body: "Life-sciences CapEx-cycli. Regulering en vergoeding in diagnostiek. Integratie na overnames. Geopolitiek en supply in instrumenten en reagents. In de jaarrekening staat geen aparte stresstest; herstel blijft voorzichtig.",
       },
+      {
+        title: "Wat telt als feit",
+        body: "SEC CIK0000313616, 10-K accession 0000313616-26-000062. Desk-run 2026-09-07-aura-s-top100. S blijft 86,5. Aftermarket ~82% is een desk-indicatie, geen nieuw cijfer.",
+      },
     ],
     reading: [
       {
@@ -240,6 +248,32 @@ export const companies: Company[] = [
     pillars: { automation: 87.4, utility: 100.0, resilience: 74.9, flex: 76.0, customers: 100.0, ai: 0 },
     business:
       "Bio-Techne ontwikkelt en levert proteïne-reagens, diagnostische kits en instrumenten voor life-sciences en klinische labs. Consumables op het geplaatste park vormen de terugkerende laag.",
+    plainLede:
+      "Bio-Techne maakt reagens en kits voor labs. Labs blijven die bestellen op het park dat er al staat.",
+    readGuide:
+      "Lees de consumables-mix, niet alleen de omzet. Status voorlopig. Geen koopadvies.",
+    depth: [
+      {
+        title: "Verhaal",
+        body: "Bio-Techne levert proteïne-reagens, diagnostische kits en instrumenten. De terugkerende laag is niet één kit in een koelkast, maar de machine die specialty-consumables blijft leveren. S 86,4, status voorlopig. Geen kooptips.",
+      },
+      {
+        title: "Wat houd je?",
+        body: "Als het instrument of de kit geleverd is, houdt Bio-Techne zelf de productie van reagens en kits. Consumables op het labpark zijn de kern naast R&D. Protein sciences en diagnostics geven enige breedte; specialty consumables blijven het zwaartepunt.",
+      },
+      {
+        title: "Hoe het geld binnenkomt",
+        body: "Boekjaar tot 30 juni 2026, Form 10-K: omzet 1,22 mld USD, brutomarge 65,8%, bedrijfsresultaat 251,9 mln, operationele kas 292,1 mln. Vrije kasstroom ongeveer 21,7% van de omzet. Kas plus korte beleggingen 264,7 mln tegenover schulden 358,5 mln; current ratio 3,46. Consumables zijn ongeveer 81% van de omzet.",
+      },
+      {
+        title: "Waar het schuurt",
+        body: "Onderzoeksbudgetten van klanten. Concurrentie in reagents. Supply van biologische materialen. Acquisitie-integratie. Geen aparte stresstest in de jaarrekening. Geen kooptips.",
+      },
+      {
+        title: "Wat telt als feit",
+        body: "SEC CIK0000842023, 10-K accession 0001104659-26-100322. Desk-run 2026-09-07-aura-s-top100. S blijft 86,4.",
+      },
+    ],
     reading: [
       {
         title: "Automatisering",
@@ -345,16 +379,46 @@ export const companies: Company[] = [
     run: "2026-09-07-aura-s-top100",
     specialSlug: "2026-09-tesla",
     snapshot: [
+      { label: "Boekjaar-einde", value: "31 dec 2025" },
       { label: "Omzet", value: "94,83 mld USD" },
       { label: "Automotive", value: "65,82 mld USD" },
       { label: "Energy", value: "12,77 mld USD" },
       { label: "Services", value: "12,53 mld USD" },
+      { label: "Bedrijfsresultaat", value: "4,36 mld USD" },
       { label: "Brutomarge", value: "18,0%" },
       { label: "Vrije kasstroom / omzet", value: "6,6%" },
+      { label: "Kas + korte beleggingen", value: "44,06 mld USD" },
+      { label: "Schulden", value: "6,58 mld USD" },
     ],
     pillars: { automation: 95.8, utility: 49.2, resilience: 70.2, flex: 74.2, customers: 88.0, ai: 10.0 },
     business:
       "Tesla fabriceert elektrische auto’s en energieproducten in eigen fabrieken, en houdt daarboven een softwarelaag: over-the-air updates, FSD Supervised, connectiviteit en energiecontrole — ook ná verkoop of lease van het ijzer.",
+    plainLede:
+      "Tesla maakt auto’s en energieproducten. Daarna houdt het de software die op dat ijzer blijft draaien.",
+    readGuide:
+      "Lees wat bij Tesla blijft als de auto de deur uit is. Een aparte FSD-omzetregel staat niet in de 10-K. Status voorlopig. Geen koopadvies.",
+    depth: [
+      {
+        title: "Verhaal",
+        body: "Eigen fabrieken plus een gehouden softwarelaag. Wie de auto “bezit”, blijft gebruiker van Tesla’s stack. S 84,6, status voorlopig. Geen kooptips.",
+      },
+      {
+        title: "Wat houd je?",
+        body: "Updates, FSD Supervised, connectiviteit en energiesturing op verkocht én geleased materieel. De leeswijze vraagt niet naar het stuur.",
+      },
+      {
+        title: "Hoe het geld binnenkomt",
+        body: "FY 2025: omzet 94,83 mld USD (automotive 65,82 · energy 12,77 · services 12,53). Brutomarge 18,0%. Vrije kasstroom 6,6% van de omzet. Kas 44,06 mld tegenover schulden 6,58 mld. FSD-abonnementen (1,1 mln in een IR-exhibit) zijn een telling, geen dollarlijn in de filing.",
+      },
+      {
+        title: "Waar het schuurt",
+        body: "Autovolume, prijs, incentives, concurrentie, FSD/robotaxi-execution, cyclische energy, regulering. Hardwarecycli blijven de hefboom.",
+      },
+      {
+        title: "Wat telt als feit",
+        body: "SEC Form 10-K CIK 0001318605, accession 0001628280-26-003952. S blijft 84,6. Zonder AI-plus zou S 74,6 zijn — researchvergelijking, geen kooplijst.",
+      },
+    ],
     reading: [
       {
         title: "Automatisering",
@@ -449,6 +513,92 @@ export const companies: Company[] = [
       "SEC companyfacts CIK0001441816; 10-K accession 0001628280-26-016799. Score gecorrigeerd van 86,7 naar 84,3 op 9 sep 2026 (K 100,0 → 84,0).",
   },
   {
+    ticker: "ISRG",
+    name: "Intuitive Surgical",
+    exchange: "NASDAQ",
+    continent: "Noord-Amerika",
+    sector: "Robotchirurgie",
+    heldLayer: "Robotchirurgisch systeempark + instrumenten",
+    s: 81.7,
+    status: "VOORLOPIG",
+    filing: "FY eind 31 dec 2025 · Form 10-K",
+    run: "2026-09-07-aura-s-top100",
+    specialSlug: "2026-09-isrg",
+    snapshot: [
+      { label: "Boekjaar-einde", value: "31 dec 2025" },
+      { label: "Omzet", value: "10,06 mld USD" },
+      { label: "Brutomarge", value: "66,0%" },
+      { label: "Bedrijfsresultaat", value: "2,95 mld USD" },
+      { label: "Operationele kas", value: "3,03 mld USD" },
+      { label: "Vrije kasstroom / omzet", value: "24,7%" },
+      { label: "OCF / omzet", value: "30,1%" },
+      { label: "Kas + korte beleggingen", value: "5,93 mld USD" },
+      { label: "Schulden", value: "0,0 mln USD" },
+      { label: "Current ratio", value: "4,87" },
+      { label: "R&D-intensiteit", value: "13,0%" },
+    ],
+    pillars: { automation: 94.0, utility: 100.0, resilience: 75.4, flex: 75.2, customers: 60.0, ai: 0 },
+    business:
+      "Intuitive bouwt robotische operatiesystemen (da Vinci, Ion) plus instrumenten, accessoires en diensten. Het geplaatste park plus instrumenten vormen de terugkerende laag.",
+    plainLede:
+      "Intuitive zet operatierobots in ziekenhuizen. Daarna houdt het de instrumenten die op dat park blijven terugkomen.",
+    readGuide:
+      "Lees park plus instrumenten, niet alleen de systeemverkoop. Classic NRR zagen we niet. Status voorlopig. Geen koopadvies.",
+    depth: [
+      {
+        title: "Verhaal",
+        body: "da Vinci en Ion plus de instrumenten erop. S 81,7, status voorlopig. Geen kooptips.",
+      },
+      {
+        title: "Wat houd je?",
+        body: "Systemen, IP en instrumenten op het ziekenhuispark. Connected operations, geen eenmalige doos.",
+      },
+      {
+        title: "Hoe het geld binnenkomt",
+        body: "FY 2025: omzet 10,06 mld USD, brutomarge 66,0%, bedrijfsresultaat 2,95 mld, operationele kas 3,03 mld (ongeveer 30,1% van de omzet). Kas 5,93 mld, schulden nul, current ratio 4,87. R&D 13,0%. Retentie zit in parkgedrag, niet in een SaaS-NRR.",
+      },
+      {
+        title: "Waar het schuurt",
+        body: "Procedurevolume, ziekenhuis-investeringen, PMA-regulering, robotica-concurrentie, instrumentenprijzen en vergoeding.",
+      },
+      {
+        title: "Wat telt als feit",
+        body: "SEC CIK0001035267, 10-K accession 0001035267-26-000010. Desk-run 2026-09-07-aura-s-top100. S blijft 81,7.",
+      },
+    ],
+    reading: [
+      {
+        title: "Automatisering",
+        body: "Eigen systemen en IP. De operatie draait op het park dat Intuitive zelf houdt, plus de instrumentenlaag.",
+      },
+      {
+        title: "Utiliteit",
+        body: "Vrije kasstroom ~24,7% van de omzet, operationele kas ~30,1%, brutomarge 66,0%. De park-machine zet omzet om in kas.",
+      },
+      {
+        title: "Resilience",
+        body: "Kasrijk, schuldvrij, current ratio 4,87. Procedurevolume blijft de schokvector.",
+      },
+      {
+        title: "Aanpassingsvermogen",
+        body: "da Vinci en Ion geven enige productbreedte; ziekenhuis-CapEx blijft de poort.",
+      },
+      {
+        title: "Klantparticipatie",
+        body: "K 60,0 omdat classic NRR ontbreekt. Parkproxy, geen verzonnen retentioncijfer.",
+      },
+    ],
+    risks: [
+      "Procedurevolume",
+      "Ziekenhuis-CapEx",
+      "PMA-regulering",
+      "Robotica-concurrentie",
+      "Instrumentenprijzen en reimbursement",
+    ],
+    source:
+      "SEC CIK0001035267; 10-K accession 0001035267-26-000010. Desk score run 2026-09-07-aura-s-top100. S 81,7 ongewijzigd uit de bron.",
+  },
+  {
     ticker: "HEI",
     name: "HEICO",
     exchange: "NYSE",
@@ -460,7 +610,7 @@ export const companies: Company[] = [
     worldRank: 27,
     filing: "FY 2025 · Form 10-K",
     run: "2026-09-07-aura-s-top100",
-    specialSlug: "2026-09-industrials-cluster",
+    specialSlug: "2026-09-hei",
     snapshot: [
       { label: "Omzet", value: "4,49 mld USD" },
       { label: "Aftermarket + repair", value: "59,6%" },
@@ -472,6 +622,32 @@ export const companies: Company[] = [
     pillars: { automation: 80.5, utility: 97.3, resilience: 66.3, flex: 72.5, customers: 89.2, ai: 0 },
     business:
       "HEICO is in deze cluster de bezitter van een productieve aftermarket-laag: Flight Support (PMA/manufacture en aftermarket/repair) en Electronic Technologies. De laag blijft bij manufacture/repair-ownership, niet bij de eenmalige OEM-verkoop.",
+    plainLede:
+      "HEICO maakt en herstelt vliegtuigonderdelen. Airlines blijven die aftermarket nodig hebben.",
+    readGuide:
+      "Lees aftermarket plus repair, niet de eenmalige OEM-verkoop. Status voorlopig. Geen koopadvies.",
+    depth: [
+      {
+        title: "Verhaal",
+        body: "Flight Support (PMA, manufacture, aftermarket) en Electronic Technologies. Aftermarket plus repair is 59,6% van de mix. S 80,0, status voorlopig. Geen kooptips.",
+      },
+      {
+        title: "Wat houd je?",
+        body: "PMA-IP en repair-werk in eigen huis. Een aftermarket-claim op geïnstalleerd vliegtuigijzer, geen tip op één type.",
+      },
+      {
+        title: "Hoe het geld binnenkomt",
+        body: "Omzet 4,49 mld USD. Brutomarge 39,8%. Vrije-kasstroommarge 19,2%. Current ratio 2,83. Netto schuld / EBITDA 1,61×. Desk-run 2026-09-07-aura-s-top100.",
+      },
+      {
+        title: "Waar het schuurt",
+        body: "Luchtvaartcyclus, OEM-weerstand tegen PMA, FAA/EASA, bolt-on integratie. Geen aparte hersteltest in deze run.",
+      },
+      {
+        title: "Wat telt als feit",
+        body: "Live dossier HEI plus desk-run 2026-09-07-aura-s-top100. S blijft 80,0. World-rang 27.",
+      },
+    ],
     reading: [
       {
         title: "Automatisering",
@@ -571,21 +747,52 @@ export const companies: Company[] = [
     s: 72.8,
     status: "VOORLOPIG",
     worldRank: 71,
-    filing: "FY 2025 · Form 10-K",
+    filing: "FY eind 31 dec 2025 · Form 10-K",
     run: "2026-09-07-aura-s-top100",
-    specialSlug: "2026-09-industrials-cluster",
+    specialSlug: "2026-09-gatx",
     snapshot: [
+      { label: "Boekjaar-einde", value: "31 dec 2025" },
       { label: "Omzet", value: "1,74 mld USD" },
       { label: "Lease-omzet", value: "1,49 mld USD" },
       { label: "Rail North America", value: "68,2%" },
+      { label: "Vloot (wholly owned)", value: "~156.000 railcars" },
       { label: "Renewal success", value: "87,3%" },
-      { label: "Utilization (non-boxcar)", value: "99%" },
-      { label: "OCF-marge", value: "~37,2%" },
+      { label: "Utilization (non-boxcar)", value: "99,0%" },
+      { label: "Operationele kas", value: "648,1 mln USD" },
+      { label: "OCF-marge", value: "37,2%" },
+      { label: "Unrestricted cash", value: "743 mln USD" },
+      { label: "Recourse debt", value: "~12,45 mld USD" },
       { label: "Net debt / EBITDA", value: "~10,7×" },
     ],
     pillars: { automation: 90.9, utility: 100.0, resilience: 36.3, flex: 69.5, customers: 77.6, ai: 0 },
     business:
       "GATX is de lessor-pool in de cluster: de onderneming bezit de railcar-vloot en verhuurt full-service. De productieve laag is eigendom van de vloot plus hoge renewal en utilization — bezit + lange lease, geen aftermarket op klantijzer.",
+    plainLede:
+      "GATX rijdt geen treinen. Het bezit de wagons en verhuurt ze full-service.",
+    readGuide:
+      "Lees vlootbezit en hefboom samen. Kas ná nieuwe wagons is negatief; de score leest de operationele kas. Status voorlopig. Geen koopadvies.",
+    depth: [
+      {
+        title: "Verhaal",
+        body: "Een lessor, geen railroad. Lease-omzet 1,49 mld van 1,74 mld. S 72,8, status voorlopig. Geen kooptips.",
+      },
+      {
+        title: "Wat houd je?",
+        body: "Eigen vloot van ongeveer 156.000 railcars plus full-service. Renewal 87,3%, non-boxcar occupancy 99,0%. GABX sloot 1 januari 2026 — buiten deze FY25-P&L.",
+      },
+      {
+        title: "Hoe het geld binnenkomt",
+        body: "Operationele kas 648,1 mln (37,2% van de omzet). Onbeperkte kas 743 mln. Recourse-schuld ~12,45 mld. Portfolio-kas ná vlootinvesteringen is negatief; nut leest de OCF-marge, niet die vrije kas.",
+      },
+      {
+        title: "Waar het schuurt",
+        body: "Netto schuld / EBITDA-proxy 10,7× is het wringpunt. Rail North America 68,2%. Herstel ongetest in deze run.",
+      },
+      {
+        title: "Wat telt als feit",
+        body: "Form 10-K accession 0000040211-26-000018, CIK0000040211. Desk-run 2026-09-07-aura-s-top100. S blijft 72,8.",
+      },
+    ],
     reading: [
       {
         title: "Automatisering",
@@ -614,7 +821,95 @@ export const companies: Company[] = [
       "Residual value van de vloot",
       "Cyclus in North American rail",
     ],
-    source: "Desk score run 2026-09-07-aura-s-top100 · World-rang #71. Cluster: bezit vs huur.",
+    source: "Desk score run 2026-09-07-aura-s-top100 · World-rang #71. Form 10-K accession 0000040211-26-000018.",
+  },
+  {
+    ticker: "ASML",
+    name: "ASML",
+    exchange: "AEX / NASDAQ",
+    continent: "Europa",
+    sector: "Lithografie",
+    heldLayer: "EUV-/DUV-lithografie + installed base/service",
+    s: 70.7,
+    status: "VOORLOPIG",
+    filing: "FY eind 31 dec 2025 · Form 20-F",
+    run: "2026-09-07-aura-s-top100",
+    specialSlug: "2026-09-asml",
+    snapshot: [
+      { label: "Boekjaar-einde", value: "31 dec 2025" },
+      { label: "Omzet", value: "32,67 mld EUR" },
+      { label: "Brutowinst", value: "17,26 mld EUR" },
+      { label: "Bedrijfsresultaat", value: "11,30 mld EUR" },
+      { label: "Nettowinst", value: "9,61 mld EUR" },
+      { label: "Operationele kas", value: "12,66 mld EUR" },
+      { label: "R&D", value: "4,70 mld EUR" },
+      { label: "RPO", value: "46,50 mld EUR" },
+      { label: "Brutomarge", value: "~52,8%" },
+      { label: "FCF / omzet", value: "~33,9%" },
+      { label: "OCF / omzet", value: "~38,7%" },
+      { label: "Aftermarket-proxy", value: "~28%" },
+      { label: "Current ratio", value: "~1,53" },
+      { label: "ND / EBITDA", value: "~0,50×" },
+    ],
+    pillars: { automation: 96.0, utility: 100.0, resilience: 60.5, flex: 75.0, customers: 9.0, ai: 0 },
+    business:
+      "ASML bouwt lithografiesystemen waarmee chipfabrieken circuits op wafers schrijven. De gehouden laag is EUV-/DUV plus service op de installed base — niet de chipvraag zelf.",
+    plainLede:
+      "ASML maakt de machines waarmee chipfabrieken patronen schrijven. Daarna houdt het de service op die machines.",
+    readGuide:
+      "Cijfers in euro uit de 20-F. Klanten-score 9,0 is concentratie bij weinig fabs, geen oordeel over service. Status voorlopig. Geen koopadvies.",
+    depth: [
+      {
+        title: "Verhaal",
+        body: "De schrijfmachine van de fab, plus installed base en service. S 70,7, status voorlopig. Geen kooptips.",
+      },
+      {
+        title: "Wat houd je?",
+        body: "EUV, DUV, upgrades (High-NA) en aftermarket. Geen claim op TSMC’s, Intels of Samsungs chipvolumes.",
+      },
+      {
+        title: "Hoe het geld binnenkomt",
+        body: "FY 2025, euro: omzet 32,67 mld, bedrijfsresultaat 11,30 mld, operationele kas 12,66 mld, R&D 4,70 mld, RPO 46,50 mld. Desk-run: FCF/omzet ~33,9%, aftermarket-proxy ~28%. Sommige kaslabels in de desk-snapshot staan als USD; companyfacts is euro — geen conversie, primaire cijfers blijven euro.",
+      },
+      {
+        title: "Waar het schuurt",
+        body: "Fab-investeringscyclus, exportcontrole, single-source in de EUV-keten, klantconcentratie (K 9,0). S blijft 70,7.",
+      },
+      {
+        title: "Wat telt als feit",
+        body: "Form 20-F accession 0001628280-26-011378, CIK 0000937966. Desk-run 2026-09-07-aura-s-top100. S ongemoeid 70,7.",
+      },
+    ],
+    reading: [
+      {
+        title: "Automatisering",
+        body: "Eigen lithografie-IP en systemen. De productieve laag is de scanner plus service, niet de foundry.",
+      },
+      {
+        title: "Utiliteit",
+        body: "Hoge kasconversie op classic FCF/OCF-lezing (U 100). Aftermarket-proxy ~28% van de mix.",
+      },
+      {
+        title: "Resilience",
+        body: "Kasrijk in absolute zin, R 60,5. Cyclus en geopolitiek blijven de schok.",
+      },
+      {
+        title: "Aanpassingsvermogen",
+        body: "High-NA en installed-base upgrades, met lange levertijden. A-flex 75,0.",
+      },
+      {
+        title: "Klantparticipatie",
+        body: "K 9,0 door concentratie bij weinig fabs. Clusterrisico, geen verzonnen NRR.",
+      },
+    ],
+    risks: [
+      "Semicon-capexcyclus",
+      "Exportcontrole en geopolitiek",
+      "Single-source in de EUV-keten",
+      "Klantconcentratie (TSMC, Intel, Samsung)",
+    ],
+    source:
+      "SEC companyfacts CIK0000937966; 20-F accession 0001628280-26-011378. Desk score run 2026-09-07-aura-s-top100. S 70,7 ongewijzigd uit de bron. Primaire cijfers in EUR.",
   },
   {
     ticker: "URI",
@@ -694,4 +989,6 @@ export function neighbors(ticker: string) {
 }
 
 export const etalageTickers = ["PME", "DHR", "TECH"] as const;
+/** Cover samples — featured depth, not extra etalage rows. */
+export const sampleTickers = ["HEI", "GATX"] as const;
 export const mandenTickers = ["SAP", "DLB"] as const;

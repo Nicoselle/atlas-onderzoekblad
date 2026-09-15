@@ -138,7 +138,7 @@ export const baskets: Basket[] = [
     names: 20,
     scored: 20,
     note: "Life tools, robotchirurgie, diagnostiek. Incl. PME · DHR · TECH.",
-    tickers: ["PME", "DHR", "TECH"],
+    tickers: ["PME", "DHR", "TECH", "ISRG"],
   },
 ];
 
