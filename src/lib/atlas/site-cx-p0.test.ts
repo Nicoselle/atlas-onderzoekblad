@@ -1,5 +1,7 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import { test } from "node:test";
+import { fileURLToPath } from "node:url";
 import { etalageTickers, getCompany, mandenTickers, rankedCompanies, sampleTickers } from "./companies.ts";
 import {
   BRIDGE_BODY,
@@ -36,6 +38,8 @@ import {
   SUBSCRIBE_TRUST,
   SUBSCRIBE_UNDER,
   FOOTER_NOTE,
+  GROK_BOT_COLOPHON,
+  GROK_BOT_METHODE,
 } from "./copy.ts";
 import { formatNlDate } from "./format.ts";
 import { speciales } from "./articles.ts";
@@ -88,6 +92,28 @@ test("dual-run banner points at live here.now in plain Dutch", () => {
   assert.equal(BRIDGE_BODY, "Nieuwe Atlas-site (test). De oude site blijft online.");
   assert.equal(BRIDGE_CTA, "Naar de huidige live Atlas");
   assert.equal(HERE_NOW_URL, "https://snowy-crest-h56g.here.now/");
+});
+
+test("honest Grok Bot disclosure is calm and off the hero", () => {
+  assert.equal(GROK_BOT_COLOPHON, "Atlas is een Grok Bot-project.");
+  assert.equal(
+    GROK_BOT_METHODE,
+    "Dit blad draait op Grok Bots: assistenten die jaarrekeningen lezen en het onderzoek blad-klaar zetten. Nico blijft eindredacteur.",
+  );
+  assert.doesNotMatch(heroBundle, /Grok Bot/);
+  assert.doesNotMatch(GROK_BOT_COLOPHON, /powered by|Tip-ban|kooptip/i);
+  assert.doesNotMatch(GROK_BOT_METHODE, /powered by|Tip-ban|kooptip/i);
+  assert.match(GROK_BOT_METHODE, /Nico blijft eindredacteur/);
+});
+
+test("Grok Bot disclosure is wired into footer and methode", () => {
+  const footer = readFileSync(fileURLToPath(new URL("../../components/atlas/site-footer.tsx", import.meta.url)), "utf8");
+  const methode = readFileSync(fileURLToPath(new URL("../../routes/methode.tsx", import.meta.url)), "utf8");
+  assert.match(footer, /Grok Bot/);
+  assert.match(footer, /GROK_BOT_COLOPHON/);
+  assert.match(methode, /Grok Bot/);
+  assert.match(methode, /GROK_BOT_METHODE/);
+  assert.match(methode, /Over dit blad/);
 });
 
 test("inschrijven copy is the commercial SKU, without tip-ban chrome", () => {
@@ -153,6 +179,8 @@ test("chrome copy does not shout the tip-ban; methode keeps one calm line", () =
     HERO_PROMISE,
     SITE_DESCRIPTION,
     FOOTER_NOTE,
+    GROK_BOT_COLOPHON,
+    GROK_BOT_METHODE,
     SUBSCRIBE_LEDE,
     SUBSCRIBE_TRUST,
     ETALAGE_ABOVE,
