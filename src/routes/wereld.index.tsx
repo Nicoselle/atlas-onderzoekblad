@@ -2,8 +2,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHero } from "@/components/atlas/page-hero";
 import { SiteShell } from "@/components/atlas/site-shell";
 import { StatusBadge } from "@/components/atlas/status-badge";
-import { companies } from "@/lib/atlas/companies";
+import { companies, getCompany } from "@/lib/atlas/companies";
 import { formatNlDate } from "@/lib/atlas/format";
+import { deskRowsForSlug, previewTickers } from "@/lib/atlas/mand-rows";
 import { baskets, CENSUS_DATE, continents, INCOMPLETE_TOTAL, SCORED_TOTAL } from "@/lib/atlas/world";
 
 export const Route = createFileRoute("/wereld/")({
@@ -48,7 +49,11 @@ function WereldPage() {
         <h2 className="font-display text-3xl font-medium tracking-tight">Continenten</h2>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {continents.map((c) => {
-            const listed = companies.filter((co) => co.continent === c.name);
+            const deskPreview = previewTickers(c.id);
+            const listed =
+              deskPreview.length > 0
+                ? deskPreview
+                : companies.filter((co) => co.continent === c.name).map((co) => co.ticker);
             return (
               <article
                 id={c.id}
@@ -72,15 +77,9 @@ function WereldPage() {
                 </p>
                 {listed.length > 0 ? (
                   <ul className="mt-4 flex flex-wrap gap-2">
-                    {listed.map((co) => (
-                      <li key={co.ticker}>
-                        <Link
-                          to="/dossiers/$ticker"
-                          params={{ ticker: co.ticker.toLowerCase() }}
-                          className="inline-flex min-h-8 items-center rounded-sm border border-rule px-2 font-sans text-xs tracking-wide text-ink hover:border-ink"
-                        >
-                          {co.ticker}
-                        </Link>
+                    {listed.map((ticker) => (
+                      <li key={ticker}>
+                        <TickerChip ticker={ticker} />
                       </li>
                     ))}
                   </ul>
@@ -98,48 +97,74 @@ function WereldPage() {
             Diepe manden staan hier. Open één mand; lees S als onderzoeksrang.
           </p>
           <div className="mt-8 grid gap-4 md:grid-cols-2">
-            {baskets.map((b) => (
-              <article
-                id={b.id}
-                key={b.id}
-                className="scroll-mt-24 rounded-lg bg-paper p-5 shadow-[var(--shadow-border)]"
-              >
-                <div className="flex items-baseline justify-between gap-3">
-                  <h3 className="font-display text-xl font-medium tracking-tight">{b.name}</h3>
-                  <span className="font-sans text-xs tabular-nums text-faint">
-                    {b.scored}/{b.names}
-                  </span>
-                </div>
-                <p className="mt-2 font-sans text-sm leading-relaxed text-ink-soft">{b.note}</p>
-                {b.tickers?.length ? (
-                  <ul className="mt-4 flex flex-wrap gap-2">
-                    {b.tickers.map((t) => (
-                      <li key={t}>
-                        <Link
-                          to="/dossiers/$ticker"
-                          params={{ ticker: t.toLowerCase() }}
-                          className="inline-flex min-h-8 items-center rounded-sm border border-rule px-2 font-sans text-xs tracking-wide"
-                        >
-                          {t}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                ) : null}
-                <p className="mt-5">
-                  <Link
-                    to="/wereld/$slug"
-                    params={{ slug: b.id }}
-                    className="inline-flex min-h-11 items-center font-sans text-sm text-ink underline decoration-rule underline-offset-4 hover:text-moss"
-                  >
-                    Open één mand
-                  </Link>
-                </p>
-              </article>
-            ))}
+            {baskets.map((b) => {
+              const chips = previewTickers(b.id);
+              const filled = deskRowsForSlug(b.id).length > 0;
+              return (
+                <article
+                  id={b.id}
+                  key={b.id}
+                  className="scroll-mt-24 rounded-lg bg-paper p-5 shadow-[var(--shadow-border)]"
+                >
+                  <div className="flex items-baseline justify-between gap-3">
+                    <h3 className="font-display text-xl font-medium tracking-tight">
+                      <Link
+                        to="/wereld/$slug"
+                        params={{ slug: b.id }}
+                        className="hover:text-moss"
+                      >
+                        {b.name}
+                      </Link>
+                    </h3>
+                    <span className="font-sans text-xs tabular-nums text-faint">
+                      {b.scored}/{b.names}
+                    </span>
+                  </div>
+                  <p className="mt-2 font-sans text-sm leading-relaxed text-ink-soft">{b.note}</p>
+                  {chips.length ? (
+                    <ul className="mt-4 flex flex-wrap gap-2">
+                      {chips.map((t) => (
+                        <li key={t}>
+                          <TickerChip ticker={t} />
+                        </li>
+                      ))}
+                    </ul>
+                  ) : null}
+                  <p className="mt-5">
+                    <Link
+                      to="/wereld/$slug"
+                      params={{ slug: b.id }}
+                      className="inline-flex min-h-11 items-center font-sans text-sm text-ink underline decoration-rule underline-offset-4 hover:text-moss"
+                    >
+                      {filled ? "Open de mandtabel" : "Open één mand"}
+                    </Link>
+                  </p>
+                </article>
+              );
+            })}
           </div>
         </div>
       </section>
     </SiteShell>
+  );
+}
+
+function TickerChip({ ticker }: { ticker: string }) {
+  const dossier = getCompany(ticker);
+  if (dossier) {
+    return (
+      <Link
+        to="/dossiers/$ticker"
+        params={{ ticker: dossier.ticker.toLowerCase() }}
+        className="inline-flex min-h-8 items-center rounded-sm border border-rule px-2 font-sans text-xs tracking-wide text-ink hover:border-ink"
+      >
+        {ticker}
+      </Link>
+    );
+  }
+  return (
+    <span className="inline-flex min-h-8 items-center rounded-sm border border-rule px-2 font-sans text-xs tracking-wide text-ink-soft">
+      {ticker}
+    </span>
   );
 }

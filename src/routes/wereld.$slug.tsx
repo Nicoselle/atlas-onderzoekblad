@@ -1,16 +1,17 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { MandRoster } from "@/components/atlas/mand-roster";
 import { PageHero } from "@/components/atlas/page-hero";
-import { ScoreRoster } from "@/components/atlas/score-roster";
 import { SiteShell } from "@/components/atlas/site-shell";
 import { StatusBadge } from "@/components/atlas/status-badge";
-import { companiesForPlace, resolveWorldPlace } from "@/lib/atlas/place";
+import { MAND_LEADS } from "@/lib/atlas/mand-rows";
+import { resolveWorldPlace, rowsForPlace } from "@/lib/atlas/place";
 import type { WorldPlace } from "@/lib/atlas/world";
 
 export const Route = createFileRoute("/wereld/$slug")({
   loader: ({ params }) => {
     const place = resolveWorldPlace(params.slug);
     if (!place) throw notFound();
-    return { place, companies: companiesForPlace(place) };
+    return { place, rows: rowsForPlace(place) };
   },
   head: ({ loaderData }) => ({
     meta: [{ title: `${placeTitle(loaderData?.place)} · Atlas` }],
@@ -23,12 +24,14 @@ function placeTitle(place: WorldPlace | undefined) {
 }
 
 function WorldPlacePage() {
-  const { place, companies } = Route.useLoaderData();
+  const { place, rows } = Route.useLoaderData();
   const kicker = placeKicker(place);
+  const lead = MAND_LEADS[place.item.id] ?? "Alleen namen die Atlas al heeft gelezen. S is onderzoeksrang.";
+  const scored = rows.filter((row) => row.s !== null).length;
   const empty =
     place.kind === "basket"
-      ? "Geen dossier op dit blad voor deze mand. De wereldtelling blijft staan; Atlas verzint geen filings."
-      : "Geen dossier op dit blad voor dit continent. Atlas verzint geen filings.";
+      ? "Geen desk-tabel of dossier op dit blad voor deze mand. Atlas verzint geen filings."
+      : "Geen desk-tabel of dossier op dit blad voor dit continent. Atlas verzint geen filings.";
 
   return (
     <SiteShell>
@@ -37,26 +40,26 @@ function WorldPlacePage() {
         title={place.item.name}
         dek={
           <>
-            {place.item.note}{" "}
+            {lead}{" "}
             <StatusBadge status="VOORLOPIG" className="ml-1 align-middle" />
           </>
         }
         aside={
           <p className="font-sans text-sm text-muted">
             <span className="block font-display text-4xl font-medium tabular-nums text-ink">
-              {place.item.scored}
+              {rows.length > 0 ? scored : place.item.scored}
             </span>
-            gescoord · {place.item.names} namen
+            gescoord · {rows.length > 0 ? rows.length : place.item.names} namen
           </p>
         }
       />
 
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
-        <p className="mb-8 font-sans text-sm text-muted">
-          Primaire tabel toont alleen totaal S — onderzoeksrang. A · U · R · A-flex
-          staan in de lezing eronder.
+        <p className="mb-4 font-sans text-sm text-muted">
+          Primaire tabel toont alleen bestaande S — onderzoeksrang.
         </p>
-        <ScoreRoster companies={companies} empty={empty} />
+        <p className="mb-8 font-sans text-sm text-muted">{place.item.note}</p>
+        <MandRoster rows={rows} empty={empty} />
         <p className="mt-8 font-sans text-sm">
           <Link to="/wereld" className="underline decoration-rule underline-offset-4">
             ← Continenten & manden
