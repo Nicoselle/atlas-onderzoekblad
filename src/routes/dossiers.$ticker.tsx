@@ -41,7 +41,7 @@ function DossierPage() {
                 {company.plainLede ?? `Wat dit bedrijf zelf houdt: ${company.heldLayer}.`}
               </p>
               <p className="mt-3 max-w-xl font-sans text-sm leading-relaxed text-muted">
-                {company.filing}. {company.readGuide ?? "Cijfers uit de jaarrekening. Geen kooptips."}
+                {company.filing}. {company.readGuide ?? "Cijfers uit de jaarrekening."}
               </p>
               <div className="mt-5 flex flex-wrap items-center gap-3">
                 <StatusBadge status={company.status} />
@@ -128,7 +128,7 @@ function DossierPage() {
             ) : null}
             <p className="mt-6 font-sans text-xs leading-relaxed text-faint">{company.source}</p>
             <p className="mt-4 font-sans text-xs leading-relaxed text-muted">
-              Onderzoek, status {company.status.toLowerCase()}. Geen kooptips. Geen koersdoelen.
+              Onderzoek, status {company.status.toLowerCase()}.
             </p>
           </aside>
         </div>

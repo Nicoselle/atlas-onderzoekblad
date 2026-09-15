@@ -12,7 +12,7 @@ export const HERO_LEAD =
   "We lezen jaarrekeningen om te zien wie de cruciale techniek of het product écht in handen heeft — en wie alleen huur betaalt.";
 
 export const HERO_PROMISE =
-  "Geen kooptips. Wel een vaste score (0–100, voorlopig) en dossiers die je kunt nalezen.";
+  "Een vaste score (0–100, voorlopig) en dossiers die je kunt nalezen.";
 
 export const HERO_LENS =
   "Je krijgt een leeswijze: blijft het bedrijf eigenaar van wat de klant elke maand nodig heeft, of stopt de relatie bij de kassa?";
@@ -30,15 +30,13 @@ export const FORM_BUTTON = "Houd me op de hoogte";
 export const SUBSCRIBE_KICKER = "Nieuwsbrief";
 export const SUBSCRIBE_TITLE = "Blijf op de hoogte";
 export const SUBSCRIBE_LEDE =
-  "Korte stukken over bedrijven, rechtstreeks uit de jaarrekening. Geen kooptips. Eén e-mail is genoeg.";
-export const SUBSCRIBE_TRUST = "Onderzoek · jaarrekeningen eerst · geen kooptips";
+  "Korte stukken over bedrijven, rechtstreeks uit de jaarrekening. Eén e-mail is genoeg.";
+export const SUBSCRIBE_TRUST = "Onderzoek · jaarrekeningen eerst";
 export const SUBSCRIBE_STATUS = "De lijst wordt nog gekoppeld. Het formulier is al klaar.";
-export const SUBSCRIBE_UNDER =
-  "We sturen geen koop- of verkoopadvies. De score op het blad is een onderzoeksrang, geen advies om te handelen.";
+export const SUBSCRIBE_UNDER = "Eén mail wanneer er iets te lezen valt.";
 
 export const ETALAGE_HEADING = "Drie nagekeken namen";
-export const ETALAGE_ABOVE =
-  "Drie bedrijven die we hebben nagekeken. De cijfers zijn onderzoek, geen advies om te kopen.";
+export const ETALAGE_ABOVE = "Drie bedrijven die we hebben nagekeken.";
 export const ETALAGE_BELOW = "De onderbouwing staat in het dossier.";
 export const ETALAGE_STATUS = "status voorlopig";
 
@@ -48,13 +46,10 @@ export const COVER_NUMMERS_LEDE =
   "Twee langere voorbeelden: GATX en HEICO. Meer stukken staan op de huidige live Atlas.";
 
 export const SITE_TITLE = "Atlas — onderzoekblad over bedrijven";
-export const SITE_DESCRIPTION =
-  "Atlas is een onderzoekblad over bedrijven. We lezen jaarrekeningen. Geen kooptips.";
+export const SITE_DESCRIPTION = "Atlas is een onderzoekblad over bedrijven. We lezen jaarrekeningen.";
 export const HEADER_SUB = "onderzoekblad";
 
-export const TIP_BAN_FOOTER =
-  "Persoonlijk onderzoek. Eerst de jaarrekening. Geen kooptips. Geen beleggingsadvies. Scores 0–100, status voorlopig — een leeswijze, geen kooplijst.";
-export const TIP_BAN_SHORT = "Geen kooptips. Geen koersdoelen. Geen koop- of verkoopsignalen.";
+export const FOOTER_NOTE = "Scores 0–100, status voorlopig.";
 
 export const HERE_NOW_URL = "https://snowy-crest-h56g.here.now/";
 export const BRIDGE_KICKER = "Twee sites";
@@ -64,8 +59,8 @@ export const BRIDGE_CTA = "Naar de huidige live Atlas";
 export const METHODE_PRODUCT = [
   {
     kicker: "Waarom Atlas",
-    title: "Diepte zonder kooptips",
-    body: "We lezen jaarrekeningen voor wie bedrijven wil begrijpen. Geen ladder van koopsignalen. Wel een vaste rang: wie houdt wat de klant elke maand nodig heeft?",
+    title: "Diepte in de jaarrekening",
+    body: "We lezen jaarrekeningen voor wie bedrijven wil begrijpen. Wel een vaste rang: wie houdt wat de klant elke maand nodig heeft?",
   },
   {
     kicker: "Hoe we scoren",
@@ -74,28 +69,27 @@ export const METHODE_PRODUCT = [
   },
   {
     kicker: "Wat we nooit doen",
-    title: "Geen koopadvies",
-    body: "Geen koersdoelen. Geen kooplijst. Geen “koop dit”. Namen uitlichten is onderzoek, geen bevel.",
+    title: "Onderzoek, geen advies",
+    body: "Atlas is onderzoek, geen beleggingsadvies.",
   },
 ] as const;
 
 export const COVER_FAQ = [
   {
     q: "Wat is Atlas?",
-    a: "Een onderzoekblad over bedrijven. We lezen jaarrekeningen. We geven geen kooptips.",
+    a: "Een onderzoekblad over bedrijven. We lezen jaarrekeningen.",
   },
   {
     q: "Hoe werkt de score?",
-    a: "Vier vragen over het bedrijf worden één cijfer van 0 tot 100. De methode staat op de methode-pagina. Het is een leeswijze, geen tip.",
+    a: "Vier vragen over het bedrijf worden één cijfer van 0 tot 100. De methode staat op de methode-pagina.",
   },
   {
-    q: "Geeft Atlas koopadvies?",
-    a: "Nee. Namen uitlichten is onderzoek, geen kooplijst. Geen koop- of verkoopsignalen.",
+    q: "Wat betekent voorlopig?",
+    a: "De jaarrekening is gelezen, maar niet elk veld is hard. De score mag getoond, met voorbehoud.",
   },
 ] as const;
 
 export const LEESGRENS_ITEMS = [
-  "Geen kooptips, geen koersdoelen, geen kooplijst.",
   "Oude scores rekenen we niet om naar de nieuwe schaal.",
   "De score gaat over het bedrijf, niet over een persoon.",
   "Klantbehoud zit in de berekening, niet als extra letter op het blad.",
@@ -108,7 +102,7 @@ export const GLOSSARY = [
   },
   {
     term: "AURA/S",
-    def: "Onze score van 0 tot 100: automatisering, nut, schokbestendigheid, aanpassingsvermogen. Geen tip.",
+    def: "Onze score van 0 tot 100: automatisering, nut, schokbestendigheid, aanpassingsvermogen.",
   },
   {
     term: "Voorlopig",

@@ -26,9 +26,7 @@ function placeTitle(place: WorldPlace | undefined) {
 function WorldPlacePage() {
   const { place, rows } = Route.useLoaderData();
   const kicker = placeKicker(place);
-  const lead =
-    MAND_LEADS[place.item.id] ??
-    "Alleen namen die Atlas al heeft gelezen. S is onderzoeksrang, geen kooptip.";
+  const lead = MAND_LEADS[place.item.id] ?? "Alleen namen die Atlas al heeft gelezen. S is onderzoeksrang.";
   const scored = rows.filter((row) => row.s !== null).length;
   const empty =
     place.kind === "basket"
@@ -57,8 +55,8 @@ function WorldPlacePage() {
       />
 
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
-        <p className="mb-4 font-sans text-sm text-muted" role="note">
-          Tip-ban. Geen kooptip. Geen koersdoel. Primaire tabel toont alleen bestaande S.
+        <p className="mb-4 font-sans text-sm text-muted">
+          Primaire tabel toont alleen bestaande S — onderzoeksrang.
         </p>
         <p className="mb-8 font-sans text-sm text-muted">{place.item.note}</p>
         <MandRoster rows={rows} empty={empty} />

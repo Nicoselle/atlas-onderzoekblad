@@ -1,6 +1,6 @@
 # Atlas — onderzoekblad over bedrijven
 
-We lezen jaarrekeningen. Geen kooptips.
+We lezen jaarrekeningen.
 
 Dit repo is de duurzame codebase voor de Grok-host. De live site op here.now is een andere publicatie. Cutover en DNS blijven buiten deze pass.
 
@@ -19,4 +19,4 @@ npm run build
 
 Open http://localhost:8080 — cover (geen AURA/S in de hero), nieuwsbrief, methode, etalage PME/DHR/TECH. Banner “Twee sites” wijst naar here.now.
 
-Persoonlijk onderzoek. Geen kooptips.
+Persoonlijk onderzoek.

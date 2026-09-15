@@ -18,7 +18,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "Software",
       s: 80.5,
       status: "VOORLOPIG",
-      lezing: "Dassault Systèmes (DSY) — europa. Hergebruik Top100-score. S=80,5 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "Dassault Systèmes (DSY) — europa. Hergebruik Top100-score. S=80,5 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum.",
     },
     {
       ticker: "ATCO.A",
@@ -26,7 +26,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "Industrieel/automatisering",
       s: 76.5,
       status: "VOORLOPIG",
-      lezing: "Atlas Copco (ATCO.A) — europa. Hergebruik Top100-score. S=76,5 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "Atlas Copco (ATCO.A) — europa. Hergebruik Top100-score. S=76,5 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum.",
     },
     {
       ticker: "NVO",
@@ -34,7 +34,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "Semis/equipment",
       s: 74.8,
       status: "VOORLOPIG",
-      lezing: "Novo Nordisk (NVO) — denmark. S=74,8 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht de knip (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "Novo Nordisk (NVO) — denmark. S=74,8 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht de knip (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum.",
     },
     {
       ticker: "SAP",
@@ -42,7 +42,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "Software",
       s: 74.7,
       status: "VOORLOPIG",
-      lezing: "SAP (SAP) — germany. S=74,7 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht de knip (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "SAP (SAP) — germany. S=74,7 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht de knip (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum.",
     },
     {
       ticker: "RELX",
@@ -50,7 +50,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "Software",
       s: 74.3,
       status: "VOORLOPIG",
-      lezing: "RELX (RELX) — uk. S=74,3 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht de knip (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "RELX (RELX) — uk. S=74,3 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht de knip (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum.",
     },
     {
       ticker: "NVS",
@@ -58,7 +58,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "Semis/equipment",
       s: 72.9,
       status: "VOORLOPIG",
-      lezing: "Novartis (NVS) — switzerland. S=72,9 (VOORLOPIG, SEC/bedrijfsvoering-proxies): utiliteit sterk, veerkracht de knip (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "Novartis (NVS) — switzerland. S=72,9 (VOORLOPIG, SEC/bedrijfsvoering-proxies): utiliteit sterk, veerkracht de knip (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum.",
     },
     {
       ticker: "SAND",
@@ -66,7 +66,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "Industrieel/automatisering",
       s: 71.9,
       status: "VOORLOPIG",
-      lezing: "Sandvik (SAND) — europa. Hergebruik Top100-score. S=71,9 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht de knip (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "Sandvik (SAND) — europa. Hergebruik Top100-score. S=71,9 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht de knip (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum.",
     },
     {
       ticker: "ARM",
@@ -74,7 +74,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "Semis/equipment",
       s: 71.6,
       status: "VOORLOPIG",
-      lezing: "Arm (ARM) — europa. Hergebruik Top100-score. S=71,6 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "Arm (ARM) — europa. Hergebruik Top100-score. S=71,6 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum.",
     },
     {
       ticker: "ABBNY",
@@ -82,7 +82,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "Industrieel/automatisering",
       s: 70.9,
       status: "VOORLOPIG",
-      lezing: "ABB (ABBNY) — switzerland. S=70,9 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit gemiddeld, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "ABB (ABBNY) — switzerland. S=70,9 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit gemiddeld, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum.",
     },
     {
       ticker: "ASML",
@@ -90,7 +90,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "Semis/equipment",
       s: 70.7,
       status: "VOORLOPIG",
-      lezing: "ASML (ASML) — europa. Hergebruik Top100-score. S=70,7 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "ASML (ASML) — europa. Hergebruik Top100-score. S=70,7 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum.",
     },
     {
       ticker: "AZN",
@@ -98,7 +98,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "Semis/equipment",
       s: 70.7,
       status: "VOORLOPIG",
-      lezing: "AstraZeneca (AZN) — uk. S=70,7 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht de knip (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "AstraZeneca (AZN) — uk. S=70,7 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht de knip (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum.",
     },
     {
       ticker: "HEXA.B",
@@ -106,7 +106,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "Software",
       s: 70.3,
       status: "VOORLOPIG",
-      lezing: "Hexagon (HEXA.B) — europa. Hergebruik Top100-score. S=70,3 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht de knip (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "Hexagon (HEXA.B) — europa. Hergebruik Top100-score. S=70,3 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht de knip (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum.",
     },
     {
       ticker: "ASM",
@@ -114,7 +114,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "Semis/equipment",
       s: 70.0,
       status: "VOORLOPIG",
-      lezing: "ASM International (ASM) — europa. Hergebruik Top100-score. S=70,0 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "ASM International (ASM) — europa. Hergebruik Top100-score. S=70,0 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum.",
     },
     {
       ticker: "NXPI",
@@ -122,7 +122,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "Semis/equipment",
       s: 69.8,
       status: "VOORLOPIG",
-      lezing: "NXP Semiconductors (NXPI) — netherlands. S=69,8 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht de knip (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "NXP Semiconductors (NXPI) — netherlands. S=69,8 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht de knip (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum.",
     },
     {
       ticker: "STM",
@@ -130,7 +130,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "Semis/equipment",
       s: 69.6,
       status: "VOORLOPIG",
-      lezing: "STMicroelectronics (STM) — switzerland/france/italy. S=69,6 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "STMicroelectronics (STM) — switzerland/france/italy. S=69,6 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum.",
     },
     {
       ticker: "NOK",
@@ -138,7 +138,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "Telecom/media",
       s: 68.2,
       status: "VOORLOPIG",
-      lezing: "Nokia (NOK) — finland. S=68,2 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "Nokia (NOK) — finland. S=68,2 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum.",
     },
     {
       ticker: "PHG",
@@ -146,7 +146,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "Medtech/health",
       s: 66.8,
       status: "VOORLOPIG",
-      lezing: "Philips (PHG) — netherlands. S=66,8 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht de knip (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "Philips (PHG) — netherlands. S=66,8 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht de knip (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum.",
     },
     {
       ticker: "ETN",
@@ -154,7 +154,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "Industrieel/automatisering",
       s: 65.2,
       status: "VOORLOPIG",
-      lezing: "Eaton (ETN) — ireland. S=65,2 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht de knip (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "Eaton (ETN) — ireland. S=65,2 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht de knip (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum.",
     },
     {
       ticker: "SIE",
@@ -162,7 +162,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "Industrieel/automatisering",
       s: 64.3,
       status: "VOORLOPIG",
-      lezing: "Siemens (SIE) — europa. Hergebruik Top100-score. S=64,3 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht de knip (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "Siemens (SIE) — europa. Hergebruik Top100-score. S=64,3 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht de knip (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum.",
     },
     {
       ticker: "ERIC",
@@ -170,7 +170,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "Telecom/media",
       s: 58.0,
       status: "VOORLOPIG",
-      lezing: "Ericsson (ERIC) — sweden. S=58,0 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit gemiddeld, veerkracht de knip (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "Ericsson (ERIC) — sweden. S=58,0 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit gemiddeld, veerkracht de knip (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum.",
     },
     {
       ticker: "KNEBV",
@@ -178,7 +178,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "Industrieel/automatisering",
       s: null,
       status: "INCOMPLEET",
-      lezing: "Kone (KNEBV, finland) staat in de Europa-sleeve, maar S is INCOMPLEET: Essay-naam; geen SEC primary companyfacts — INCOMPLEET. Geen verzonnen ratio’s. Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "Kone (KNEBV, finland) staat in de Europa-sleeve, maar S is INCOMPLEET: Essay-naam; geen SEC primary companyfacts — INCOMPLEET. Geen verzonnen ratio’s. Aparte lijst — niet automatisch W37-universum.",
     },
     {
       ticker: "SGE",
@@ -186,7 +186,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "Software",
       s: null,
       status: "INCOMPLEET",
-      lezing: "Sage Group (SGE, uk) staat in de Europa-sleeve, maar S is INCOMPLEET: Essay-naam; LSE/OTC zonder bruikbare SEC XBRL — INCOMPLEET. Geen verzonnen ratio’s. Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "Sage Group (SGE, uk) staat in de Europa-sleeve, maar S is INCOMPLEET: Essay-naam; LSE/OTC zonder bruikbare SEC XBRL — INCOMPLEET. Geen verzonnen ratio’s. Aparte lijst — niet automatisch W37-universum.",
     },
     {
       ticker: "WKL",
@@ -194,7 +194,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "Software",
       s: null,
       status: "INCOMPLEET",
-      lezing: "Wolters Kluwer (WKL, netherlands) staat in de Europa-sleeve, maar S is INCOMPLEET: Essay-naam; WTKWY OTC — SEC companyfacts 404 — INCOMPLEET. Geen verzonnen ratio’s. Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "Wolters Kluwer (WKL, netherlands) staat in de Europa-sleeve, maar S is INCOMPLEET: Essay-naam; WTKWY OTC — SEC companyfacts 404 — INCOMPLEET. Geen verzonnen ratio’s. Aparte lijst — niet automatisch W37-universum.",
     },
     {
       ticker: "IFNNY",
@@ -202,7 +202,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "Semis/equipment",
       s: null,
       status: "INCOMPLEET",
-      lezing: "Infineon (IFNNY, germany) staat in de Europa-sleeve, maar S is INCOMPLEET: OTC ADR — SEC companyfacts 404. Geen verzonnen ratio’s. Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "Infineon (IFNNY, germany) staat in de Europa-sleeve, maar S is INCOMPLEET: OTC ADR — SEC companyfacts 404. Geen verzonnen ratio’s. Aparte lijst — niet automatisch W37-universum.",
     },
     {
       ticker: "SPXSF",
@@ -210,7 +210,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "Industrieel/automatisering",
       s: null,
       status: "INCOMPLEET",
-      lezing: "Spirax-Sarco (SPXSF, uk) staat in de Europa-sleeve, maar S is INCOMPLEET: OTC ADR — SEC companyfacts 404. Geen verzonnen ratio’s. Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "Spirax-Sarco (SPXSF, uk) staat in de Europa-sleeve, maar S is INCOMPLEET: OTC ADR — SEC companyfacts 404. Geen verzonnen ratio’s. Aparte lijst — niet automatisch W37-universum.",
     },
   ],
   mijnbouw: [
@@ -220,7 +220,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "streaming/royalty",
       s: 84.4,
       status: "VOORLOPIG",
-      lezing: "Franco-Nevada (metal): streaming/royalty — contractueel metaal. S=84,4 hergebruik mining/WORLD. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "Franco-Nevada (metal): streaming/royalty — contractueel metaal. S=84,4 hergebruik mining/WORLD. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "WPM",
@@ -228,7 +228,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "streaming/royalty",
       s: 84.2,
       status: "VOORLOPIG",
-      lezing: "Wheaton Precious Metals (metal): streaming/royalty — contractueel metaal. S=84,2 hergebruik mining/WORLD. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "Wheaton Precious Metals (metal): streaming/royalty — contractueel metaal. S=84,2 hergebruik mining/WORLD. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "B",
@@ -236,7 +236,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "goud",
       s: 72.2,
       status: "VOORLOPIG",
-      lezing: "Barrick Mining (miner): goudproductie (eigen mijnen). S=72,2 hergebruik mining/WORLD. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "Barrick Mining (miner): goudproductie (eigen mijnen). S=72,2 hergebruik mining/WORLD. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "SAND",
@@ -244,7 +244,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "equipment",
       s: 71.9,
       status: "VOORLOPIG",
-      lezing: "Sandvik (equip): mijnbouw-/zwaar materieel (equip). S=71,9 hergebruik mining/WORLD. Status VOORLOPIG. Geen tip.",
+      lezing: "Sandvik (equip): mijnbouw-/zwaar materieel (equip). S=71,9 hergebruik mining/WORLD. Status VOORLOPIG.",
     },
     {
       ticker: "NEM",
@@ -252,7 +252,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "goud",
       s: 71.5,
       status: "VOORLOPIG",
-      lezing: "Newmont (miner): goudproductie (eigen mijnen, post-Newcrest). S=71,5 hergebruik mining/WORLD. Status VOORLOPIG. Geen tip. Dossier B3 Semaform aanwezig.",
+      lezing: "Newmont (miner): goudproductie (eigen mijnen, post-Newcrest). S=71,5 hergebruik mining/WORLD. Status VOORLOPIG. Dossier B3 Semaform aanwezig.",
     },
     {
       ticker: "BHP",
@@ -260,7 +260,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "diversified",
       s: 70.5,
       status: "VOORLOPIG",
-      lezing: "BHP Group (miner): diversified mining (ijzererts, koper, kolen). S=70,5 hergebruik mining/WORLD. Status VOORLOPIG. Geen tip. Dossier B3 Semaform aanwezig.",
+      lezing: "BHP Group (miner): diversified mining (ijzererts, koper, kolen). S=70,5 hergebruik mining/WORLD. Status VOORLOPIG. Dossier B3 Semaform aanwezig.",
     },
     {
       ticker: "RIO",
@@ -268,7 +268,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "diversified",
       s: 70.2,
       status: "VOORLOPIG",
-      lezing: "Rio Tinto (miner): Pilbara-ijzererts + aluminium/koper. S=70,2 hergebruik mining/WORLD. Status VOORLOPIG. Geen tip. Dossier B3 Semaform aanwezig.",
+      lezing: "Rio Tinto (miner): Pilbara-ijzererts + aluminium/koper. S=70,2 hergebruik mining/WORLD. Status VOORLOPIG. Dossier B3 Semaform aanwezig.",
     },
     {
       ticker: "AEM",
@@ -276,7 +276,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "goud",
       s: 69.8,
       status: "VOORLOPIG",
-      lezing: "Agnico Eagle (miner): goudmijnen (Canada/Australia/Mexico/Finland). S=69,8 hergebruik mining/WORLD. Status VOORLOPIG. Geen tip. Dossier B3 Semaform aanwezig.",
+      lezing: "Agnico Eagle (miner): goudmijnen (Canada/Australia/Mexico/Finland). S=69,8 hergebruik mining/WORLD. Status VOORLOPIG. Dossier B3 Semaform aanwezig.",
     },
     {
       ticker: "SCCO",
@@ -284,7 +284,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "koper",
       s: 69.5,
       status: "VOORLOPIG",
-      lezing: "Southern Copper (miner): koperproductie (LatAm). S=69,5 hergebruik mining/WORLD. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "Southern Copper (miner): koperproductie (LatAm). S=69,5 hergebruik mining/WORLD. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "PAAS",
@@ -292,7 +292,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "goud/zilver",
       s: 68.7,
       status: "VOORLOPIG",
-      lezing: "Pan American Silver (miner): zilver/goudproductie. S=68,7 hergebruik mining/WORLD. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "Pan American Silver (miner): zilver/goudproductie. S=68,7 hergebruik mining/WORLD. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "KGC",
@@ -300,7 +300,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "goud",
       s: 68.3,
       status: "VOORLOPIG",
-      lezing: "Kinross Gold (miner): goudproductie. S=68,3 hergebruik mining/WORLD. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "Kinross Gold (miner): goudproductie. S=68,3 hergebruik mining/WORLD. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "SQM",
@@ -308,7 +308,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "lithium/RE",
       s: 68.1,
       status: "VOORLOPIG",
-      lezing: "SQM (metal): lithium / specialty chemicals. S=68,1 hergebruik mining/WORLD. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "SQM (metal): lithium / specialty chemicals. S=68,1 hergebruik mining/WORLD. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "CAT",
@@ -316,7 +316,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "equipment",
       s: 67.3,
       status: "VOORLOPIG",
-      lezing: "Caterpillar (equip): zwaar materieel (OEM, mining-adjacent). S=67,3 hergebruik mining/WORLD. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "Caterpillar (equip): zwaar materieel (OEM, mining-adjacent). S=67,3 hergebruik mining/WORLD. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "HBM",
@@ -324,7 +324,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "koper",
       s: 61.5,
       status: "VOORLOPIG",
-      lezing: "Hudbay Minerals (miner): koper/zink/goud miner. S=61,5 hergebruik mining/WORLD. Status VOORLOPIG. Geen tip.",
+      lezing: "Hudbay Minerals (miner): koper/zink/goud miner. S=61,5 hergebruik mining/WORLD. Status VOORLOPIG.",
     },
     {
       ticker: "VALE",
@@ -332,7 +332,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "diversified",
       s: 58.7,
       status: "VOORLOPIG",
-      lezing: "Vale (miner): ijzererts / diversified miner. S=58,7 hergebruik mining/WORLD. Status VOORLOPIG. Geen tip.",
+      lezing: "Vale (miner): ijzererts / diversified miner. S=58,7 hergebruik mining/WORLD. Status VOORLOPIG.",
     },
     {
       ticker: "FCX",
@@ -340,7 +340,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "koper",
       s: 58.0,
       status: "VOORLOPIG",
-      lezing: "Freeport-McMoRan (miner): koper/goud miner. S=58,0 hergebruik mining/WORLD. Status VOORLOPIG. Geen tip.",
+      lezing: "Freeport-McMoRan (miner): koper/goud miner. S=58,0 hergebruik mining/WORLD. Status VOORLOPIG.",
     },
     {
       ticker: "ALB",
@@ -348,7 +348,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "lithium/RE",
       s: 55.7,
       status: "VOORLOPIG",
-      lezing: "Albemarle (metal): lithium / specialty chemicals. S=55,7 hergebruik mining/WORLD. Status VOORLOPIG. Geen tip.",
+      lezing: "Albemarle (metal): lithium / specialty chemicals. S=55,7 hergebruik mining/WORLD. Status VOORLOPIG.",
     },
     {
       ticker: "TECK",
@@ -356,7 +356,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "diversified",
       s: 55.2,
       status: "VOORLOPIG",
-      lezing: "Teck Resources (miner): koper/zink/kolen miner. S=55,2 hergebruik mining/WORLD. Status VOORLOPIG. Geen tip.",
+      lezing: "Teck Resources (miner): koper/zink/kolen miner. S=55,2 hergebruik mining/WORLD. Status VOORLOPIG.",
     },
     {
       ticker: "MP",
@@ -364,7 +364,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "lithium/RE",
       s: 49.5,
       status: "VOORLOPIG",
-      lezing: "MP Materials (metal): rare earths / magnetics. S=49,5 hergebruik mining/WORLD. Status VOORLOPIG. Geen tip.",
+      lezing: "MP Materials (metal): rare earths / magnetics. S=49,5 hergebruik mining/WORLD. Status VOORLOPIG.",
     },
     {
       ticker: "AAL.L",
@@ -398,7 +398,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "security_saas",
       s: 85.1,
       status: "VOORLOPIG",
-      lezing: "Zscaler (security_saas): cloud security / ZTNA platform. S=85,1 hergebruik top100. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "Zscaler (security_saas): cloud security / ZTNA platform. S=85,1 hergebruik top100. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "MDB",
@@ -406,7 +406,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "data_platform",
       s: 84.3,
       status: "VOORLOPIG",
-      lezing: "MongoDB (data_platform): document-database platform-IP. S=84,3 hergebruik top100. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "MongoDB (data_platform): document-database platform-IP. S=84,3 hergebruik top100. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "APPF",
@@ -414,7 +414,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "vertical_saas",
       s: 82.2,
       status: "VOORLOPIG",
-      lezing: "AppFolio (vertical_saas): property-management SaaS. S=82,2 hergebruik top100. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "AppFolio (vertical_saas): property-management SaaS. S=82,2 hergebruik top100. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "WDAY",
@@ -422,7 +422,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "hcm_erp",
       s: 81.8,
       status: "VOORLOPIG",
-      lezing: "Workday (hcm_erp): HCM / financial cloud platform. S=81,8 hergebruik top100. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "Workday (hcm_erp): HCM / financial cloud platform. S=81,8 hergebruik top100. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "SPSC",
@@ -430,7 +430,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "vertical_saas",
       s: 81.3,
       status: "VOORLOPIG",
-      lezing: "SPS Commerce (vertical_saas): retail supply-chain network SaaS. S=81,3 hergebruik top100. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "SPS Commerce (vertical_saas): retail supply-chain network SaaS. S=81,3 hergebruik top100. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "TEAM",
@@ -438,7 +438,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "collab",
       s: 81.2,
       status: "VOORLOPIG",
-      lezing: "Atlassian (collab): developer collaboration / Atlassian cloud. S=81,2 hergebruik top100. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "Atlassian (collab): developer collaboration / Atlassian cloud. S=81,2 hergebruik top100. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "DSY",
@@ -446,7 +446,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "design_plm",
       s: 80.5,
       status: "VOORLOPIG",
-      lezing: "Dassault Systèmes (design_plm): industrieel 3D / PLM software. S=80,5 hergebruik top100. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "Dassault Systèmes (design_plm): industrieel 3D / PLM software. S=80,5 hergebruik top100. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "INTU",
@@ -454,7 +454,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "hcm_erp",
       s: 79.6,
       status: "VOORLOPIG",
-      lezing: "Intuit (hcm_erp): tax / accounting platform (TurboTax/QB). S=79,6 hergebruik top100. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "Intuit (hcm_erp): tax / accounting platform (TurboTax/QB). S=79,6 hergebruik top100. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "NOW",
@@ -462,7 +462,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "workflow",
       s: 79.1,
       status: "VOORLOPIG",
-      lezing: "ServiceNow (workflow): enterprise workflow platform. S=79,1 hergebruik top100. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "ServiceNow (workflow): enterprise workflow platform. S=79,1 hergebruik top100. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "ADBE",
@@ -470,7 +470,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "creative",
       s: 78.2,
       status: "VOORLOPIG",
-      lezing: "Adobe (creative): creative / document cloud suite. S=78,2 hergebruik top100. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "Adobe (creative): creative / document cloud suite. S=78,2 hergebruik top100. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "CDNS",
@@ -478,7 +478,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "eda",
       s: 78.2,
       status: "VOORLOPIG",
-      lezing: "Cadence (eda): EDA chip-design tooling. S=78,2 hergebruik top100. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "Cadence (eda): EDA chip-design tooling. S=78,2 hergebruik top100. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "PLTR",
@@ -486,7 +486,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "data_platform",
       s: 78.1,
       status: "VOORLOPIG",
-      lezing: "Palantir (data_platform): data / AIP Foundry platform. S=78,1 hergebruik top100. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "Palantir (data_platform): data / AIP Foundry platform. S=78,1 hergebruik top100. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "ADSK",
@@ -494,7 +494,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "design_plm",
       s: 78.0,
       status: "VOORLOPIG",
-      lezing: "Autodesk (design_plm): design / BIM software (niet Adidas). S=78,0 hergebruik top100. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "Autodesk (design_plm): design / BIM software (niet Adidas). S=78,0 hergebruik top100. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "CRM",
@@ -502,7 +502,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "crm",
       s: 77.9,
       status: "VOORLOPIG",
-      lezing: "Salesforce (crm): CRM cloud + AppExchange. S=77,9 hergebruik top100. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "Salesforce (crm): CRM cloud + AppExchange. S=77,9 hergebruik top100. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "DOCU",
@@ -510,7 +510,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "collab",
       s: 76.4,
       status: "VOORLOPIG",
-      lezing: "Docusign (collab): e-signature / agreement cloud. S=76,4 hergebruik top100. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "Docusign (collab): e-signature / agreement cloud. S=76,4 hergebruik top100. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "AGYS",
@@ -518,7 +518,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "vertical_saas",
       s: 75.8,
       status: "VOORLOPIG",
-      lezing: "Agilysys (vertical_saas): hospitality PMS software. S=75,8 hergebruik top100. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "Agilysys (vertical_saas): hospitality PMS software. S=75,8 hergebruik top100. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "RAMP",
@@ -526,7 +526,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "data_platform",
       s: 75.8,
       status: "VOORLOPIG",
-      lezing: "LiveRamp (data_platform): data collaboration / identity graph. S=75,8 hergebruik top100. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "LiveRamp (data_platform): data collaboration / identity graph. S=75,8 hergebruik top100. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "ZM",
@@ -534,7 +534,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "collab",
       s: 75.5,
       status: "VOORLOPIG",
-      lezing: "Zoom (collab): video communications platform. S=75,5 hergebruik top100. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "Zoom (collab): video communications platform. S=75,5 hergebruik top100. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "DT",
@@ -542,7 +542,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "observability",
       s: 75.1,
       status: "VOORLOPIG",
-      lezing: "Dynatrace (observability): observability / APM platform. S=75,1 hergebruik top100. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "Dynatrace (observability): observability / APM platform. S=75,1 hergebruik top100. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "SAP",
@@ -550,7 +550,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "hcm_erp",
       s: 74.7,
       status: "VOORLOPIG",
-      lezing: "SAP (hcm_erp): ERP platform (S/4HANA). S=74,7 hergebruik europa. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "SAP (hcm_erp): ERP platform (S/4HANA). S=74,7 hergebruik europa. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "DBX",
@@ -558,7 +558,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "collab",
       s: 74.6,
       status: "VOORLOPIG",
-      lezing: "Dropbox (collab): content collaboration cloud. S=74,6 hergebruik top100. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "Dropbox (collab): content collaboration cloud. S=74,6 hergebruik top100. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "PTC",
@@ -566,7 +566,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "design_plm",
       s: 74.4,
       status: "VOORLOPIG",
-      lezing: "PTC (design_plm): industriële PLM / CAD stack. S=74,4 hergebruik top100. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "PTC (design_plm): industriële PLM / CAD stack. S=74,4 hergebruik top100. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "PCTY",
@@ -574,7 +574,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "hcm_erp",
       s: 74.3,
       status: "VOORLOPIG",
-      lezing: "Paylocity (hcm_erp): payroll / HCM SaaS. S=74,3 hergebruik top100. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "Paylocity (hcm_erp): payroll / HCM SaaS. S=74,3 hergebruik top100. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "MSFT",
@@ -582,7 +582,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "platform",
       s: 74.1,
       status: "VOORLOPIG",
-      lezing: "Microsoft (platform): cloud + productivity software stack. S=74,1 hergebruik top100. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "Microsoft (platform): cloud + productivity software stack. S=74,1 hergebruik top100. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "OKTA",
@@ -590,7 +590,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "security_saas",
       s: 73.7,
       status: "VOORLOPIG",
-      lezing: "Okta (security_saas): identity / access platform. S=73,7 hergebruik top100. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "Okta (security_saas): identity / access platform. S=73,7 hergebruik top100. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "PAYC",
@@ -598,7 +598,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "hcm_erp",
       s: 73.7,
       status: "VOORLOPIG",
-      lezing: "Paycom (hcm_erp): payroll / HR software platform. S=73,7 hergebruik top100. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "Paycom (hcm_erp): payroll / HR software platform. S=73,7 hergebruik top100. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "ACIW",
@@ -606,7 +606,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "payments",
       s: 71.9,
       status: "VOORLOPIG",
-      lezing: "ACI Worldwide (payments): payments / merchant software. S=71,9 hergebruik top100. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "ACI Worldwide (payments): payments / merchant software. S=71,9 hergebruik top100. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "QLYS",
@@ -614,7 +614,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "security_saas",
       s: 71.1,
       status: "VOORLOPIG",
-      lezing: "Qualys (security_saas): vulnerability management cloud. S=71,1 hergebruik top100. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "Qualys (security_saas): vulnerability management cloud. S=71,1 hergebruik top100. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "PANW",
@@ -622,7 +622,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "security_saas",
       s: 70.7,
       status: "VOORLOPIG",
-      lezing: "Palo Alto Networks (security_saas): network / cloud security platform. S=70,7 hergebruik top100. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "Palo Alto Networks (security_saas): network / cloud security platform. S=70,7 hergebruik top100. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "TDC",
@@ -630,7 +630,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "data_platform",
       s: 70.3,
       status: "VOORLOPIG",
-      lezing: "Teradata (data_platform): enterprise data platform. S=70,3 hergebruik top100. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "Teradata (data_platform): enterprise data platform. S=70,3 hergebruik top100. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "FTNT",
@@ -638,7 +638,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "security_saas",
       s: 69.7,
       status: "VOORLOPIG",
-      lezing: "Fortinet (security_saas): network security / FortiGate stack. S=69,7 hergebruik top100. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "Fortinet (security_saas): network security / FortiGate stack. S=69,7 hergebruik top100. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "TYL",
@@ -646,7 +646,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "vertical_saas",
       s: 69.0,
       status: "VOORLOPIG",
-      lezing: "Tyler Technologies (vertical_saas): overheidssoftware (civic cloud). S=69,0 hergebruik top100. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "Tyler Technologies (vertical_saas): overheidssoftware (civic cloud). S=69,0 hergebruik top100. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "FFIV",
@@ -654,7 +654,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "infra_soft",
       s: 68.2,
       status: "VOORLOPIG",
-      lezing: "F5 (infra_soft): application delivery & security software. S=68,2 hergebruik top100. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "F5 (infra_soft): application delivery & security software. S=68,2 hergebruik top100. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "IT",
@@ -662,7 +662,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "research",
       s: 67.6,
       status: "VOORLOPIG",
-      lezing: "Gartner (research): research / advisory IP (Gartner). S=67,6 hergebruik top100. Status VOORLOPIG. Geen tip. Nieuw dossier (ochtend B3/B4).",
+      lezing: "Gartner (research): research / advisory IP (Gartner). S=67,6 hergebruik top100. Status VOORLOPIG. Nieuw dossier (ochtend B3/B4).",
     },
     {
       ticker: "BSY",
@@ -670,7 +670,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "design_plm",
       s: 66.7,
       status: "VOORLOPIG",
-      lezing: "Bentley Systems (design_plm): infrastructure engineering software (iTwin). S=66,7 hergebruik top100. Status VOORLOPIG. Geen tip. Nieuw dossier (ochtend B3/B4).",
+      lezing: "Bentley Systems (design_plm): infrastructure engineering software (iTwin). S=66,7 hergebruik top100. Status VOORLOPIG. Nieuw dossier (ochtend B3/B4).",
     },
     {
       ticker: "BOX",
@@ -678,7 +678,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "collab",
       s: 65.8,
       status: "VOORLOPIG",
-      lezing: "Box (collab): content cloud / collaboration. S=65,8 hergebruik top100. Status VOORLOPIG. Geen tip. Nieuw dossier (ochtend B3/B4).",
+      lezing: "Box (collab): content cloud / collaboration. S=65,8 hergebruik top100. Status VOORLOPIG. Nieuw dossier (ochtend B3/B4).",
     },
     {
       ticker: "ROP",
@@ -686,7 +686,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "vertical_soft",
       s: 64.8,
       status: "VOORLOPIG",
-      lezing: "Roper (vertical_soft): vertical software & niche platforms. S=64,8 hergebruik top100. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "Roper (vertical_soft): vertical software & niche platforms. S=64,8 hergebruik top100. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "MANH",
@@ -694,7 +694,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "vertical_saas",
       s: 64.1,
       status: "VOORLOPIG",
-      lezing: "Manhattan Associates (vertical_saas): supply-chain / WMS software. S=64,1 hergebruik top100. Status VOORLOPIG. Geen tip. Nieuw dossier (ochtend B3/B4).",
+      lezing: "Manhattan Associates (vertical_saas): supply-chain / WMS software. S=64,1 hergebruik top100. Status VOORLOPIG. Nieuw dossier (ochtend B3/B4).",
     },
   ],
   softwarelaag: [
@@ -704,7 +704,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "behoudt laag",
       s: 86.9,
       status: "VOORLOPIG",
-      lezing: "Radiology imaging-software-IP behouden — SW-only, issuer houdt de laag. S=86,9 (hergebruik oceania). Geen tip.",
+      lezing: "Radiology imaging-software-IP behouden — SW-only, issuer houdt de laag. S=86,9 (hergebruik oceania).",
     },
     {
       ticker: "MDB",
@@ -712,7 +712,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "behoudt laag",
       s: 84.3,
       status: "VOORLOPIG",
-      lezing: "Document-databaseplatform — issuer houdt data-/query-IP, geen urenmodel. S=84,3 (hergebruik top100). Geen tip.",
+      lezing: "Document-databaseplatform — issuer houdt data-/query-IP, geen urenmodel. S=84,3 (hergebruik top100).",
     },
     {
       ticker: "TNE",
@@ -720,7 +720,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "behoudt laag",
       s: 86.0,
       status: "VOORLOPIG",
-      lezing: "Enterprise SaaS ERP-IP (SaaS+) — platform blijft bij de issuer. S=86,0 (hergebruik oceania). Geen tip.",
+      lezing: "Enterprise SaaS ERP-IP (SaaS+) — platform blijft bij de issuer. S=86,0 (hergebruik oceania).",
     },
     {
       ticker: "TSLA",
@@ -728,7 +728,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "behoudt laag",
       s: 84.6,
       status: "VOORLOPIG",
-      lezing: "Archetype issuer-lens: software/FSD/data behouden over hardware heen. S=84,6 (hergebruik top100). Geen tip.",
+      lezing: "Archetype issuer-lens: software/FSD/data behouden over hardware heen. S=84,6 (hergebruik top100).",
     },
     {
       ticker: "XRO",
@@ -736,7 +736,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "behoudt laag",
       s: 82.3,
       status: "VOORLOPIG",
-      lezing: "Cloud accounting-IP behouden — NZ-wortels, platformlaag bij issuer. S=82,3 (hergebruik oceania). Geen tip.",
+      lezing: "Cloud accounting-IP behouden — NZ-wortels, platformlaag bij issuer. S=82,3 (hergebruik oceania).",
     },
     {
       ticker: "WTC",
@@ -744,7 +744,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "behoudt laag",
       s: 81.9,
       status: "VOORLOPIG",
-      lezing: "Logistics SaaS (CargoWise) — issuer houdt de platformlaag. S=81,9 (hergebruik oceania). Geen tip.",
+      lezing: "Logistics SaaS (CargoWise) — issuer houdt de platformlaag. S=81,9 (hergebruik oceania).",
     },
     {
       ticker: "WDAY",
@@ -752,7 +752,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "behoudt laag",
       s: 81.8,
       status: "VOORLOPIG",
-      lezing: "HCM/financieel cloudplatform — lock-in via eigen stack, niet uren. S=81,8 (hergebruik top100). Geen tip.",
+      lezing: "HCM/financieel cloudplatform — lock-in via eigen stack, niet uren. S=81,8 (hergebruik top100).",
     },
     {
       ticker: "DSY",
@@ -760,7 +760,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "behoudt laag",
       s: 80.5,
       status: "VOORLOPIG",
-      lezing: "Industrieel 3D/PLM-software Europa — IP blijft bij Dassault. S=80,5 (hergebruik europa). Geen tip.",
+      lezing: "Industrieel 3D/PLM-software Europa — IP blijft bij Dassault. S=80,5 (hergebruik europa).",
     },
     {
       ticker: "HEI",
@@ -768,7 +768,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "behoudt laag",
       s: 80.0,
       status: "VOORLOPIG",
-      lezing: "Aerospace aftermarket + niche-IP — industriële software/data-adjacent keep. S=80,0 (hergebruik top100). Geen tip.",
+      lezing: "Aerospace aftermarket + niche-IP — industriële software/data-adjacent keep. S=80,0 (hergebruik top100).",
     },
     {
       ticker: "INTU",
@@ -776,7 +776,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "behoudt laag",
       s: 79.6,
       status: "VOORLOPIG",
-      lezing: "Tax/accounting-platform (TurboTax/QB) — data- en workflow-IP behouden. S=79,6 (hergebruik top100). Geen tip.",
+      lezing: "Tax/accounting-platform (TurboTax/QB) — data- en workflow-IP behouden. S=79,6 (hergebruik top100).",
     },
     {
       ticker: "NOW",
@@ -784,7 +784,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "platform (zorg)",
       s: 79.1,
       status: "VOORLOPIG",
-      lezing: "Workflow-platform met sterke lock-in — keep, maar SaaS-huur-risico meewegen. S=79,1 (hergebruik top100). Geen tip.",
+      lezing: "Workflow-platform met sterke lock-in — keep, maar SaaS-huur-risico meewegen. S=79,1 (hergebruik top100).",
     },
     {
       ticker: "CDNS",
@@ -792,7 +792,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "behoudt laag",
       s: 78.2,
       status: "VOORLOPIG",
-      lezing: "EDA-software — chipontwerp-IP/tooling blijft bij Cadence. S=78,2 (hergebruik top100). Geen tip.",
+      lezing: "EDA-software — chipontwerp-IP/tooling blijft bij Cadence. S=78,2 (hergebruik top100).",
     },
     {
       ticker: "PLTR",
@@ -800,7 +800,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "platform (zorg)",
       s: 78.1,
       status: "VOORLOPIG",
-      lezing: "Data-platform (AIP/Foundry) — keep van stack; zorg om dienstenmix. S=78,1 (hergebruik top100). Geen tip.",
+      lezing: "Data-platform (AIP/Foundry) — keep van stack; zorg om dienstenmix. S=78,1 (hergebruik top100).",
     },
     {
       ticker: "ADSK",
@@ -808,7 +808,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "behoudt laag",
       s: 78.0,
       status: "VOORLOPIG",
-      lezing: "Industrieel design/BIM-software (ADSK; niet Adidas ADS) — IP bij issuer. S=78,0 (hergebruik top100). Geen tip.",
+      lezing: "Industrieel design/BIM-software (ADSK; niet Adidas ADS) — IP bij issuer. S=78,0 (hergebruik top100).",
     },
     {
       ticker: "CRM",
@@ -816,7 +816,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "platform (zorg)",
       s: 77.9,
       status: "VOORLOPIG",
-      lezing: "CRM-cloudplatform — keep via AppExchange; onderscheid van pure reseller. S=77,9 (hergebruik top100). Geen tip.",
+      lezing: "CRM-cloudplatform — keep via AppExchange; onderscheid van pure reseller. S=77,9 (hergebruik top100).",
     },
     {
       ticker: "SAP",
@@ -824,7 +824,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "behoudt laag",
       s: 74.7,
       status: "VOORLOPIG",
-      lezing: "ERP-platform Europa (S/4HANA) — softwarelaag behouden, niet urenmodel. S=74,7 (hergebruik europa). Geen tip.",
+      lezing: "ERP-platform Europa (S/4HANA) — softwarelaag behouden, niet urenmodel. S=74,7 (hergebruik europa).",
     },
     {
       ticker: "WIT",
@@ -832,7 +832,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "huur/uren",
       s: 64.0,
       status: "VOORLOPIG",
-      lezing: "Contrast: IT-services — vooral uren/outsourcing, weinig eigen productlaag. S=64,0 (hergebruik asia). Geen tip.",
+      lezing: "Contrast: IT-services — vooral uren/outsourcing, weinig eigen productlaag. S=64,0 (hergebruik asia).",
     },
     {
       ticker: "INFY",
@@ -840,7 +840,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "huur/uren",
       s: 62.7,
       status: "VOORLOPIG",
-      lezing: "Contrast: IT-services — uren en projecten domineren t.o.v. product-IP. S=62,7 (hergebruik asia). Geen tip.",
+      lezing: "Contrast: IT-services — uren en projecten domineren t.o.v. product-IP. S=62,7 (hergebruik asia).",
     },
     {
       ticker: "ACN",
@@ -848,7 +848,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "huur/uren",
       s: 59.6,
       status: "VOORLOPIG",
-      lezing: "Contrast: consulting/implementatie-uren — login en mensen, niet eigen stack. S=59,6 (hergebruik top100). Geen tip.",
+      lezing: "Contrast: consulting/implementatie-uren — login en mensen, niet eigen stack. S=59,6 (hergebruik top100).",
     },
     {
       ticker: "IBM",
@@ -856,7 +856,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "huur/uren",
       s: 55.0,
       status: "VOORLOPIG",
-      lezing: "Contrast: mix software+services — zwaar uren/hybrid cloud-huur in de mix. S=55,0 (hergebruik top100). Geen tip.",
+      lezing: "Contrast: mix software+services — zwaar uren/hybrid cloud-huur in de mix. S=55,0 (hergebruik top100).",
     },
   ],
   industrieel: [
@@ -1360,7 +1360,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "japan",
       s: 75.5,
       status: "VOORLOPIG",
-      lezing: "Disco (6146) — japan. S=75,5 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "Disco (6146) — japan. S=75,5 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum.",
     },
     {
       ticker: "6954",
@@ -1368,7 +1368,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "japan",
       s: 73.2,
       status: "VOORLOPIG",
-      lezing: "Fanuc (6954) — japan. S=73,2 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "Fanuc (6954) — japan. S=73,2 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum.",
     },
     {
       ticker: "TSM",
@@ -1376,7 +1376,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "taiwan",
       s: 72.8,
       status: "VOORLOPIG",
-      lezing: "TSMC (TSM) — taiwan. S=72,8 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "TSMC (TSM) — taiwan. S=72,8 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum.",
     },
     {
       ticker: "8035",
@@ -1384,7 +1384,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "japan",
       s: 70.1,
       status: "VOORLOPIG",
-      lezing: "Tokyo Electron (8035) — japan. S=70,1 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "Tokyo Electron (8035) — japan. S=70,1 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum.",
     },
     {
       ticker: "6501",
@@ -1392,7 +1392,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "japan",
       s: 69.5,
       status: "VOORLOPIG",
-      lezing: "Hitachi (6501) — japan. S=69,5 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "Hitachi (6501) — japan. S=69,5 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum.",
     },
     {
       ticker: "6857",
@@ -1400,7 +1400,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "japan",
       s: 68.6,
       status: "VOORLOPIG",
-      lezing: "Advantest (6857) — japan. S=68,6 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "Advantest (6857) — japan. S=68,6 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit sterk, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum.",
     },
     {
       ticker: "BABA",
@@ -1408,7 +1408,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "china/hk",
       s: 63.3,
       status: "VOORLOPIG",
-      lezing: "Alibaba (BABA) — china/hk. S=63,3 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit gemiddeld, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "Alibaba (BABA) — china/hk. S=63,3 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit gemiddeld, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum.",
     },
     {
       ticker: "6301",
@@ -1416,7 +1416,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "japan",
       s: 61.9,
       status: "VOORLOPIG",
-      lezing: "Komatsu (6301) — japan. S=61,9 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit gemiddeld, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "Komatsu (6301) — japan. S=61,9 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit gemiddeld, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum.",
     },
     {
       ticker: "UMC",
@@ -1424,7 +1424,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "taiwan",
       s: 59.4,
       status: "VOORLOPIG",
-      lezing: "UMC (UMC) — taiwan. S=59,4 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit gemiddeld, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "UMC (UMC) — taiwan. S=59,4 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit gemiddeld, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum.",
     },
     {
       ticker: "BIDU",
@@ -1432,7 +1432,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "china/hk",
       s: 57.1,
       status: "VOORLOPIG",
-      lezing: "Baidu (BIDU) — china/hk. S=57,1 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit zwak, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "Baidu (BIDU) — china/hk. S=57,1 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit zwak, veerkracht solide (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum.",
     },
     {
       ticker: "ASX",
@@ -1440,7 +1440,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "taiwan",
       s: 41.1,
       status: "VOORLOPIG",
-      lezing: "ASE Technology (ASX) — taiwan. S=41,1 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit zwak, veerkracht de knip (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum. Geen tip.",
+      lezing: "ASE Technology (ASX) — taiwan. S=41,1 (VOORLOPIG, bedrijfsvoering-proxies): utiliteit zwak, veerkracht de knip (herstel ongetest=20). Aparte lijst — niet automatisch W37-universum.",
     },
     {
       ticker: "6273",
@@ -1538,7 +1538,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "behoudt laag",
       s: 86.9,
       status: "VOORLOPIG",
-      lezing: "Radiology imaging-software-IP behouden — SW-only, issuer houdt de laag. S=86,9 (hergebruik oceania). Geen tip.",
+      lezing: "Radiology imaging-software-IP behouden — SW-only, issuer houdt de laag. S=86,9 (hergebruik oceania).",
     },
     {
       ticker: "TNE",
@@ -1546,7 +1546,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "behoudt laag",
       s: 86.0,
       status: "VOORLOPIG",
-      lezing: "Enterprise SaaS ERP-IP (SaaS+) — platform blijft bij de issuer. S=86,0 (hergebruik oceania). Geen tip.",
+      lezing: "Enterprise SaaS ERP-IP (SaaS+) — platform blijft bij de issuer. S=86,0 (hergebruik oceania).",
     },
     {
       ticker: "XRO",
@@ -1554,7 +1554,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "behoudt laag",
       s: 82.3,
       status: "VOORLOPIG",
-      lezing: "Cloud accounting-IP behouden — NZ-wortels, platformlaag bij issuer. S=82,3 (hergebruik oceania). Geen tip.",
+      lezing: "Cloud accounting-IP behouden — NZ-wortels, platformlaag bij issuer. S=82,3 (hergebruik oceania).",
     },
     {
       ticker: "WTC",
@@ -1562,7 +1562,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "behoudt laag",
       s: 81.9,
       status: "VOORLOPIG",
-      lezing: "Logistics SaaS (CargoWise) — issuer houdt de platformlaag. S=81,9 (hergebruik oceania). Geen tip.",
+      lezing: "Logistics SaaS (CargoWise) — issuer houdt de platformlaag. S=81,9 (hergebruik oceania).",
     },
     {
       ticker: "WDS",
@@ -1580,7 +1580,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "koper",
       s: 69.5,
       status: "VOORLOPIG",
-      lezing: "Southern Copper (miner): koperproductie (LatAm). S=69,5 hergebruik mining/WORLD. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "Southern Copper (miner): koperproductie (LatAm). S=69,5 hergebruik mining/WORLD. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "SQM",
@@ -1588,7 +1588,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "lithium/RE",
       s: 68.1,
       status: "VOORLOPIG",
-      lezing: "SQM (metal): lithium / specialty chemicals. S=68,1 hergebruik mining/WORLD. Status VOORLOPIG. Geen tip. Dossier aanwezig.",
+      lezing: "SQM (metal): lithium / specialty chemicals. S=68,1 hergebruik mining/WORLD. Status VOORLOPIG. Dossier aanwezig.",
     },
     {
       ticker: "VALE",
@@ -1596,7 +1596,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "diversified",
       s: 58.7,
       status: "VOORLOPIG",
-      lezing: "Vale (miner): ijzererts / diversified miner. S=58,7 hergebruik mining/WORLD. Status VOORLOPIG. Geen tip.",
+      lezing: "Vale (miner): ijzererts / diversified miner. S=58,7 hergebruik mining/WORLD. Status VOORLOPIG.",
     },
   ],
   coins: [
@@ -1606,7 +1606,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "protocol",
       s: null,
       status: "ONBEREKENBAAR",
-      lezing: "Protocol-leeswijze. Geen AURA/S uit filings. Geen tip.",
+      lezing: "Protocol-leeswijze. Geen AURA/S uit filings.",
     },
     {
       ticker: "ETH",
@@ -1614,7 +1614,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "protocol",
       s: null,
       status: "ONBEREKENBAAR",
-      lezing: "Protocol-leeswijze. Geen AURA/S uit filings. Geen tip.",
+      lezing: "Protocol-leeswijze. Geen AURA/S uit filings.",
     },
     {
       ticker: "SOL",
@@ -1622,7 +1622,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "protocol",
       s: null,
       status: "ONBEREKENBAAR",
-      lezing: "Protocol-leeswijze. Geen AURA/S uit filings. Geen tip.",
+      lezing: "Protocol-leeswijze. Geen AURA/S uit filings.",
     },
     {
       ticker: "AVAX",
@@ -1630,7 +1630,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "protocol",
       s: null,
       status: "ONBEREKENBAAR",
-      lezing: "Protocol-leeswijze. Geen AURA/S uit filings. Geen tip.",
+      lezing: "Protocol-leeswijze. Geen AURA/S uit filings.",
     },
     {
       ticker: "LINK",
@@ -1638,7 +1638,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "protocol",
       s: null,
       status: "ONBEREKENBAAR",
-      lezing: "Protocol-leeswijze. Geen AURA/S uit filings. Geen tip.",
+      lezing: "Protocol-leeswijze. Geen AURA/S uit filings.",
     },
     {
       ticker: "DOT",
@@ -1646,7 +1646,7 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "protocol",
       s: null,
       status: "ONBEREKENBAAR",
-      lezing: "Protocol-leeswijze. Geen AURA/S uit filings. Geen tip.",
+      lezing: "Protocol-leeswijze. Geen AURA/S uit filings.",
     },
     {
       ticker: "ATOM",
@@ -1654,19 +1654,19 @@ export const MAND_ROSTERS: Record<string, MandRow[]> = {
       sector: "protocol",
       s: null,
       status: "ONBEREKENBAAR",
-      lezing: "Protocol-leeswijze. Geen AURA/S uit filings. Geen tip.",
+      lezing: "Protocol-leeswijze. Geen AURA/S uit filings.",
     },
   ],
 };
 
 export const MAND_LEADS: Record<string, string> = {
-  "europa": "Deze Europa-mand toont de namen uit de desk-tabel, met de S die daar al stond. S is een onderzoeksrang, geen kooptip.",
+  "europa": "Deze Europa-mand toont de namen uit de desk-tabel, met de S die daar al stond. S is een onderzoeksrang.",
   "mijnbouw": "Mijnbouw en royalty: streaming, goud, koper, diversified, lithium en equipment. Scores zijn hergebruikt; Atlas verzint geen nieuwe S.",
-  "software": "Software en SaaS: de gehouden laag, met S uit de desk-tabel. Apart van Softwarelaag (keep versus huur). Geen kooptip.",
-  "softwarelaag": "Wie de software-, data- of IP-laag houdt, en wie vooral van huur of uren leeft. Scores hergebruikt. Geen tip, ook niet op de contrastnamen.",
-  "industrieel": "Aerospace, aftermarket, railcar-lessors, rental en OEM. S komt uit de desk-tabel. Cluster bezit versus huur: HEI, GATX, URI — onderzoeksrang, geen kooplijst.",
+  "software": "Software en SaaS: de gehouden laag, met S uit de desk-tabel. Apart van Softwarelaag (keep versus huur).",
+  "softwarelaag": "Wie de software-, data- of IP-laag houdt, en wie vooral van huur of uren leeft. Scores hergebruikt.",
+  "industrieel": "Aerospace, aftermarket, railcar-lessors, rental en OEM. S komt uit de desk-tabel. Cluster bezit versus huur: HEI, GATX, URI.",
   "landbouw": "Equipment, meststoffen, zaden, precision, irrigatie, diergezondheid en processing. Alleen bestaande S; ontbrekende filings blijven INCOMPLEET.",
-  "energie": "Olie-gas, uranium en LNG — de gehouden productieve laag. S uit de desk-tabel. Tip-vrij en voorlopig.",
+  "energie": "Olie-gas, uranium en LNG — de gehouden productieve laag. S uit de desk-tabel. Status voorlopig.",
   "azie": "Azië-mand: Japan, Taiwan, Korea en China/HK. Alleen desk-S; waar filings ontbreken blijft de rij INCOMPLEET.",
   "oceanie": "Oceanië-namen die al in de desk-manden staan (softwarelaag en energie). Geen verzonnen extra rijen.",
   "latam": "LatAm-namen uit de mijnbouw-mand (overlap is bedoeld). Geen verzonnen extra rijen.",
