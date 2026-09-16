@@ -19,4 +19,6 @@ npm run build
 
 Open http://localhost:8080 — cover (geen AURA/S in de hero), nieuwsbrief, methode, etalage PME/DHR/TECH. Banner “Twee sites” wijst naar here.now.
 
+Nieuwsbrief: `/inschrijven` is een native POST naar `https://buttondown.com/api/emails/embed-subscribe/selleslags` (`email` + `embed=1`). Succes: `/inschrijven?ok=1`.
+
 Persoonlijk onderzoek.

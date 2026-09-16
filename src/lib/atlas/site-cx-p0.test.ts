@@ -8,7 +8,9 @@ import {
   BRIDGE_CTA,
   BRIDGE_KICKER,
   BUTTONDOWN_PLACEHOLDER,
+  BUTTONDOWN_USERNAME,
   buttonDownEmbedAction,
+  buttonDownUsername,
   COVER_EDITION_SLUGS,
   COVER_FAQ,
   COVER_NUMMERS_LEDE,
@@ -31,9 +33,11 @@ import {
   OTIUM_BRIDGE,
   SITE_DESCRIPTION,
   SITE_TITLE,
+  parseSubscribeSearch,
+  SUBSCRIBE_ERROR,
   SUBSCRIBE_KICKER,
   SUBSCRIBE_LEDE,
-  SUBSCRIBE_STATUS,
+  SUBSCRIBE_OK,
   SUBSCRIBE_TITLE,
   SUBSCRIBE_TRUST,
   SUBSCRIBE_UNDER,
@@ -125,9 +129,13 @@ test("inschrijven copy is the commercial SKU, without tip-ban chrome", () => {
   );
   assert.equal(SUBSCRIBE_TRUST, "Onderzoek · jaarrekeningen eerst");
   assert.equal(FORM_BUTTON, "Houd me op de hoogte");
-  assert.equal(SUBSCRIBE_STATUS, "De lijst wordt nog gekoppeld. Het formulier is al klaar.");
+  assert.equal(SUBSCRIBE_OK, "Ingeschreven. Check je inbox voor de bevestiging.");
+  assert.equal(SUBSCRIBE_ERROR, "Inschrijven is niet gelukt. Probeer het opnieuw.");
   assert.equal(SUBSCRIBE_UNDER, "Eén mail wanneer er iets te lezen valt.");
-  assert.doesNotMatch([SUBSCRIBE_LEDE, SUBSCRIBE_TRUST, SUBSCRIBE_UNDER].join(" "), /kooptip|koersdoel|Tip-ban/i);
+  assert.doesNotMatch(
+    [SUBSCRIBE_LEDE, SUBSCRIBE_TRUST, SUBSCRIBE_UNDER, SUBSCRIBE_OK, SUBSCRIBE_ERROR].join(" "),
+    /kooptip|koersdoel|Tip-ban|lijst wordt nog gekoppeld/i,
+  );
 });
 
 test("etalage copy is research, not a buy list", () => {
@@ -183,6 +191,8 @@ test("chrome copy does not shout the tip-ban; methode keeps one calm line", () =
     GROK_BOT_METHODE,
     SUBSCRIBE_LEDE,
     SUBSCRIBE_TRUST,
+    SUBSCRIBE_OK,
+    SUBSCRIBE_ERROR,
     ETALAGE_ABOVE,
     ...COVER_FAQ.map((item) => `${item.q} ${item.a}`),
     ...LEESGRENS_ITEMS,
@@ -203,10 +213,40 @@ test("chrome copy does not shout the tip-ban; methode keeps one calm line", () =
   assert.equal(LEESGRENS_ITEMS.length, 3);
 });
 
-test("Buttondown stays quiet when username is REPLACE_ME", () => {
+test("Buttondown public embed targets selleslags", () => {
+  assert.equal(BUTTONDOWN_USERNAME, "selleslags");
+  assert.equal(buttonDownUsername(), "selleslags");
+  assert.equal(
+    buttonDownEmbedAction(),
+    "https://buttondown.com/api/emails/embed-subscribe/selleslags",
+  );
+  assert.equal(isButtonDownWired(), true);
   assert.equal(isButtonDownWired(BUTTONDOWN_PLACEHOLDER), false);
   assert.equal(isButtonDownWired("atlas-onderzoek"), true);
   assert.match(buttonDownEmbedAction("atlas-onderzoek"), /embed-subscribe\/atlas-onderzoek$/);
+  assert.deepEqual(parseSubscribeSearch({ ok: "1" }), { ok: "1" });
+  assert.deepEqual(parseSubscribeSearch({ ok: 1 }), { ok: "1" });
+  assert.deepEqual(parseSubscribeSearch({}), {});
+});
+
+test("inschrijven form is a native Buttondown embed, without stub copy", () => {
+  const source = readFileSync(
+    fileURLToPath(new URL("../../components/atlas/subscribe-form.tsx", import.meta.url)),
+    "utf8",
+  );
+  const page = readFileSync(
+    fileURLToPath(new URL("../../routes/inschrijven.tsx", import.meta.url)),
+    "utf8",
+  );
+  assert.match(source, /buttonDownEmbedAction/);
+  assert.match(source, /name="embed"/);
+  assert.match(source, /method="post"/);
+  assert.match(source, /SUBSCRIBE_OK/);
+  assert.match(source, /SUBSCRIBE_ERROR/);
+  assert.doesNotMatch(source, /De lijst wordt nog gekoppeld/);
+  assert.doesNotMatch(source, /disabled/);
+  assert.match(page, /validateSearch/);
+  assert.match(page, /ok === "1"/);
 });
 
 test("every mand and continent slug resolves", () => {

@@ -32,8 +32,9 @@ export const SUBSCRIBE_TITLE = "Blijf op de hoogte";
 export const SUBSCRIBE_LEDE =
   "Korte stukken over bedrijven, rechtstreeks uit de jaarrekening. Eén e-mail is genoeg.";
 export const SUBSCRIBE_TRUST = "Onderzoek · jaarrekeningen eerst";
-export const SUBSCRIBE_STATUS = "De lijst wordt nog gekoppeld. Het formulier is al klaar.";
 export const SUBSCRIBE_UNDER = "Eén mail wanneer er iets te lezen valt.";
+export const SUBSCRIBE_OK = "Ingeschreven. Check je inbox voor de bevestiging.";
+export const SUBSCRIBE_ERROR = "Inschrijven is niet gelukt. Probeer het opnieuw.";
 
 export const ETALAGE_HEADING = "Drie nagekeken namen";
 export const ETALAGE_ABOVE = "Drie bedrijven die we hebben nagekeken.";
@@ -119,14 +120,16 @@ export const GLOSSARY = [
   },
 ] as const;
 
+/** Public Buttondown username — no API secret. Env may override. */
+export const BUTTONDOWN_USERNAME = "selleslags";
 export const BUTTONDOWN_PLACEHOLDER = "REPLACE_ME";
 
 export function buttonDownUsername() {
-  const fromEnv = import.meta.env.VITE_BUTTONDOWN_USERNAME;
+  const fromEnv = import.meta.env?.VITE_BUTTONDOWN_USERNAME;
   if (typeof fromEnv === "string" && fromEnv.trim().length > 0) {
     return fromEnv.trim();
   }
-  return BUTTONDOWN_PLACEHOLDER;
+  return BUTTONDOWN_USERNAME;
 }
 
 export function isButtonDownWired(username = buttonDownUsername()) {
@@ -135,4 +138,11 @@ export function isButtonDownWired(username = buttonDownUsername()) {
 
 export function buttonDownEmbedAction(username = buttonDownUsername()) {
   return `https://buttondown.com/api/emails/embed-subscribe/${encodeURIComponent(username)}`;
+}
+
+export function parseSubscribeSearch(search: Record<string, unknown>): { ok?: "1" } {
+  if (search.ok === "1" || search.ok === 1) {
+    return { ok: "1" };
+  }
+  return {};
 }
